@@ -5,7 +5,6 @@ import com.phidget22.*;
 public class Vinput implements AttachListener, DetachListener, VoltageRatioInputVoltageRatioChangeListener {
     private int numero_input;
     private VoltageRatioInput input;
-    double stateintput;
     Gestion_Balance gestionBalance;
     public Vinput(Gestion_Balance gestionBalance, int numero_input) throws PhidgetException {
         this.gestionBalance = gestionBalance;
@@ -21,7 +20,7 @@ public void open(){
         this.input.addVoltageRatioChangeListener(this);
         this.input.open(500);
     } catch (PhidgetException e) {
-        System.err.println("Entrer Détachée");
+        System.err.println("Entrée " + numero_input + "détachée");
         throw new RuntimeException(e);
     }
 }
@@ -29,6 +28,7 @@ public void open(){
         try {
             this.input.removeAttachListener(this);
             this.input.removeDetachListener(this);
+            this.input.removeVoltageRatioChangeListener(this);
             this.input.close();
         } catch (PhidgetException e) {
             throw new RuntimeException(e);

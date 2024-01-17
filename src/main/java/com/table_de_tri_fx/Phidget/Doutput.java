@@ -2,12 +2,9 @@ package com.table_de_tri_fx.Phidget;
 
 import com.phidget22.*;
 public class Doutput implements AttachListener, DetachListener{
-    private Gestion_RFID gestionRef;
     private int numero_output;
     private DigitalOutput output;
-    private boolean statedoutput;
-    public Doutput(Gestion_RFID gestionRef, int numero_output) throws PhidgetException {
-        this.gestionRef = gestionRef;
+    public Doutput(int numero_output) throws PhidgetException {
         this.numero_output = numero_output;
         this.output = new DigitalOutput();
         open();
@@ -21,6 +18,7 @@ public void open(){
 
         this.output.open(500);
     } catch (PhidgetException e) {
+        System.out.println("Sortie " + numero_output + " déttachée");
         throw new RuntimeException(e);
     }
 }
