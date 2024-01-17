@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="08516385-d940-47d8-b540-f322cdf48d15" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Table_de_tri_fx/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Table_de_tri_fx/build/classes/java/main/com/example/table_de_tri_fx/HelloApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Table_de_tri_fx/build/classes/java/main/com/example/table_de_tri_fx/HelloController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Table_de_tri_fx/build/classes/java/main/module-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Table_de_tri_fx/build/libs/Table_de_tri_fx-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Table_de_tri_fx/build/resources/main/com/example/table_de_tri_fx/PageConn.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Table_de_tri_fx/build/resources/main/com/example/table_de_tri_fx/PageConnexion.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Table_de_tri_fx/build/resources/main/com/example/table_de_tri_fx/PagePrincipale.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Table_de_tri_fx/build/tmp/compileJava/compileTransaction/stash-dir/HelloApplication.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Table_de_tri_fx/build/tmp/compileJava/compileTransaction/stash-dir/HelloController.class.uniqueId2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Table_de_tri_fx/build/tmp/compileJava/compileTransaction/stash-dir/module-info.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Table_de_tri_fx/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Table_de_tri_fx/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Table_de_tri_fx/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Table_de_tri_fx/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Table_de_tri_fx/gradle/wrapper/gradle-wrapper.properties.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Table_de_tri_fx/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Table_de_tri_fx/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Table_de_tri_fx/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Table_de_tri_fx/src/main/java/com/example/table_de_tri_fx/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Table_de_tri_fx/src/main/java/com/example/table_de_tri_fx/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Table_de_tri_fx/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Table_de_tri_fx/src/main/resources/com/example/table_de_tri_fx/PageConn.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Table_de_tri_fx/src/main/resources/com/example/table_de_tri_fx/PageConnexion.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Table_de_tri_fx/src/main/resources/com/example/table_de_tri_fx/PagePrincipale.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/table_de_tri_fx/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/table_de_tri_fx/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/table_de_tri_fx/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/table_de_tri_fx/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/table_de_tri_fx/PagePrincipale.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/table_de_tri_fx/PagePrincipale.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2b4gdVtiv7L2UDKKDKx2WCFKRfS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/kgarnier/IntelliJIDEAProjects/Phidget",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "build.tools",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Phidget" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Phidget" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="08516385-d940-47d8-b540-f322cdf48d15" name="Changes" comment="" />
+      <created>1705479853065</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705479853065</updated>
+      <workItem from="1705479854248" duration="781000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
