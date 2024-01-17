@@ -3,9 +3,25 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.table_de_tri_fx.HelloController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label fx:id="labelScann" layoutX="126.0" layoutY="148.0" prefHeight="15.0" prefWidth="349.0" text="Veilllez scannez votre carte pour vous connectez " />
-      <Label layoutX="126.0" layoutY="53.0" prefHeight="67.0" prefWidth="373.0" text="Welcome To Table de Tri " textFill="#17723f" />
+      <AnchorPane prefHeight="384.0" prefWidth="592.0">
+         <children>
+            <Label fx:id="labelEmballage" layoutX="230.0" layoutY="140.0" prefHeight="17.0" prefWidth="133.0" />
+            <Label layoutX="399.0" layoutY="17.0" prefHeight="25.0" prefWidth="166.0" text="Identifiant :" />
+            <Label layoutX="14.0" layoutY="17.0" prefHeight="25.0" prefWidth="184.0" />
+            <Label layoutX="146.0" layoutY="157.0" prefHeight="25.0" prefWidth="160.0" text="Emballage : " textFill="RED" />
+            <Label layoutX="146.0" layoutY="199.0" prefHeight="16.0" prefWidth="160.0" text="Déchet Alimentaires : " />
+            <Label layoutX="144.0" layoutY="248.0" prefHeight="25.0" prefWidth="173.0" text="Pain : " />
+            <Label fx:id="labelDechetAlimentaire" layoutX="163.0" layoutY="199.0" prefHeight="17.0" prefWidth="133.0" />
+            <Label fx:id="labelPain" layoutX="179.0" layoutY="236.0" prefHeight="48.0" prefWidth="151.0" />
+         </children>
+      </AnchorPane>
    </children>
-</AnchorPane>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
