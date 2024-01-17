@@ -1,4 +1,4 @@
-package com.example.table_de_tri_fx;
+package com.table_de_tri_fx;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

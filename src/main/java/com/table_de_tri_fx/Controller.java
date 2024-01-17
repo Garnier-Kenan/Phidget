@@ -1,4 +1,4 @@
-package com.example.table_de_tri_fx;
+package com.table_de_tri_fx;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
