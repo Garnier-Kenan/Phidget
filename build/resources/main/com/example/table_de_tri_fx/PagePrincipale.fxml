@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.table_de_tri_fx.HelloController">
+   <children>
+      <Label fx:id="labelScann" layoutX="126.0" layoutY="148.0" prefHeight="15.0" prefWidth="349.0" text="Veilllez scannez votre carte pour vous connectez " />
+      <Label layoutX="126.0" layoutY="53.0" prefHeight="67.0" prefWidth="373.0" text="Welcome To Table de Tri " textFill="#17723f" />
+   </children>
+</AnchorPane>
