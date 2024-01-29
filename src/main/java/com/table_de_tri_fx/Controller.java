@@ -21,14 +21,14 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        thread = new Thread(()->{
-            try {
-                gestion = new Gestion(this);
-            } catch (PhidgetException e) {
-                throw new RuntimeException(e);
-            }
-        });
-        thread.start();
+//        thread = new Thread(()->{
+//            try {
+//                gestion = new Gestion(this);
+//            } catch (PhidgetException e) {
+//                throw new RuntimeException(e);
+//            }
+//        });
+//        thread.start();
     }
     public static void close(){
         try {
