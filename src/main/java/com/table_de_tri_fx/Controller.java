@@ -1,20 +1,9 @@
 package com.table_de_tri_fx;
 
 
-
-import com.table_de_tri_fx.Phidget.RecupDonnee;
-import javafx.embed.swing.JFXPanel;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
+import com.phidget22.PhidgetException;
 import javafx.fxml.Initializable;
-
-import javafx.scene.Node;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
-
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -26,14 +15,26 @@ public class Controller implements Initializable {
     public Label labelScann;
     String prenom = new String("");
     Boolean state = false;
-    String nom= new String("");
-    RecupDonnee recupDonnee = new RecupDonnee(this);
-
-
+    String nom = new String("");
+    private static Gestion gestion;
+    private Thread thread;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        recupDonnee.Connexion(state, prenom, nom);
-        System.out.println(recupDonnee.state + recupDonnee.prenom + recupDonnee.nom);
+        thread = new Thread(()->{
+            try {
+                gestion = new Gestion(this);
+            } catch (PhidgetException e) {
+                throw new RuntimeException(e);
+            }
+        });
+        thread.start();
+    }
+    public static void close(){
+        try {
+            gestion.close();
+        } catch (PhidgetException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
