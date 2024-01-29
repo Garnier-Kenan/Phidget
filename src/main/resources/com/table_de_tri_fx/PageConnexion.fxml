@@ -1,31 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane maxHeight="1080.0" maxWidth="1920.0" minHeight="1080.0" minWidth="1920.0" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <VBox prefHeight="200.0" prefWidth="100.0">
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
          <children>
-            <AnchorPane prefHeight="384.0" prefWidth="592.0">
+            <AnchorPane layoutX="633.0" prefHeight="1081.0" prefWidth="1001.0" AnchorPane.rightAnchor="322.0">
                <children>
-                  <Label fx:id="labelEmballage" layoutX="432.0" layoutY="140.0" prefHeight="17.0" prefWidth="133.0" />
-                  <Label layoutX="399.0" layoutY="17.0" prefHeight="25.0" prefWidth="166.0" text="Identifiant :" />
-                  <Label layoutX="14.0" layoutY="17.0" prefHeight="25.0" prefWidth="184.0" />
-                  <Label layoutX="210.0" layoutY="136.0" prefHeight="25.0" prefWidth="160.0" text="Emballage : " textFill="RED" />
-                  <Label layoutX="210.0" layoutY="199.0" prefHeight="16.0" prefWidth="160.0" text="Déchet Alimentaires : " />
-                  <Label layoutX="210.0" layoutY="248.0" prefHeight="25.0" prefWidth="173.0" text="Pain : " />
-                  <Label fx:id="labelDechetAlimentaire" layoutX="445.0" layoutY="199.0" prefHeight="17.0" prefWidth="133.0" />
-                  <Label fx:id="labelPain" layoutX="423.0" layoutY="224.0" prefHeight="48.0" prefWidth="151.0" />
+                  <Label layoutX="260.0" layoutY="257.0" prefHeight="30.0" prefWidth="294.0" text="Welcome user !" textFill="#4086ab">
+                     <font>
+                        <Font name="Tahoma" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="281.0" layoutY="318.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" stylesheets="@../../../java/com/table_de_tri_fx/css/stylesheet.css" />
                </children>
             </AnchorPane>
+            <AnchorPane layoutX="2.0" prefHeight="1080.0" prefWidth="596.0" styleClass="left-form" stylesheets="@../../../java/com/table_de_tri_fx/css/stylesheet.css">
+               <children>
+                  <Label layoutX="81.0" layoutY="314.0" prefHeight="30.0" prefWidth="477.0" text="Table de Tri Lycee Astier" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="36.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
          </children>
-      </VBox>
+      </AnchorPane>
    </children>
-   <columnConstraints>
-      <ColumnConstraints />
-   </columnConstraints>
-   <rowConstraints>
-      <RowConstraints />
-   </rowConstraints>
-</GridPane>
+</StackPane>

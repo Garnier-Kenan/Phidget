@@ -38,6 +38,7 @@ dependencies {
   implementation("mysql:mysql-connector-java:8.0.33")
   implementation 'org.kordamp.bootstrapfx:bootstrapfx-core:0.4.0'
   implementation(files("lib/phidget22.jar"))
+  implementation 'com.cloudimpl.outstack:App:4.0.551'
   testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
 }

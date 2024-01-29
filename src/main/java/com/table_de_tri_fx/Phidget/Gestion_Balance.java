@@ -1,6 +1,7 @@
 package com.table_de_tri_fx.Phidget;
 
 import com.phidget22.PhidgetException;
+import javafx.application.Platform;
 
 public class Gestion_Balance {
     private Vinput vInput0;
