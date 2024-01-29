@@ -1,0 +1,10 @@
+.left-form{
+    -fx-background-color: linear-gradient(to bottom right , #278a32 , #4086ab);
+}
+.text-field{
+    -fx-background-color: linear-gradient(to bottom,#efefef,#eee);
+    -fx-border-color: #000;
+    -fx-border-width: .8px;
+    -fx-font-size: 13px;
+    -fx-font-family: "Tahoma";
+}

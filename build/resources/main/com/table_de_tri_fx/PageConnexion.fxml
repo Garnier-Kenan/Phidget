@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="1080.0" maxWidth="1920.0" minHeight="1080.0" minWidth="1920.0" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane layoutX="633.0" prefHeight="1081.0" prefWidth="1001.0" AnchorPane.rightAnchor="322.0">
+               <children>
+                  <Label layoutX="260.0" layoutY="257.0" prefHeight="30.0" prefWidth="294.0" text="Welcome user !" textFill="#4086ab">
+                     <font>
+                        <Font name="Tahoma" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="281.0" layoutY="318.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" stylesheets="@../../../java/com/table_de_tri_fx/css/stylesheet.css" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="2.0" prefHeight="1080.0" prefWidth="596.0" styleClass="left-form" stylesheets="@../../../java/com/table_de_tri_fx/css/stylesheet.css">
+               <children>
+                  <Label layoutX="81.0" layoutY="314.0" prefHeight="30.0" prefWidth="477.0" text="Table de Tri Lycee Astier" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="36.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
