@@ -5,37 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08516385-d940-47d8-b540-f322cdf48d15" name="Changes" comment="Add files via upload">
-      <change afterPath="$PROJECT_DIR$/lib/fontawesomefx-8.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/RecupDonnee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageMain.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/360_F_297984037_iuijYMhcLkt2nNW8niNbkvvUeOwtU8b3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/360_F_362425563_V4vRnhXylbroS0BF6TpWva3B06ogcyoy.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/table_de_tri_fx/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/table_de_tri_fx/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/module-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/Table_de_tri_fx-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Table_de_tri_fx-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/com/example/table_de_tri_fx/PageConnexion.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/com/example/table_de_tri_fx/PagePrincipale.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/HelloApplication.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/module-info.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Gestion_Balance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Gestion_Balance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/BDD/BDD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Doutput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Gestion_Balance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Gestion_RFID.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/RecupDonnee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Vinput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/css/stylesheet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageConnexion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageConnexion.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PagePrincipale.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageMain.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageMain.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +145,7 @@
       <workItem from="1706106194453" duration="2360000" />
       <workItem from="1706113176210" duration="1278000" />
       <workItem from="1706511975694" duration="30000" />
-      <workItem from="1706512020493" duration="9788000" />
+      <workItem from="1706512020493" duration="10536000" />
     </task>
     <task id="LOCAL-00001" summary="Add files via upload">
       <created>1705480665433</created>
@@ -195,7 +175,21 @@
       <option name="project" value="LOCAL" />
       <updated>1705480812740</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add files via upload">
+      <created>1706532815424</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706532815424</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add files via upload">
+      <created>1706532832260</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706532832260</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

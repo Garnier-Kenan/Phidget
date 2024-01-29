@@ -8,3 +8,10 @@
     -fx-font-size: 13px;
     -fx-font-family: "Tahoma";
 }
+.navbutton{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-family: "Arial";
+    -fx-alignment: CENTER-LEFT;
+}

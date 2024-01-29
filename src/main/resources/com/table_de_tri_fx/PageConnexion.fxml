@@ -17,7 +17,7 @@
                         <Font name="Tahoma" size="24.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="281.0" layoutY="318.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" stylesheets="@../../../java/com/table_de_tri_fx/css/stylesheet.css" />
+                  <TextField layoutX="252.0" layoutY="320.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" stylesheets="@../../../java/com/table_de_tri_fx/css/stylesheet.css" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="2.0" prefHeight="1080.0" prefWidth="596.0" styleClass="left-form" stylesheets="@../../../java/com/table_de_tri_fx/css/stylesheet.css">
