@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.StackPane?>
 
-<StackPane maxHeight="1080.0" maxWidth="1920.0" minHeight="1080.0" minWidth="1920.0" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.table_de_tri_fx.Controller" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0">
-         <children>
-            <AnchorPane layoutX="633.0" prefHeight="1081.0" prefWidth="1001.0" AnchorPane.rightAnchor="322.0" />
-            <AnchorPane layoutX="2.0" prefHeight="1080.0" prefWidth="596.0" styleClass="left-form" stylesheets="@../../../java/com/table_de_tri_fx/css/stylesheet.css">
-               <children>
-                  <Label layoutX="81.0" layoutY="314.0" prefHeight="30.0" prefWidth="477.0" text="Table de Tri Lycee Astier" textFill="WHITE">
-                     <font>
-                        <Font name="Tahoma" size="36.0" />
-                     </font>
-                  </Label>
-               </children></AnchorPane>
-         </children>
-      </AnchorPane>
-   </children>
-</StackPane>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.table_de_tri_fx.Controller">
+    <!-- Contenu de la deuxième page -->
+</VBox>
+

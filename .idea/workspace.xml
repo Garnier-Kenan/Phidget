@@ -5,10 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08516385-d940-47d8-b540-f322cdf48d15" name="Changes" comment="Add files via upload">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/table_de_tri_fx/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/table_de_tri_fx/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/table_de_tri_fx/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/table_de_tri_fx/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/com/table_de_tri_fx/PageConnexion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/com/table_de_tri_fx/PageConnexion.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Application.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Application.class.uniqueId0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageConnexion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageConnexion.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageMain.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageMain.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,25 +70,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kgarnier/Desktop/scenebuilder/SceneBuilder.exe&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;5ae6b5f69ca0ad9cc91737fda7857912&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/DOSSIERDELAMORT/TD_phidget_FXML",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.JavaFX",
+    "spring.configuration.checksum": "5ae6b5f69ca0ad9cc91737fda7857912",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -93,6 +106,7 @@
       <recent name="C:\Users\kgarnier\IntelliJIDEAProjects\Phidget\lib" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.table_de_tri_fx" />
       <recent name="sample" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -149,7 +163,8 @@
       <workItem from="1706511975694" duration="30000" />
       <workItem from="1706512020493" duration="9788000" />
       <workItem from="1706536188282" duration="1599000" />
-      <workItem from="1706538437387" duration="5059000" />
+      <workItem from="1706538437387" duration="7351000" />
+      <workItem from="1706601613606" duration="9073000" />
     </task>
     <task id="LOCAL-00001" summary="Add files via upload">
       <created>1705480665433</created>
@@ -200,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706538707085</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add files via upload">
+      <created>1706544196747</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1706544196747</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

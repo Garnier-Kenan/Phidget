@@ -1,14 +1,16 @@
 package com.table_de_tri_fx;
 
 
-import com.phidget22.PhidgetException;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
-import org.springframework.expression.spel.ast.BooleanLiteral;
+import javafx.util.Duration;
 
 import java.io.IOException;
 import java.net.URL;
@@ -20,49 +22,85 @@ public class Controller implements Initializable {
     public Label labelPain;
     public Label labelEmballages;
     public Label labelScann;
+    public Button btnSimulate ;
+
     String prenom = new String("");
-    Boolean state = false;
+    Boolean state = true;
     String nom = new String("");
     private static Gestion gestion;
     private Thread thread;
     private Stage primaryStage;
-
+    private Timeline timeoutTimeline;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-//        thread = new Thread(()->{
-//            try {
-//                gestion = new Gestion(this);
-//            } catch (PhidgetException e) {
-//                throw new RuntimeException(e);
-//            }
-//        });
-//        thread.start();
 
-
+        // Initialisation le Timeline pour le timeout
+        timeoutTimeline = new Timeline(new KeyFrame(
+                Duration.seconds(10), //Temp du timeout
+                event -> eventTimeout()));
+        btnSimulate.setOnAction(event -> {
+            processBoolean(true);
+            resetTimeout();
+        });
     }
+
+
+    private void openWindow() {
+        try {
+            Stage newStage = new Stage();
+            // Chargez le fichier FXML de votre seconde fenêtre
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("PageConnexion.fxml"));
+            newStage.setScene(new Scene(loader.load()));
+            newStage.setFullScreen(true);
+            newStage.setTitle("Table Principale");
+            newStage.show();
+            closePrimaryStage();
+            resetTimeout();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public void setPrimaryStage(Stage primaryStage) {
         this.primaryStage = primaryStage;
     }
 
+    // ...
+    private void eventTimeout() {
+        System.out.println("Timeout occurred. Returning to main window.");
 
-    private void openNewWindow(Boolean flag) {
-        labelScann.setText(""+ flag);
+        // Code pour revenir à la fenêtre principale
+        try {
+            Stage newStage = new Stage();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("PageMain.fxml"));
+            newStage.setScene(new Scene(loader.load()));
+            newStage.setFullScreen(true);
 
-        // Vérifiez le badge ID et ouvrez une nouvelle fenêtre si nécessaire
-        if (flag != false) {
-            try {
-                Stage newStage = new Stage();
-                // Chargez le fichier FXML de votre nouvelle fenêtre
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("PageConnexion.fxml"));
-                newStage.setScene(new Scene(loader.load()));
-                primaryStage.close();
-                newStage.setTitle("Table Principale");
-                newStage.show();
-            } catch (IOException e) {
-                e.printStackTrace();
+            Controller mainController = loader.getController();
+            mainController.setPrimaryStage(newStage);
+
+            newStage.setTitle("Fenêtre Principale");
+            newStage.show();
+
+
+            // Fermez la fenêtre actuelle
+            Stage currentStage = (Stage) btnSimulate.getScene().getWindow();
+            currentStage.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+    }
+        private void processBoolean(boolean condition) {
+            if (condition) {
+                closePrimaryStage();
+                openWindow();
+            }
         }
+
+    private void closePrimaryStage() {
+        Stage stage = (Stage) btnSimulate.getScene().getWindow();
+        stage.close();
     }
 
 
@@ -71,7 +109,15 @@ public class Controller implements Initializable {
 
 
 
+    private void resetTimeout() {
+        timeoutTimeline.stop();
+        timeoutTimeline.play();
     }
+
+
+
+
+}
 
 
 
