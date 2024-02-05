@@ -34,16 +34,17 @@ public class Gestion_BDD {
         }
         return flag;
     }
-    public Boolean dechet(int id,String poid0, String poid1, String poid2){
+    public Boolean dechet(int id,int id_table,Double poid0, Double poid1, Double poid2){
         Boolean flag = false;
         connecter();
         try {
-            String query = "INSERT INTO dechet (id_user, alimentaire,emballage, pain) VALUES (?, ?, ?, ?);";
+            String query = "INSERT INTO dechet (id_user,id_table, pain,alimentaire,emballage) VALUES (?,?, ?, ?, ?);";
             PreparedStatement preparedStatement = connexion.prepareStatement(query);
-            preparedStatement.setString(1,String.valueOf(id));
-            preparedStatement.setString(2,poid0);
-            preparedStatement.setString(3,poid1);
-            preparedStatement.setString(4,poid2);
+            preparedStatement.setInt(1,id);
+            preparedStatement.setInt(2,id_table);
+            preparedStatement.setDouble(3,poid0);
+            preparedStatement.setDouble(4,poid1);
+            preparedStatement.setDouble(5,poid2);
 
             int rowsAffected = preparedStatement.executeUpdate();
 

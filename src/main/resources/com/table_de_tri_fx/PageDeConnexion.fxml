@@ -23,7 +23,6 @@
 
             </Label>
             <ImageView fitHeight="96.0" fitWidth="118.0" layoutX="663.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true" />
-            <FontAwesomeIconView layoutX="740.0" layoutY="115.0" />
          </children>
       </AnchorPane>
       <AnchorPane layoutX="303.0" layoutY="270.0" prefHeight="650.0" prefWidth="1014.0">

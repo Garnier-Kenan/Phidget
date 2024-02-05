@@ -18,16 +18,25 @@ public class Application extends javafx.application.Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("PageDeConnexion.fxml"));
-            Scene scene = new Scene(fxmlLoader.load());
+            FXMLLoader fxmlLoader2 = new FXMLLoader(getClass().getResource("PagePrincipale.fxml"));
+            Scene scene2 = new Scene(fxmlLoader2.load());
+            FXMLLoader fxmlLoader1 = new FXMLLoader(Application.class.getResource("PageDeConnexion.fxml"));
+            Scene scene1 = new Scene(fxmlLoader1.load());
             primaryStage.setFullScreenExitHint("");
             primaryStage.setTitle("Table de Tri");
-            primaryStage.setScene(scene);
-            primaryStage.setOnCloseRequest(event -> System.exit(0));
+            primaryStage.setScene(scene1);
             primaryStage.setFullScreen(true);
             primaryStage.show();
-            Controller.setPrimaryStage(primaryStage);
-
+            primaryStage.setOnCloseRequest(event -> {
+                System.exit(0);
+                Controller.close();
+            });
+            DATA_Scene.controller=fxmlLoader1.getController();
+            DATA_Scene.primaryStage=primaryStage;
+            DATA_Scene.controller2=fxmlLoader2.getController();
+            DATA_Scene.scene1=scene1;
+            DATA_Scene.scene2=scene2;
+            DATA_Scene.position = false;
         } catch (IOException e) {
             e.printStackTrace();
         }

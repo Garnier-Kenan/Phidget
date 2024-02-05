@@ -46,15 +46,18 @@ public void open(){
     this.input.addDetachListener(this);
     this.input.addAttachListener(this);
 }
-    public void close() {
-        try {
-            this.input.removeAttachListener(this);
-            this.input.removeDetachListener(this);
-            this.input.removeVoltageRatioChangeListener(this);
-            this.input.close();
-        } catch (PhidgetException e) {
-            throw new RuntimeException(e);
+    public void close() throws PhidgetException {
+        if(input.getIsOpen()){
+            try {
+                this.input.removeAttachListener(this);
+                this.input.removeDetachListener(this);
+                this.input.removeVoltageRatioChangeListener(this);
+                this.input.close();
+            } catch (PhidgetException e) {
+                throw new RuntimeException(e);
+            }
         }
+
     }
     @Override
     public void onAttach(AttachEvent attachEvent) {
@@ -69,7 +72,7 @@ public void open(){
     @Override
     public void onVoltageRatioChange(VoltageRatioInputVoltageRatioChangeEvent voltageRatioInputVoltageRatioChangeEvent) {
         if (calibrer){
-            gestion.poids(numero_input,decimalFormat.format(Math.abs(voltageRatioInputVoltageRatioChangeEvent.getVoltageRatio()- (DATA_Balance.offset[numero_input])) *DATA_Balance.GAIN[numero_input]));
+            gestion.poids(numero_input,Double.parseDouble(decimalFormat.format(Math.abs(voltageRatioInputVoltageRatioChangeEvent.getVoltageRatio()- (DATA_Balance.offset[numero_input])) *DATA_Balance.GAIN[numero_input])));
         }else{
             System.err.println("Balance " + numero_input + " erreur calibrage");
         }
