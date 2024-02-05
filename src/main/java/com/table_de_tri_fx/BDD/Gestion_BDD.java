@@ -3,7 +3,7 @@ package com.table_de_tri_fx.BDD;
 import java.sql.*;
 
 public class Gestion_BDD {
-    private static final String URL = "jdbc:mysql://localhost:3306/table_de_tri";
+    private static final String URL = "jdbc:mysql://10.0.0.164:3306/table_de_tri";
     private static final String UTILISATEUR = "root";
     private static final String MOT_DE_PASSE = "";
     private static Connection connexion;

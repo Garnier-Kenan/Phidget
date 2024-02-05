@@ -6,6 +6,11 @@ import javafx.scene.Scene;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
+import javafx.scene.control.Button;
+
+
+
+
 import java.io.IOException;
 
 public class Application extends javafx.application.Application {
@@ -13,18 +18,15 @@ public class Application extends javafx.application.Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("PageMain.fxml"));
-            Parent root = loader.load();
-            // Accédez au contrôleur directement
-           Controller mainController = loader.getController();
-            primaryStage.setTitle("Fenêtre Principale");
+            FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("PageDeConnexion.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            primaryStage.setFullScreenExitHint("");
+            primaryStage.setTitle("Table de Tri");
+            primaryStage.setScene(scene);
+            primaryStage.setOnCloseRequest(event -> System.exit(0));
             primaryStage.setFullScreen(true);
-            primaryStage.setScene(new Scene(root, 30, 200));
-
-            // Passez la référence de la fenêtre principale au contrôleur
-            mainController.setPrimaryStage(primaryStage);
-
             primaryStage.show();
+            Controller.setPrimaryStage(primaryStage);
 
         } catch (IOException e) {
             e.printStackTrace();

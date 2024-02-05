@@ -23,11 +23,11 @@ public class Gestion {
 
         gestion_rfid = new Gestion_RFID(this);
 
-        vInput0 = new Vinput(this, 0);
-
-        vInput1 = new Vinput(this, 1);
-
-        vInput2 = new Vinput(this, 2);
+//        vInput0 = new Vinput(this, 0);
+//
+//        vInput1 = new Vinput(this, 1);
+//
+//        vInput2 = new Vinput(this, 2);
 
     }
 
@@ -43,9 +43,11 @@ public class Gestion {
                     controller.nom = tab[2];
                     controller.prenom = tab[1];
                     controller.state = true;
+                    controller.rfid();
                     break;
                 case '2':
                     controller.state = false;
+                    controller.rfid();
                     break;
             }
         }
