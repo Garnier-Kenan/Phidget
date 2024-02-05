@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08516385-d940-47d8-b540-f322cdf48d15" name="Changes" comment="Branche fonctionelle">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageDeConnexion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageDeConnexion.fxml" afterDir="false" />
+    <list default="true" id="08516385-d940-47d8-b540-f322cdf48d15" name="Changes" comment="fxml flo">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/image.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,11 +92,11 @@
       <recent name="C:\Users\kgarnier\IntelliJIDEAProjects\Projet_Phidget_fx\src\main\java\com\table_de_tri_fx" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="T:\Projet\src\main\resources\images" />
       <recent name="T:\Projet\src\main\resources\CSS\fonts" />
       <recent name="T:\Projet\src\main\resources\CSS" />
       <recent name="T:\Projet\src\main\resources\com\table_de_tri_fx\css\fonts" />
       <recent name="T:\Projet_Phidget_fx\src\main\resources\images" />
-      <recent name="T:\Projet_Phidget_fx\src\main\resources\com\table_de_tri_fx" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.table_de_tri_fx" />
@@ -256,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707138800614</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fxml flo">
+      <created>1707148618155</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1707148618155</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +271,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add files via upload" />
     <MESSAGE value="Branche fonctionelle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Branche fonctionelle" />
+    <MESSAGE value="fxml flo" />
+    <option name="LAST_COMMIT_MESSAGE" value="fxml flo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
