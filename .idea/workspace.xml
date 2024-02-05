@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="08516385-d940-47d8-b540-f322cdf48d15" name="Changes" comment="Add files via upload">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageDeConnexion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageDeConnexion.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PagePrincipale.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PagePrincipale.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/360_F_297984037_iuijYMhcLkt2nNW8niNbkvvUeOwtU8b3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/360_F_362425563_V4vRnhXylbroS0BF6TpWva3B06ogcyoy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/600.10-stats-icon-iconbunny.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/image.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +26,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Table_de_tri_fx" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -36,8 +41,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="CSS File" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -53,7 +58,9 @@
     <setting file="file://$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageConnexion.fxml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2b4gdVtiv7L2UDKKDKx2WCFKRfS" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -231,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707117966969</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add files via upload">
+      <created>1707132462612</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1707132462612</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

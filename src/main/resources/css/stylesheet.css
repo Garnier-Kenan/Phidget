@@ -1,0 +1,7 @@
+.loginform{
+    -fx-background-color: linear-gradient(to bottom right,#37752f,#ffffff);
+}
+.mainform{
+    -fx-background-color: linear-gradient(to bottom right,#37752f,#8b9e8d);
+}
+
