@@ -28,9 +28,7 @@ public class Gestion_RFID implements AttachListener, DetachListener, RFIDTagList
                 System.err.println("Erreur ouverture RFID, regarder branchement");
             }
         }
-
         try {
-
             dOutput0 = new Doutput(1);
             dOutput1 = new Doutput(2);
             dOutput0.getOutput().setState(true);

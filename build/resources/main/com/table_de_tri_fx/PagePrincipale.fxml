@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="1080.0" minWidth="1920.0" prefHeight="400.0" prefWidth="600.0" styleClass="mainform" stylesheets="@../../css/stylesheet.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="1080.0" minWidth="1920.0" prefHeight="400.0" prefWidth="600.0" styleClass="mainform" stylesheets="@../../css/stylesheet.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.table_de_tri_fx.Controller2">
    <children>
       <AnchorPane prefHeight="1080.0" prefWidth="351.0" styleClass="mainform" stylesheets="@../../css/stylesheet.css" />
       <AnchorPane layoutX="372.0" prefHeight="553.0" prefWidth="1347.0" styleClass="mainform" stylesheets="@../../css/stylesheet.css">

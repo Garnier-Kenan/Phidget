@@ -24,13 +24,16 @@ public void open(){
         }
     }
 }
-    public void close() {
-        try {
-            this.output.close();
-        } catch (PhidgetException e) {
-            System.err.println("Sortie" + numero_output + "Erreur fermeture, sortie déjà fermer");
-            throw new RuntimeException(e);
+    public void close() throws PhidgetException {
+        if(output.getIsOpen()){
+            try {
+                this.output.close();
+            } catch (PhidgetException e) {
+                System.err.println("Sortie" + numero_output + "Erreur fermeture, sortie déjà fermer");
+                throw new RuntimeException(e);
+            }
         }
+
     }
     public DigitalOutput getOutput() {
         return output;

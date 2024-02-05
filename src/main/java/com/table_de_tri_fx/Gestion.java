@@ -2,6 +2,7 @@ package com.table_de_tri_fx;
 
 import com.phidget22.PhidgetException;
 import com.table_de_tri_fx.BDD.Gestion_BDD;
+import com.table_de_tri_fx.Phidget.DATA_Balance;
 import com.table_de_tri_fx.Phidget.Gestion_RFID;
 import com.table_de_tri_fx.Phidget.Vinput;
 import javafx.application.Platform;
@@ -11,13 +12,10 @@ public class Gestion {
     private Gestion_BDD gestion_bdd;
     private Vinput vInput0, vInput1, vInput2;
     private String oldtag = "", trame = "2";
-    private String poid0, poid1, poid2;
-    private int id_user;
-    private Controller controller;
+    private Double poid0, poid1, poid2;
+    private int id_user,id_table = DATA_Balance.id_table;
 
-    public Gestion(Controller controller) throws PhidgetException {
-
-        this.controller = controller;
+    public Gestion() throws PhidgetException {
 
         gestion_bdd = new Gestion_BDD();
 
@@ -40,20 +38,31 @@ public class Gestion {
                 case '1':
                     String[] tab = trame.split("/");
                     id_user = Integer.valueOf(tab[3]);
-                    controller.nom = tab[2];
-                    controller.prenom = tab[1];
-                    controller.state = true;
-                    controller.rfid();
+                    DATA_Scene.controller2.nom = tab[2];
+                    DATA_Scene.controller2.prenom = tab[1];
+                    if (!DATA_Scene.position){
+                        DATA_Scene.controller.state = true;
+                        DATA_Scene.controller.rfid();
+                    }else{
+                        DATA_Scene.controller2.state = true;
+                        DATA_Scene.controller2.rfid();
+                    }
+
                     break;
                 case '2':
-                    controller.state = false;
-                    controller.rfid();
+                    if (DATA_Scene.position){
+                        DATA_Scene.controller.state = false;
+                        DATA_Scene.controller.rfid();
+                    }else{
+                        DATA_Scene.controller2.state = false;
+                        DATA_Scene.controller2.rfid();
+                    }
                     break;
             }
         }
     }
     public void ecrire(){
-        Boolean reponsse = gestion_bdd.dechet(id_user, poid0, poid1, poid2);
+        Boolean reponsse = gestion_bdd.dechet(id_user,id_table, poid0, poid1, poid2);
         if (reponsse) {
             System.out.println("BDD c'est bon");
         } else {
@@ -61,19 +70,18 @@ public class Gestion {
         }
     }
 
-    public void poids(int i, String poid) {
+    public void poids(int i, Double poid) {
         switch (i) {
             case 0 -> poid0 = poid;
             case 1 -> poid1 = poid;
             case 2 -> poid2 = poid;
         }
         Platform.runLater(() ->{
-            controller.labelPain.setText(poid0);
-            controller.labelAlimentaires.setText(poid1);
-            controller.labelEmballages.setText(poid2);
+            DATA_Scene.controller2.labelPain.setText(poid0.toString());
+            DATA_Scene.controller2.labelAlimentaires.setText(poid1.toString());
+            DATA_Scene.controller2.labelEmballages.setText(poid2.toString());
         });
     }
-
     public void close() throws PhidgetException {
         vInput0.close();
         vInput1.close();
