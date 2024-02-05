@@ -1,0 +1,39 @@
+Index: build/resources/main/com/table_de_tri_fx/PageConnexion.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import javafx.scene.control.Label?>\r\n<?import javafx.scene.control.TextField?>\r\n<?import javafx.scene.layout.AnchorPane?>\r\n<?import javafx.scene.layout.StackPane?>\r\n<?import javafx.scene.text.Font?>\r\n\r\n<StackPane maxHeight=\"1080.0\" maxWidth=\"1920.0\" minHeight=\"1080.0\" minWidth=\"1920.0\" prefHeight=\"1080.0\" prefWidth=\"1920.0\" xmlns=\"http://javafx.com/javafx/21\" xmlns:fx=\"http://javafx.com/fxml/1\">\r\n   <children>\r\n      <AnchorPane prefHeight=\"200.0\" prefWidth=\"200.0\">\r\n         <children>\r\n            <AnchorPane layoutX=\"633.0\" prefHeight=\"1081.0\" prefWidth=\"1001.0\" AnchorPane.rightAnchor=\"322.0\">\r\n               <children>\r\n                  <Label layoutX=\"260.0\" layoutY=\"257.0\" prefHeight=\"30.0\" prefWidth=\"294.0\" text=\"Welcome user !\" textFill=\"#4086ab\">\r\n                     <font>\r\n                        <Font name=\"Tahoma\" size=\"24.0\" />\r\n                     </font>\r\n                  </Label>\r\n                  <TextField layoutX=\"252.0\" layoutY=\"320.0\" prefHeight=\"30.0\" prefWidth=\"220.0\" promptText=\"Username\" stylesheets=\"@../../../java/com/table_de_tri_fx/css/stylesheet.css\" />\r\n               </children>\r\n            </AnchorPane>\r\n            <AnchorPane layoutX=\"2.0\" prefHeight=\"1080.0\" prefWidth=\"596.0\" styleClass=\"left-form\" stylesheets=\"@../../../java/com/table_de_tri_fx/css/stylesheet.css\">\r\n               <children>\r\n                  <Label layoutX=\"81.0\" layoutY=\"314.0\" prefHeight=\"30.0\" prefWidth=\"477.0\" text=\"Table de Tri Lycee Astier\" textFill=\"WHITE\">\r\n                     <font>\r\n                        <Font name=\"Tahoma\" size=\"36.0\" />\r\n                     </font>\r\n                  </Label>\r\n               </children></AnchorPane>\r\n         </children>\r\n      </AnchorPane>\r\n   </children>\r\n</StackPane>\r\n
+===================================================================
+diff --git a/build/resources/main/com/table_de_tri_fx/PageConnexion.fxml b/build/resources/main/com/table_de_tri_fx/PageConnexion.fxml
+--- a/build/resources/main/com/table_de_tri_fx/PageConnexion.fxml	
++++ b/build/resources/main/com/table_de_tri_fx/PageConnexion.fxml	
+@@ -1,25 +1,14 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
+-<?import javafx.scene.control.Label?>
+-<?import javafx.scene.control.TextField?>
+-<?import javafx.scene.layout.AnchorPane?>
+-<?import javafx.scene.layout.StackPane?>
+-<?import javafx.scene.text.Font?>
++<?import javafx.scene.control.*?>
++<?import javafx.scene.layout.*?>
++<?import javafx.scene.text.*?>
+ 
+-<StackPane maxHeight="1080.0" maxWidth="1920.0" minHeight="1080.0" minWidth="1920.0" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
++<StackPane maxHeight="1080.0" maxWidth="1920.0" minHeight="1080.0" minWidth="1920.0" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.table_de_tri_fx.Controller" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+       <AnchorPane prefHeight="200.0" prefWidth="200.0">
+          <children>
+-            <AnchorPane layoutX="633.0" prefHeight="1081.0" prefWidth="1001.0" AnchorPane.rightAnchor="322.0">
+-               <children>
+-                  <Label layoutX="260.0" layoutY="257.0" prefHeight="30.0" prefWidth="294.0" text="Welcome user !" textFill="#4086ab">
+-                     <font>
+-                        <Font name="Tahoma" size="24.0" />
+-                     </font>
+-                  </Label>
+-                  <TextField layoutX="252.0" layoutY="320.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" stylesheets="@../../../java/com/table_de_tri_fx/css/stylesheet.css" />
+-               </children>
+-            </AnchorPane>
++            <AnchorPane layoutX="633.0" prefHeight="1081.0" prefWidth="1001.0" AnchorPane.rightAnchor="322.0" />
+             <AnchorPane layoutX="2.0" prefHeight="1080.0" prefWidth="596.0" styleClass="left-form" stylesheets="@../../../java/com/table_de_tri_fx/css/stylesheet.css">
+                <children>
+                   <Label layoutX="81.0" layoutY="314.0" prefHeight="30.0" prefWidth="477.0" text="Table de Tri Lycee Astier" textFill="WHITE">
