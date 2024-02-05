@@ -4,19 +4,17 @@ import com.phidget22.PhidgetException;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Platform;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
+import javafx.scene.control.Label;
 import javafx.util.Duration;
-
-import java.awt.*;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class Controller2 implements Initializable {
-    public Label labelPain, labelEmballages, labelAlimentaires;
+    public Label labelPain;
+    public Label labelEmballages;
+    public Label labelAlimentaires;
     public String prenom = new String(""), nom = new String("");
     public Boolean state = false;
     private Timeline timeoutTimeline;

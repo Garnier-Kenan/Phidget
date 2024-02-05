@@ -31,11 +31,11 @@ public class Application extends javafx.application.Application {
                 System.exit(0);
                 Controller.close();
             });
-            DATA_Scene.controller=fxmlLoader1.getController();
             DATA_Scene.primaryStage=primaryStage;
-            DATA_Scene.controller2=fxmlLoader2.getController();
             DATA_Scene.scene1=scene1;
             DATA_Scene.scene2=scene2;
+            DATA_Scene.controller=fxmlLoader1.getController();
+            DATA_Scene.controller2=fxmlLoader2.getController();
             DATA_Scene.position = false;
         } catch (IOException e) {
             e.printStackTrace();
