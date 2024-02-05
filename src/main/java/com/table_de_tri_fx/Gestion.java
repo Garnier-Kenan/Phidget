@@ -13,7 +13,7 @@ public class Gestion {
     private Vinput vInput0, vInput1, vInput2;
     private String oldtag = "", trame = "2";
     private Double poid0, poid1, poid2;
-    private int id_user,id_table = DATA_Balance.id_table;
+    private int id_user, id_table = DATA_Balance.id_table;
 
     public Gestion() throws PhidgetException {
 
@@ -40,29 +40,34 @@ public class Gestion {
                     id_user = Integer.valueOf(tab[3]);
                     DATA_Scene.controller2.nom = tab[2];
                     DATA_Scene.controller2.prenom = tab[1];
-                    if (!DATA_Scene.position){
+                    if (!DATA_Scene.position) {
                         DATA_Scene.controller.state = true;
                         DATA_Scene.controller.rfid();
-                    }else{
+                    } else {
                         DATA_Scene.controller2.state = true;
                         DATA_Scene.controller2.rfid();
                     }
 
                     break;
                 case '2':
-                    if (DATA_Scene.position){
+                    if (DATA_Scene.position) {
                         DATA_Scene.controller.state = false;
                         DATA_Scene.controller.rfid();
-                    }else{
+                    } else {
                         DATA_Scene.controller2.state = false;
                         DATA_Scene.controller2.rfid();
                     }
                     break;
             }
+        } else if (tag.equals(oldtag)) {
+            Platform.runLater(() -> {
+                DATA_Scene.controller.labelScann.setText("Carte déjà passer");
+            });
         }
     }
-    public void ecrire(){
-        Boolean reponsse = gestion_bdd.dechet(id_user,id_table, poid0, poid1, poid2);
+
+    public void ecrire() {
+        Boolean reponsse = gestion_bdd.dechet(id_user, id_table, poid0, poid1, poid2);
         if (reponsse) {
             System.out.println("BDD c'est bon");
         } else {
@@ -76,12 +81,13 @@ public class Gestion {
             case 1 -> poid1 = poid;
             case 2 -> poid2 = poid;
         }
-        Platform.runLater(() ->{
+        Platform.runLater(() -> {
             DATA_Scene.controller2.labelPain.setText(poid0.toString());
-            DATA_Scene.controller2.labelAlimentaires.setText(poid1.toString());
-            DATA_Scene.controller2.labelEmballages.setText(poid2.toString());
+            DATA_Scene.controller2.labelAlimentaire.setText(poid1.toString());
+            DATA_Scene.controller2.labelEmballage.setText(poid2.toString());
         });
     }
+
     public void close() throws PhidgetException {
         vInput0.close();
         vInput1.close();

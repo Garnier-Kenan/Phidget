@@ -18,13 +18,13 @@ public class Application extends javafx.application.Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         try {
-            FXMLLoader fxmlLoader2 = new FXMLLoader(getClass().getResource("PagePrincipale.fxml"));
-            Scene scene2 = new Scene(fxmlLoader2.load());
-            FXMLLoader fxmlLoader1 = new FXMLLoader(Application.class.getResource("PageDeConnexion.fxml"));
-            Scene scene1 = new Scene(fxmlLoader1.load());
+            FXMLLoader fxmlLoader_Principale = new FXMLLoader(getClass().getResource("PagePrincipale.fxml"));
+            Scene scene_Principale = new Scene(fxmlLoader_Principale.load());
+            FXMLLoader fxmlLoader_Connexion = new FXMLLoader(Application.class.getResource("PageDeConnexion.fxml"));
+            Scene scene_Connexion = new Scene(fxmlLoader_Connexion.load());
             primaryStage.setFullScreenExitHint("");
             primaryStage.setTitle("Table de Tri");
-            primaryStage.setScene(scene1);
+            primaryStage.setScene(scene_Connexion);
             primaryStage.setFullScreen(true);
             primaryStage.show();
             primaryStage.setOnCloseRequest(event -> {
@@ -32,10 +32,10 @@ public class Application extends javafx.application.Application {
                 Controller.close();
             });
             DATA_Scene.primaryStage=primaryStage;
-            DATA_Scene.scene1=scene1;
-            DATA_Scene.scene2=scene2;
-            DATA_Scene.controller=fxmlLoader1.getController();
-            DATA_Scene.controller2=fxmlLoader2.getController();
+            DATA_Scene.scene1=scene_Connexion;
+            DATA_Scene.scene2=scene_Principale;
+            DATA_Scene.controller=fxmlLoader_Connexion.getController();
+            DATA_Scene.controller2=fxmlLoader_Principale.getController();
             DATA_Scene.position = false;
         } catch (IOException e) {
             e.printStackTrace();

@@ -1,6 +1,5 @@
 package com.table_de_tri_fx;
 
-import com.phidget22.PhidgetException;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Platform;
@@ -13,8 +12,9 @@ import java.util.ResourceBundle;
 
 public class Controller2 implements Initializable {
     public Label labelPain;
-    public Label labelEmballages;
-    public Label labelAlimentaires;
+    public Label labelEmballage;
+    public Label labelAlimentaire;
+    public Label labelUser;
     public String prenom = new String(""), nom = new String("");
     public Boolean state = false;
     private Timeline timeoutTimeline;
@@ -27,6 +27,7 @@ public class Controller2 implements Initializable {
                         event -> {
                             try {
                                 openConnexion();
+                                Platform.runLater(() -> DATA_Scene.controller.labelScann.setText("Bonjour veuillez scanner votre carte pour vous connecter"));
                             } catch (IOException e) {
                                 throw new RuntimeException(e);
                             }
@@ -37,10 +38,12 @@ public class Controller2 implements Initializable {
         if (state) {
             Platform.runLater(() -> {
                 resetTimeout();
+                labelUser.setText("Bonjour " + prenom + " " + nom);
             });
         } else {
             try {
                 openConnexion();
+                Platform.runLater(() -> DATA_Scene.controller.labelScann.setText("Erreur carte inconnue"));
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
@@ -49,9 +52,6 @@ public class Controller2 implements Initializable {
     private void openConnexion() throws IOException {
         DATA_Scene.primaryStage.setScene(DATA_Scene.scene1);
         DATA_Scene.primaryStage.setTitle("Fenêtre Connection");
-        DATA_Scene.primaryStage.setFullScreen(true);
-        DATA_Scene.primaryStage.show();
-        Platform.runLater(() -> DATA_Scene.controller.labelScann.setText("Erreur utilisateur"));
         DATA_Scene.position = false;
     }
 

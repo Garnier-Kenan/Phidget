@@ -35,20 +35,19 @@ public class Controller implements Initializable {
                 DATA_Scene.controller2.resetTimeout();
                 try {
                     openPrincipale();
+                    DATA_Scene.controller2.labelUser.setText("Bojour " + DATA_Scene.controller2.prenom + " " + DATA_Scene.controller2.nom);
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
             });
         } else {
-            Platform.runLater(() -> labelScann.setText("Erreur utilisateur"));
+            Platform.runLater(() -> labelScann.setText("Erreur carte inconnue"));
         }
     }
 
     public void openPrincipale() throws IOException {
         DATA_Scene.primaryStage.setScene(DATA_Scene.scene2);
         DATA_Scene.primaryStage.setTitle("Fenêtre Principale");
-        DATA_Scene.primaryStage.setFullScreen(true);
-        DATA_Scene.primaryStage.show();
         DATA_Scene.position = true;
     }
     public static void close() {
