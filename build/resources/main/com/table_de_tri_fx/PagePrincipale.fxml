@@ -17,7 +17,7 @@
                         <Font name="Tahoma" size="29.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" layoutX="304.0" layoutY="35.0" prefHeight="126.0" prefWidth="780.0" styleClass="mainform" stylesheets="@../../css/stylesheet.css" text="Table de Tri Management ">
+                  <Label layoutX="304.0" layoutY="35.0" prefHeight="126.0" prefWidth="780.0" styleClass="mainform" stylesheets="@../../css/stylesheet.css" text="Table de Tri Management ">
                      <font>
                         <Font name="Arial Black" size="48.0" />
                      </font>
@@ -26,7 +26,7 @@
             </AnchorPane>
             <AnchorPane fx:id="dechet" layoutX="30.0" layoutY="214.0" prefHeight="388.0" prefWidth="515.0">
                <children>
-                  <Label alignment="CENTER" layoutY="6.0" prefHeight="74.0" prefWidth="515.0" text="Total Dechet : ">
+                  <Label alignment="CENTER" prefHeight="74.0" prefWidth="515.0" text="Total Dechet : ">
                      <font>
                         <Font name="Arial Black" size="48.0" />
                      </font>

@@ -4,6 +4,7 @@ plugins {
   id 'org.javamodularity.moduleplugin' version '1.8.12'
   id 'org.openjfx.javafxplugin' version '0.0.13'
   id 'org.beryx.jlink' version '2.25.0'
+
 }
 
 group 'com.example'
@@ -39,9 +40,12 @@ dependencies {
   implementation 'org.kordamp.bootstrapfx:bootstrapfx-core:0.4.0'
   implementation(files("lib/phidget22.jar"))
   implementation(files("lib/fontawesomefx-8.9.jar"))
+
   implementation 'com.cloudimpl.outstack:App:4.0.551'
   testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+
+
 }
 
 test {
