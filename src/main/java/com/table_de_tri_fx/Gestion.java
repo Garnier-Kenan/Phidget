@@ -14,19 +14,37 @@ public class Gestion {
     private String oldtag = "", trame = "2";
     private Double poid0, poid1, poid2;
     private int id_user, id_table = DATA_Balance.id_table;
+    Thread b0, b1, b2;
 
     public Gestion() throws PhidgetException {
 
         gestion_bdd = new Gestion_BDD();
 
         gestion_rfid = new Gestion_RFID(this);
-
-//        vInput0 = new Vinput(this, 0);
-//
-//        vInput1 = new Vinput(this, 1);
-//
-//        vInput2 = new Vinput(this, 2);
-
+    b0 = new Thread(()->{
+        try {
+            vInput0 = new Vinput(this, 0);
+        } catch (PhidgetException e) {
+            throw new RuntimeException(e);
+        }
+    });
+    b0.start();
+        b1 = new Thread(()->{
+            try {
+                vInput1 = new Vinput(this, 1);
+            } catch (PhidgetException e) {
+                throw new RuntimeException(e);
+            }
+        });
+        b1.start();
+        b2 = new Thread(()->{
+            try {
+                vInput2 = new Vinput(this, 2);
+            } catch (PhidgetException e) {
+                throw new RuntimeException(e);
+            }
+        });
+        b2.start();
     }
 
     public void afficheNom(String tag) {

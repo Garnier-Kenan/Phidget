@@ -50,7 +50,10 @@
          <children>
             <AnchorPane layoutX="44.0" layoutY="31.0" prefHeight="420.0" prefWidth="417.0">
                <children>
-                  <Label fx:id="labelPain" layoutY="133.0" prefHeight="165.0" prefWidth="418.0" />
+                  <Label fx:id="labelPain" alignment="CENTER" layoutY="133.0" prefHeight="165.0" prefWidth="418.0">
+                     <font>
+                        <Font size="96.0" />
+                     </font></Label>
                   <Label alignment="CENTER" layoutX="33.0" layoutY="23.0" prefHeight="58.0" prefWidth="365.0" text="Pain">
                      <font>
                         <Font name="Arial Black" size="48.0" />
@@ -65,17 +68,23 @@
                         <Font name="Arial Black" size="48.0" />
                      </font>
                   </Label>
-                  <Label fx:id="labelEmballage" layoutX="19.0" layoutY="85.0" prefHeight="153.0" prefWidth="383.0" />
+                  <Label fx:id="labelEmballage" alignment="CENTER" layoutX="17.0" layoutY="134.0" prefHeight="153.0" prefWidth="383.0">
+                     <font>
+                        <Font size="96.0" />
+                     </font></Label>
                </children>
             </AnchorPane>
             <AnchorPane layoutX="1024.0" layoutY="41.0" prefHeight="420.0" prefWidth="417.0">
                <children>
-                  <Label layoutX="24.0" layoutY="14.0" prefHeight="58.0" prefWidth="396.0" text="Alimentaire">
+                  <Label alignment="CENTER" layoutX="25.0" layoutY="14.0" prefHeight="58.0" prefWidth="396.0" text="Alimentaire">
                      <font>
                         <Font name="Arial Black" size="48.0" />
                      </font>
                   </Label>
-                  <Label fx:id="labelAlimentaire" layoutX="39.0" layoutY="128.0" prefHeight="173.0" prefWidth="365.0" />
+                  <Label fx:id="labelAlimentaire" layoutX="40.0" layoutY="124.0" prefHeight="173.0" prefWidth="365.0">
+                     <font>
+                        <Font size="96.0" />
+                     </font></Label>
                </children>
             </AnchorPane>
          </children>

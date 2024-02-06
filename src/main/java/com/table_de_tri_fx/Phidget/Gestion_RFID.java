@@ -7,10 +7,10 @@ public class Gestion_RFID implements AttachListener, DetachListener, RFIDTagList
     private RFID lecteur;
     private Doutput dOutput0;
     private Doutput dOutput1;
-    private Gestion ref;
+    private Gestion gestion;
 
     public Gestion_RFID(Gestion gestion) throws PhidgetException {
-        this.ref = gestion;
+        this.gestion = gestion;
         this.lecteur = new RFID();
         Thread t = new Thread(() -> open());
         t.start();
@@ -69,7 +69,7 @@ public class Gestion_RFID implements AttachListener, DetachListener, RFIDTagList
     @Override
     public void onTag(RFIDTagEvent rfidTagEvent) {
         System.out.println(rfidTagEvent.getTag().toString());
-        ref.afficheNom(rfidTagEvent.getTag().toString());
+        gestion.afficheNom(rfidTagEvent.getTag().toString());
         try {
             dOutput0.getOutput().setState(false);
             dOutput1.getOutput().setState(true);

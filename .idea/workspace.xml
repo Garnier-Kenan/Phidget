@@ -4,8 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08516385-d940-47d8-b540-f322cdf48d15" name="Changes" comment="fxml flo">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/image.png" beforeDir="false" />
+    <list default="true" id="08516385-d940-47d8-b540-f322cdf48d15" name="Changes" comment="Add files via upload">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_14_07_[Changes]/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_14_07_[Changes]/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_14_07_[Changes]/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_14_07_[Changes]/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_14_07_[Changes]/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_14_07_[Changes]/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_14_07_[Changes]/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_14_07_[Changes]/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_14_07_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_15_33_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/table_de_tri_fx/Gestion.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/table_de_tri_fx/Gestion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/table_de_tri_fx/Phidget/Gestion_RFID.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/table_de_tri_fx/Phidget/Gestion_RFID.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/table_de_tri_fx/Phidget/Vinput.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/table_de_tri_fx/Phidget/Vinput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/com/table_de_tri_fx/PagePrincipale.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/com/table_de_tri_fx/PagePrincipale.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Gestion.class.uniqueId2" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Gestion.class.uniqueId2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Gestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Gestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Gestion_RFID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Gestion_RFID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Vinput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Vinput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PagePrincipale.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PagePrincipale.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +93,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "T:/Projet/src/main/resources/images",
+    "last_opened_file_path": "C:/Users/kgarnier/IntelliJIDEAProjects/Phidget/rmplire",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -262,17 +289,24 @@
       <option name="project" value="LOCAL" />
       <updated>1707148618155</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add files via upload">
+      <created>1707149180265</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1707149180265</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add files via upload" />
     <MESSAGE value="Branche fonctionelle" />
     <MESSAGE value="fxml flo" />
-    <option name="LAST_COMMIT_MESSAGE" value="fxml flo" />
+    <MESSAGE value="Add files via upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add files via upload" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

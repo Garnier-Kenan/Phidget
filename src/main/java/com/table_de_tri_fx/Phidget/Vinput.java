@@ -2,15 +2,18 @@ package com.table_de_tri_fx.Phidget;
 
 import com.phidget22.*;
 import com.table_de_tri_fx.Gestion;
+import javafx.application.Platform;
 
 import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.util.Locale;
 
 public class Vinput implements AttachListener, DetachListener, VoltageRatioInputVoltageRatioChangeListener {
     private int numero_input;
     private VoltageRatioInput input;
     private Boolean calibrer = false;
     Gestion gestion;
-    private DecimalFormat decimalFormat = new DecimalFormat("00.000");
+    private DecimalFormat decimalFormat = new DecimalFormat("00.000", DecimalFormatSymbols.getInstance(Locale.US));
     public Vinput(Gestion gestion, int numero_input) throws PhidgetException {
         this.gestion = gestion;
         this.numero_input = numero_input;
@@ -73,6 +76,11 @@ public void open(){
     public void onVoltageRatioChange(VoltageRatioInputVoltageRatioChangeEvent voltageRatioInputVoltageRatioChangeEvent) {
         if (calibrer){
             gestion.poids(numero_input,Double.parseDouble(decimalFormat.format(Math.abs(voltageRatioInputVoltageRatioChangeEvent.getVoltageRatio()- (DATA_Balance.offset[numero_input])) *DATA_Balance.GAIN[numero_input])));
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         }else{
             System.err.println("Balance " + numero_input + " erreur calibrage");
         }
