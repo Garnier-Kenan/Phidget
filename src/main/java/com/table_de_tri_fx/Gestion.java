@@ -84,13 +84,8 @@ public class Gestion {
         }
     }
 
-    public void ecrire() {
+    public void ecrire(double poid0, Double poid1, Double poid2) {
         Boolean reponsse = gestion_bdd.dechet(id_user, id_table, poid0, poid1, poid2);
-        if (reponsse) {
-            System.out.println("BDD c'est bon");
-        } else {
-            System.err.println("BDD C'est pas bon");
-        }
     }
 
     public void poids(int i, Double poid) {
