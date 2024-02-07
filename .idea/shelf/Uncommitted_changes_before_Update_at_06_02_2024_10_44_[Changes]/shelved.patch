@@ -1,0 +1,905 @@
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_15_33_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_15_33_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_15_33_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_15_33_[Changes]/shelved.patch	(revision 92de9decd321b90ea460c67dc4325b033250eb20)
++++ /dev/null	(revision 92de9decd321b90ea460c67dc4325b033250eb20)
+@@ -1,47 +0,0 @@
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"08516385-d940-47d8-b540-f322cdf48d15\" name=\"Changes\" comment=\"Add files via upload\">\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ExternalProjectsData\">\r\n    <projectState path=\"$PROJECT_DIR$\">\r\n      <ProjectState />\r\n    </projectState>\r\n  </component>\r\n  <component name=\"ExternalProjectsManager\">\r\n    <system id=\"GRADLE\">\r\n      <state>\r\n        <projects_view>\r\n          <tree_state>\r\n            <expand />\r\n            <select />\r\n          </tree_state>\r\n        </projects_view>\r\n      </state>\r\n    </system>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"FxmlFile\" />\r\n        <option value=\"CSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PREVIOUS_COMMIT_AUTHORS\">\r\n      <list>\r\n        <option value=\"K.N &lt;125902437+garnier-kenan@users.noreply.github.com&gt;\" />\r\n      </list>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"file://$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageConnexion.fxml\" root0=\"FORCE_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2b4gdVtiv7L2UDKKDKx2WCFKRfS\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"last_opened_file_path\": \"C:/Users/kgarnier/Desktop/scenebuilder/SceneBuilder.exe\",\r\n    \"list.type.of.created.stylesheet\": \"CSS\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"project.structure.last.edited\": \"SDKs\",\r\n    \"project.structure.proportion\": \"0.15\",\r\n    \"project.structure.side.proportion\": \"0.2\",\r\n    \"settings.editor.selected.configurable\": \"preferences.keymap\",\r\n    \"spring.configuration.checksum\": \"5ae6b5f69ca0ad9cc91737fda7857912\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"ReactorSettings\">\r\n    <option name=\"notificationShown\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\kgarnier\\IntelliJIDEAProjects\\Projet_Phidget_fx\\src\\main\\java\\com\\table_de_tri_fx\\BDD\" />\r\n      <recent name=\"C:\\Users\\kgarnier\\IntelliJIDEAProjects\\Projet_Phidget_fx\\src\\main\\java\\com\\table_de_tri_fx\" />\r\n      <recent name=\"T:\\Projet_Phidget_fx\\lib\" />\r\n      <recent name=\"T:\\Projet_Phidget_fx\\build\\resources\\main\" />\r\n      <recent name=\"T:\\Projet_Phidget_fx\\src\\main\\resources\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"T:\\Projet_Phidget_fx\\src\\main\\resources\\images\" />\r\n      <recent name=\"T:\\Projet_Phidget_fx\\src\\main\\resources\\com\\table_de_tri_fx\" />\r\n      <recent name=\"C:\\Users\\kgarnier\\IntelliJIDEAProjects\\Phidget\\lib\" />\r\n    </key>\r\n    <key name=\"MoveClassesOrPackagesDialog.RECENTS_KEY\">\r\n      <recent name=\"com.table_de_tri_fx\" />\r\n      <recent name=\"\" />\r\n    </key>\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"com.table_de_tri_fx\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"Application\" type=\"Application\" factoryName=\"Application\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.table_de_tri_fx.Application\" />\r\n      <module name=\"Table_de_tri_fx.main\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"JetRunConfigurationType\">\r\n      <module name=\"Phidget\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"KotlinStandaloneScriptRunConfigurationType\">\r\n      <module name=\"Phidget\" />\r\n      <option name=\"filePath\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"08516385-d940-47d8-b540-f322cdf48d15\" name=\"Changes\" comment=\"\" />\r\n      <created>1705479853065</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1705479853065</updated>\r\n      <workItem from=\"1705479854248\" duration=\"2959000\" />\r\n      <workItem from=\"1705915047079\" duration=\"10761000\" />\r\n      <workItem from=\"1706079722267\" duration=\"3902000\" />\r\n      <workItem from=\"1706083697937\" duration=\"2029000\" />\r\n      <workItem from=\"1706085745905\" duration=\"516000\" />\r\n      <workItem from=\"1706100735857\" duration=\"1258000\" />\r\n      <workItem from=\"1706102014469\" duration=\"715000\" />\r\n      <workItem from=\"1706102749589\" duration=\"227000\" />\r\n      <workItem from=\"1706102991561\" duration=\"348000\" />\r\n      <workItem from=\"1706103355243\" duration=\"933000\" />\r\n      <workItem from=\"1706104304774\" duration=\"1875000\" />\r\n      <workItem from=\"1706106194453\" duration=\"2360000\" />\r\n      <workItem from=\"1706113176210\" duration=\"1278000\" />\r\n      <workItem from=\"1706511975694\" duration=\"30000\" />\r\n      <workItem from=\"1706512020493\" duration=\"9788000\" />\r\n      <workItem from=\"1706536188282\" duration=\"1599000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Add files via upload\">\r\n      <created>1705480665433</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1705480665433</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Add files via upload\">\r\n      <created>1705480713189</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1705480713189</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Add files via upload\">\r\n      <created>1705480805591</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1705480805591</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Add files via upload\">\r\n      <created>1705480812740</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1705480812740</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Add files via upload\">\r\n      <created>1706537390910</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1706537390910</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Add files via upload\">\r\n      <created>1706537486093</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1706537486093</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"7\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Add files via upload\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Add files via upload\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-method\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/RecupDonnee.java</url>\r\n          <line>23</line>\r\n          <properties class=\"com.table_de_tri_fx.Phidget.RecupDonnee\">\r\n            <option name=\"EMULATED\" value=\"true\" />\r\n            <option name=\"WATCH_EXIT\" value=\"false\" />\r\n          </properties>\r\n          <option name=\"timeStamp\" value=\"3\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	(revision 63ab5ca0b6e8b286af859f5cf19efb13c647cffc)
+-+++ b/.idea/workspace.xml	(date 1706538750508)
+-@@ -4,10 +4,7 @@
+-     <option name="autoReloadType" value="SELECTIVE" />
+-   </component>
+-   <component name="ChangeListManager">
+--    <list default="true" id="08516385-d940-47d8-b540-f322cdf48d15" name="Changes" comment="Add files via upload">
+--      <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" afterDir="false" />
+--    </list>
+-+    <list default="true" id="08516385-d940-47d8-b540-f322cdf48d15" name="Changes" comment="Add files via upload" />
+-     <option name="SHOW_DIALOG" value="false" />
+-     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+-@@ -143,7 +140,7 @@
+-       <workItem from="1706113176210" duration="1278000" />
+-       <workItem from="1706511975694" duration="30000" />
+-       <workItem from="1706512020493" duration="9788000" />
+--      <workItem from="1706536188282" duration="1599000" />
+-+      <workItem from="1706536188282" duration="2263000" />
+-     </task>
+-     <task id="LOCAL-00001" summary="Add files via upload">
+-       <created>1705480665433</created>
+-@@ -187,7 +184,14 @@
+-       <option name="project" value="LOCAL" />
+-       <updated>1706537486093</updated>
+-     </task>
+--    <option name="localTasksCounter" value="7" />
+-+    <task id="LOCAL-00007" summary="Add files via upload">
+-+      <created>1706537843244</created>
+-+      <option name="number" value="00007" />
+-+      <option name="presentableId" value="LOCAL-00007" />
+-+      <option name="project" value="LOCAL" />
+-+      <updated>1706537843244</updated>
+-+    </task>
+-+    <option name="localTasksCounter" value="8" />
+-     <servers />
+-   </component>
+-   <component name="TypeScriptGeneratedFilesManager">
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_15_33__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_15_33__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_15_33__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_15_33__Changes_.xml	(revision 92de9decd321b90ea460c67dc4325b033250eb20)
++++ /dev/null	(revision 92de9decd321b90ea460c67dc4325b033250eb20)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_29_01_2024_15_33_[Changes]" date="1706538848413" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_15_33_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 29/01/2024 15:33 [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_14_07_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_14_07_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_14_07_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_14_07_[Changes]/shelved.patch	(revision 92de9decd321b90ea460c67dc4325b033250eb20)
++++ /dev/null	(revision 92de9decd321b90ea460c67dc4325b033250eb20)
+@@ -1,673 +0,0 @@
+-Index: .idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10__Changes_.xml
+-===================================================================
+-diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10__Changes_.xml
+-deleted file mode 100644
+---- a/.idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10__Changes_.xml	(revision 8eb3c4ec43cf3a68916837e8b4d18d15fe1b57ee)
+-+++ /dev/null	(revision 8eb3c4ec43cf3a68916837e8b4d18d15fe1b57ee)
+-@@ -1,74 +0,0 @@
+--<changelist name="Uncommitted_changes_before_Update_at_22_01_2024_08_10_[Changes]" date="1705907424829" recycled="true" deleted="true">
+--  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10_[Changes]/shelved.patch" />
+--  <option name="DESCRIPTION" value="Uncommitted changes before Update at 22/01/2024 08:10 [Changes]" />
+--  <binary>
+--    <option name="BEFORE_PATH" value="build/classes/java/main/com/example/table_de_tri_fx/Controller.class" />
+--    <option name="AFTER_PATH" />
+--    <option name="SHELVED_PATH" />
+--  </binary>
+--  <binary>
+--    <option name="BEFORE_PATH" value=".gradle/8.0/executionHistory/executionHistory.bin" />
+--    <option name="AFTER_PATH" value=".gradle/8.0/executionHistory/executionHistory.bin" />
+--    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10_[Changes]/executionHistory.bin" />
+--  </binary>
+--  <binary>
+--    <option name="BEFORE_PATH" value=".gradle/8.0/fileHashes/fileHashes.lock" />
+--    <option name="AFTER_PATH" value=".gradle/8.0/fileHashes/fileHashes.lock" />
+--    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10_[Changes]/fileHashes.lock" />
+--  </binary>
+--  <binary>
+--    <option name="BEFORE_PATH" value="build/libs/Table_de_tri_fx-1.0-SNAPSHOT.jar" />
+--    <option name="AFTER_PATH" value="build/libs/Table_de_tri_fx-1.0-SNAPSHOT.jar" />
+--    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10_[Changes]/Table_de_tri_fx-1.0-SNAPSHOT.jar" />
+--  </binary>
+--  <binary>
+--    <option name="BEFORE_PATH" value="build/tmp/compileJava/compileTransaction/stash-dir/module-info.class.uniqueId1" />
+--    <option name="AFTER_PATH" />
+--    <option name="SHELVED_PATH" />
+--  </binary>
+--  <binary>
+--    <option name="BEFORE_PATH" value=".gradle/8.0/fileHashes/fileHashes.bin" />
+--    <option name="AFTER_PATH" value=".gradle/8.0/fileHashes/fileHashes.bin" />
+--    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10_[Changes]/fileHashes.bin" />
+--  </binary>
+--  <binary>
+--    <option name="BEFORE_PATH" value=".gradle/8.0/fileHashes/resourceHashesCache.bin" />
+--    <option name="AFTER_PATH" value=".gradle/8.0/fileHashes/resourceHashesCache.bin" />
+--    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10_[Changes]/resourceHashesCache.bin" />
+--  </binary>
+--  <binary>
+--    <option name="BEFORE_PATH" value="build/classes/java/main/module-info.class" />
+--    <option name="AFTER_PATH" />
+--    <option name="SHELVED_PATH" />
+--  </binary>
+--  <binary>
+--    <option name="BEFORE_PATH" value="build/tmp/compileJava/compileTransaction/stash-dir/HelloApplication.class.uniqueId0" />
+--    <option name="AFTER_PATH" />
+--    <option name="SHELVED_PATH" />
+--  </binary>
+--  <binary>
+--    <option name="BEFORE_PATH" value=".gradle/buildOutputCleanup/outputFiles.bin" />
+--    <option name="AFTER_PATH" value=".gradle/buildOutputCleanup/outputFiles.bin" />
+--    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10_[Changes]/outputFiles.bin" />
+--  </binary>
+--  <binary>
+--    <option name="BEFORE_PATH" value="build/tmp/compileJava/previous-compilation-data.bin" />
+--    <option name="AFTER_PATH" value="build/tmp/compileJava/previous-compilation-data.bin" />
+--    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10_[Changes]/previous-compilation-data.bin" />
+--  </binary>
+--  <binary>
+--    <option name="BEFORE_PATH" value="build/classes/java/main/com/example/table_de_tri_fx/Application.class" />
+--    <option name="AFTER_PATH" />
+--    <option name="SHELVED_PATH" />
+--  </binary>
+--  <binary>
+--    <option name="BEFORE_PATH" value=".gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+--    <option name="AFTER_PATH" value=".gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+--    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10_[Changes]/buildOutputCleanup.lock" />
+--  </binary>
+--  <binary>
+--    <option name="BEFORE_PATH" value=".gradle/8.0/executionHistory/executionHistory.lock" />
+--    <option name="AFTER_PATH" value=".gradle/8.0/executionHistory/executionHistory.lock" />
+--    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10_[Changes]/executionHistory.lock" />
+--  </binary>
+--</changelist>
+-\ No newline at end of file
+-Index: .idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10_[Changes]/shelved.patch
+-===================================================================
+-diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10_[Changes]/shelved.patch
+-deleted file mode 100644
+---- a/.idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10_[Changes]/shelved.patch	(revision 8eb3c4ec43cf3a68916837e8b4d18d15fe1b57ee)
+-+++ /dev/null	(revision 8eb3c4ec43cf3a68916837e8b4d18d15fe1b57ee)
+-@@ -1,382 +0,0 @@
+--Index: src/main/java/com/table_de_tri_fx/Phidget/Gestion_Balance.java
+--IDEA additional info:
+--Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+--<+>package com.table_de_tri_fx.Phidget;\r\n\r\nimport com.phidget22.PhidgetException;\r\n\r\npublic class Gestion_Balance {\r\n    private Vinput vInput0;\r\n    private Vinput vInput1;\r\n    private Vinput vInput2;\r\n    public double state0 = 0;\r\n    public double state1 = 0;\r\n    public double state2 = 0;\r\n\r\n    public Gestion_Balance() {\r\n        open();\r\n    }\r\n\r\n    public void open() {\r\n\r\n        Thread v1 = new Thread(() -> {\r\n            try {\r\n                vInput0 = new Vinput(this, 0);\r\n            } catch (PhidgetException e) {\r\n                throw new RuntimeException(e);\r\n            }\r\n        });\r\n        v1.start();\r\n        Thread v2 = new Thread(() -> {\r\n            try {\r\n                vInput1 = new Vinput(this, 1);\r\n            } catch (PhidgetException e) {\r\n                throw new RuntimeException(e);\r\n            }\r\n        });\r\n        v2.start();\r\n        Thread v3 = new Thread(() -> {\r\n            try {\r\n                vInput2 = new Vinput(this, 2);\r\n            } catch (PhidgetException e) {\r\n                throw new RuntimeException(e);\r\n            }\r\n        });\r\n        v3.start();\r\n\r\n    }\r\n\r\n    public void close() {\r\n        vInput0.close();\r\n        vInput1.close();\r\n        vInput2.close();\r\n    }\r\n\r\n    public void poids(int i, double voltage) {\r\n        switch (i) {\r\n            case 0 -> state0 = voltage;\r\n            case 1 -> state1 = voltage;\r\n            case 2 -> state2 = voltage;\r\n        }\r\n    }\r\n}\r\n
+--Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+--<+>UTF-8
+--===================================================================
+--diff --git a/src/main/java/com/table_de_tri_fx/Phidget/Gestion_Balance.java b/src/main/java/com/table_de_tri_fx/Phidget/Gestion_Balance.java
+----- a/src/main/java/com/table_de_tri_fx/Phidget/Gestion_Balance.java	(revision d91a6bfd7ad7fabe910b3ce84e083c1dc3ff8ace)
+--+++ b/src/main/java/com/table_de_tri_fx/Phidget/Gestion_Balance.java	(date 1705502816831)
+--@@ -1,6 +1,7 @@
+-- package com.table_de_tri_fx.Phidget;
+-- 
+-- import com.phidget22.PhidgetException;
+--+import javafx.application.Platform;
+-- 
+-- public class Gestion_Balance {
+--     private Vinput vInput0;
+--Index: src/main/java/com/table_de_tri_fx/Application.java
+--IDEA additional info:
+--Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+--<+>package com.table_de_tri_fx;\r\n\r\nimport javafx.fxml.FXMLLoader;\r\nimport javafx.scene.Scene;\r\nimport javafx.stage.Stage;\r\n\r\nimport java.io.IOException;\r\n\r\npublic class Application extends javafx.application.Application {\r\n    @Override\r\n    public void start(Stage stage) throws IOException {\r\n        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource(\"PageConnexion.fxml\"));\r\n        Scene scene = new Scene(fxmlLoader.load(), 320, 240);\r\n\r\n\r\n        stage.setTitle(\"Hello!\");\r\n        stage.setScene(scene);\r\n        stage.show();\r\n    }\r\n\r\n    public static void main(String[] args) {\r\n        launch();\r\n\r\n    }\r\n}
+--Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+--<+>UTF-8
+--===================================================================
+--diff --git a/src/main/java/com/table_de_tri_fx/Application.java b/src/main/java/com/table_de_tri_fx/Application.java
+----- a/src/main/java/com/table_de_tri_fx/Application.java	(revision d91a6bfd7ad7fabe910b3ce84e083c1dc3ff8ace)
+--+++ b/src/main/java/com/table_de_tri_fx/Application.java	(date 1705907347367)
+--@@ -1,21 +1,33 @@
+-- package com.table_de_tri_fx;
+-- 
+-- import javafx.fxml.FXMLLoader;
+--+import javafx.scene.Group;
+-- import javafx.scene.Scene;
+--+import javafx.scene.control.Button;
+--+import javafx.scene.text.Text;
+-- import javafx.stage.Stage;
+-- 
+--+import java.awt.event.ActionEvent;
+--+import java.beans.EventHandler;
+-- import java.io.IOException;
+-- 
+-- public class Application extends javafx.application.Application {
+--+    public Button buttonconnexion;
+--     @Override
+--     public void start(Stage stage) throws IOException {
+---        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("PageConnexion.fxml"));
+---        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+---
+---
+---        stage.setTitle("Hello!");
+--+        FXMLLoader fxmlLoader = new FXMLLoader(com.table_de_tri_fx.Application.class.getResource("PageMain.fxml"));
+--+        Scene scene = new Scene(fxmlLoader.load());
+--+        stage.setTitle("Table de tri ");
+--         stage.setScene(scene);
+--+        stage.setFullScreen(true);
+--         stage.show();
+--+        buttonconnexion.setOnAction(new javafx.event.EventHandler<javafx.event.ActionEvent>() {
+--+            @Override
+--+            public void handle(javafx.event.ActionEvent event) {
+--+            }
+--+        });
+--+
+--+
+--     }
+-- 
+--     public static void main(String[] args) {
+--Index: src/main/java/com/table_de_tri_fx/Controller.java
+--IDEA additional info:
+--Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+--<+>package com.table_de_tri_fx;\r\n\r\nimport javafx.fxml.FXML;\r\nimport javafx.scene.control.Button;\r\nimport javafx.scene.control.Label;\r\n\r\npublic class Controller {\r\n    public Button buttonconnexion;\r\n    public Label labelScann;\r\n    @FXML\r\n    private Label welcomeText;\r\n\r\n    @FXML\r\n    protected void onHelloButtonClick() {\r\n        welcomeText.setText(\"Welcome to JavaFX Application!\");\r\n\r\n    }\r\n\r\n  \r\n\r\n   \r\n}
+--Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+--<+>UTF-8
+--===================================================================
+--diff --git a/src/main/java/com/table_de_tri_fx/Controller.java b/src/main/java/com/table_de_tri_fx/Controller.java
+----- a/src/main/java/com/table_de_tri_fx/Controller.java	(revision d91a6bfd7ad7fabe910b3ce84e083c1dc3ff8ace)
+--+++ b/src/main/java/com/table_de_tri_fx/Controller.java	(date 1705907347492)
+--@@ -1,8 +1,21 @@
+-- package com.table_de_tri_fx;
+-- 
+--+import com.phidget22.PhidgetException;
+--+import com.phidget22.RFIDTagEvent;
+--+import com.table_de_tri_fx.Phidget.Gestion_RFID;
+--+import javafx.application.Platform;
+-- import javafx.fxml.FXML;
+--+import javafx.fxml.FXMLLoader;
+--+import javafx.scene.Scene;
+-- import javafx.scene.control.Button;
+-- import javafx.scene.control.Label;
+--+import javafx.stage.Stage;
+--+
+--+import java.awt.event.ActionEvent;
+--+import java.beans.EventHandler;
+--+import java.io.IOException;
+--+import java.net.URL;
+--+import java.util.ResourceBundle;
+-- 
+-- public class Controller {
+--     public Button buttonconnexion;
+--@@ -15,8 +28,9 @@
+--         welcomeText.setText("Welcome to JavaFX Application!");
+-- 
+--     }
+--+    public void initialize(URL location, ResourceBundle resources,RFIDTagEvent rfidTagEvent) throws PhidgetException {
+-- 
+---  
+--+    }
+-- 
+---   
+--+
+-- }
+--\ No newline at end of file
+--Index: build/resources/main/com/example/table_de_tri_fx/PagePrincipale.fxml
+--===================================================================
+--diff --git a/build/resources/main/com/example/table_de_tri_fx/PagePrincipale.fxml b/build/resources/main/com/example/table_de_tri_fx/PagePrincipale.fxml
+--deleted file mode 100644
+----- a/build/resources/main/com/example/table_de_tri_fx/PagePrincipale.fxml	(revision d91a6bfd7ad7fabe910b3ce84e083c1dc3ff8ace)
+--+++ /dev/null	(revision d91a6bfd7ad7fabe910b3ce84e083c1dc3ff8ace)
+--@@ -1,11 +0,0 @@
+---<?xml version="1.0" encoding="UTF-8"?>
+---
+---<?import javafx.scene.control.*?>
+---<?import javafx.scene.layout.*?>
+---
+---<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.table_de_tri_fx.Controller">
+---   <children>
+---      <Label fx:id="labelScann" layoutX="126.0" layoutY="148.0" prefHeight="15.0" prefWidth="349.0" text="Veilllez scannez votre carte pour vous connectez " />
+---      <Label layoutX="126.0" layoutY="53.0" prefHeight="67.0" prefWidth="373.0" text="Welcome To Table de Tri " textFill="#17723f" />
+---   </children>
+---</AnchorPane>
+--Index: src/main/resources/com/table_de_tri_fx/PagePrincipale.fxml
+--===================================================================
+--diff --git a/src/main/resources/com/table_de_tri_fx/PagePrincipale.fxml b/src/main/resources/com/table_de_tri_fx/PagePrincipale.fxml
+--deleted file mode 100644
+----- a/src/main/resources/com/table_de_tri_fx/PagePrincipale.fxml	(revision d91a6bfd7ad7fabe910b3ce84e083c1dc3ff8ace)
+--+++ /dev/null	(revision d91a6bfd7ad7fabe910b3ce84e083c1dc3ff8ace)
+--@@ -1,11 +0,0 @@
+---<?xml version="1.0" encoding="UTF-8"?>
+---
+---<?import javafx.scene.control.*?>
+---<?import javafx.scene.layout.*?>
+---
+---<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.table_de_tri_fx.Controller">
+---   <children>
+---      <Label fx:id="labelScann" layoutX="126.0" layoutY="148.0" prefHeight="15.0" prefWidth="349.0" text="Veilllez scannez votre carte pour vous connectez " />
+---      <Label layoutX="126.0" layoutY="53.0" prefHeight="67.0" prefWidth="373.0" text="Welcome To Table de Tri " textFill="#17723f" />
+---   </children>
+---</AnchorPane>
+--Index: src/main/java/module-info.java
+--===================================================================
+--diff --git a/src/main/java/module-info.java b/src/main/java/module-info.java
+--deleted file mode 100644
+----- a/src/main/java/module-info.java	(revision d91a6bfd7ad7fabe910b3ce84e083c1dc3ff8ace)
+--+++ /dev/null	(revision d91a6bfd7ad7fabe910b3ce84e083c1dc3ff8ace)
+--@@ -1,9 +0,0 @@
+---module com.example.table_de_tri_fx {
+---    requires javafx.controls;
+---    requires javafx.fxml;
+---    requires phidget22;
+---
+---
+---    opens com.table_de_tri_fx to javafx.fxml;
+---    exports com.table_de_tri_fx;
+---}
+--\ No newline at end of file
+--Index: build/resources/main/com/example/table_de_tri_fx/PageConnexion.fxml
+--===================================================================
+--diff --git a/build/resources/main/com/example/table_de_tri_fx/PageConnexion.fxml b/build/resources/main/com/example/table_de_tri_fx/PageConnexion.fxml
+--deleted file mode 100644
+----- a/build/resources/main/com/example/table_de_tri_fx/PageConnexion.fxml	(revision d91a6bfd7ad7fabe910b3ce84e083c1dc3ff8ace)
+--+++ /dev/null	(revision d91a6bfd7ad7fabe910b3ce84e083c1dc3ff8ace)
+--@@ -1,31 +0,0 @@
+---<?xml version="1.0" encoding="UTF-8"?>
+---
+---<?import javafx.scene.control.*?>
+---<?import javafx.scene.layout.*?>
+---
+---<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+---   <children>
+---      <VBox prefHeight="200.0" prefWidth="100.0">
+---         <children>
+---            <AnchorPane prefHeight="384.0" prefWidth="592.0">
+---               <children>
+---                  <Label fx:id="labelEmballage" layoutX="432.0" layoutY="140.0" prefHeight="17.0" prefWidth="133.0" />
+---                  <Label layoutX="399.0" layoutY="17.0" prefHeight="25.0" prefWidth="166.0" text="Identifiant :" />
+---                  <Label layoutX="14.0" layoutY="17.0" prefHeight="25.0" prefWidth="184.0" />
+---                  <Label layoutX="210.0" layoutY="136.0" prefHeight="25.0" prefWidth="160.0" text="Emballage : " textFill="RED" />
+---                  <Label layoutX="210.0" layoutY="199.0" prefHeight="16.0" prefWidth="160.0" text="Déchet Alimentaires : " />
+---                  <Label layoutX="210.0" layoutY="248.0" prefHeight="25.0" prefWidth="173.0" text="Pain : " />
+---                  <Label fx:id="labelDechetAlimentaire" layoutX="445.0" layoutY="199.0" prefHeight="17.0" prefWidth="133.0" />
+---                  <Label fx:id="labelPain" layoutX="423.0" layoutY="224.0" prefHeight="48.0" prefWidth="151.0" />
+---               </children>
+---            </AnchorPane>
+---         </children>
+---      </VBox>
+---   </children>
+---   <columnConstraints>
+---      <ColumnConstraints />
+---   </columnConstraints>
+---   <rowConstraints>
+---      <RowConstraints />
+---   </rowConstraints>
+---</GridPane>
+--Index: src/main/resources/com/table_de_tri_fx/PageMain.fxml
+--IDEA additional info:
+--Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+--<+>UTF-8
+--===================================================================
+--diff --git a/src/main/resources/com/table_de_tri_fx/PageMain.fxml b/src/main/resources/com/table_de_tri_fx/PageMain.fxml
+--new file mode 100644
+----- /dev/null	(date 1705506464483)
+--+++ b/src/main/resources/com/table_de_tri_fx/PageMain.fxml	(date 1705506464483)
+--@@ -0,0 +1,12 @@
+--+<?xml version="1.0" encoding="UTF-8"?>
+--+
+--+<?import javafx.scene.control.*?>
+--+<?import javafx.scene.layout.*?>
+--+
+--+<AnchorPane prefHeight="1098.0" prefWidth="1074.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.table_de_tri_fx.Controller">
+--+   <children>
+--+      <Label fx:id="labelScann" alignment="CENTER" layoutX="36.0" layoutY="269.0" prefHeight="919.0" prefWidth="1074.0" text="Veilllez scannez votre carte pour vous connectez " />
+--+      <Label alignment="CENTER" layoutX="-2.0" layoutY="-8.0" prefHeight="524.0" prefWidth="1074.0" text="WELCOME TO TABLE DE TRI " textFill="#17723f" />
+--+      <Button mnemonicParsing="false" text="Button" />
+--+   </children>
+--+</AnchorPane>
+--Index: .idea/gradle.xml
+--IDEA additional info:
+--Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+--<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n          </set>\r\n        </option>\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+--Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+--<+>UTF-8
+--===================================================================
+--diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+----- a/.idea/gradle.xml	(revision d91a6bfd7ad7fabe910b3ce84e083c1dc3ff8ace)
+--+++ b/.idea/gradle.xml	(date 1705500476349)
+--@@ -1,5 +1,6 @@
+-- <?xml version="1.0" encoding="UTF-8"?>
+-- <project version="4">
+--+  <component name="GradleMigrationSettings" migrationVersion="1" />
+--   <component name="GradleSettings">
+--     <option name="linkedExternalProjectsSettings">
+--       <GradleProjectSettings>
+--Index: src/main/java/com/table_de_tri_fx/Phidget/RecupDonnee.java
+--IDEA additional info:
+--Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+--<+>UTF-8
+--===================================================================
+--diff --git a/src/main/java/com/table_de_tri_fx/Phidget/RecupDonnee.java b/src/main/java/com/table_de_tri_fx/Phidget/RecupDonnee.java
+--new file mode 100644
+----- /dev/null	(date 1705907347430)
+--+++ b/src/main/java/com/table_de_tri_fx/Phidget/RecupDonnee.java	(date 1705907347430)
+--@@ -0,0 +1,4 @@
+--+package com.table_de_tri_fx.Phidget;
+--+
+--+public class RecupDonnee(boolean state) {
+--+}
+--Index: .idea/workspace.xml
+--IDEA additional info:
+--Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+--<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"08516385-d940-47d8-b540-f322cdf48d15\" name=\"Changes\" comment=\"Add files via upload\">\r\n      <change afterPath=\"$PROJECT_DIR$/lib/phidget22.jar\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Doutput.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Gestion_Balance.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Gestion_RFID.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Vinput.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/build.gradle\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build.gradle\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/table_de_tri_fx/Application.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Application.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/table_de_tri_fx/Controller.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Controller.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/module-info.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/module-info.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/com/example/table_de_tri_fx/PageConnexion.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageConnexion.fxml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/com/example/table_de_tri_fx/PagePrincipale.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PagePrincipale.fxml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ExternalProjectsData\">\r\n    <projectState path=\"$PROJECT_DIR$\">\r\n      <ProjectState />\r\n    </projectState>\r\n  </component>\r\n  <component name=\"ExternalProjectsManager\">\r\n    <system id=\"GRADLE\">\r\n      <state>\r\n        <projects_view>\r\n          <tree_state>\r\n            <expand />\r\n            <select />\r\n          </tree_state>\r\n        </projects_view>\r\n      </state>\r\n    </system>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PREVIOUS_COMMIT_AUTHORS\">\r\n      <list>\r\n        <option value=\"K.N &lt;125902437+garnier-kenan@users.noreply.github.com&gt;\" />\r\n      </list>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2b4gdVtiv7L2UDKKDKx2WCFKRfS\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"last_opened_file_path\": \"C:/Users/kgarnier/IntelliJIDEAProjects/Phidget\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"project.structure.last.edited\": \"Project\",\r\n    \"project.structure.proportion\": \"0.15\",\r\n    \"project.structure.side.proportion\": \"0.0\",\r\n    \"settings.editor.selected.configurable\": \"build.tools\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\kgarnier\\IntelliJIDEAProjects\\Phidget\\lib\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration default=\"true\" type=\"JetRunConfigurationType\">\r\n      <module name=\"Phidget\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"KotlinStandaloneScriptRunConfigurationType\">\r\n      <module name=\"Phidget\" />\r\n      <option name=\"filePath\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"08516385-d940-47d8-b540-f322cdf48d15\" name=\"Changes\" comment=\"\" />\r\n      <created>1705479853065</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1705479853065</updated>\r\n      <workItem from=\"1705479854248\" duration=\"2959000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Add files via upload\">\r\n      <created>1705480665433</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1705480665433</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Add files via upload\">\r\n      <created>1705480713189</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1705480713189</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Add files via upload\">\r\n      <created>1705480805591</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1705480805591</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Add files via upload\">\r\n      <created>1705480812740</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1705480812740</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"5\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Add files via upload\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Add files via upload\" />\r\n  </component>\r\n</project>
+--Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+--<+>UTF-8
+--===================================================================
+--diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+----- a/.idea/workspace.xml	(revision d91a6bfd7ad7fabe910b3ce84e083c1dc3ff8ace)
+--+++ b/.idea/workspace.xml	(date 1705907347930)
+--@@ -5,23 +5,31 @@
+--   </component>
+--   <component name="ChangeListManager">
+--     <list default="true" id="08516385-d940-47d8-b540-f322cdf48d15" name="Changes" comment="Add files via upload">
+---      <change afterPath="$PROJECT_DIR$/lib/phidget22.jar" afterDir="false" />
+---      <change afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Doutput.java" afterDir="false" />
+---      <change afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Gestion_Balance.java" afterDir="false" />
+---      <change afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Gestion_RFID.java" afterDir="false" />
+---      <change afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Vinput.java" afterDir="false" />
+--+      <change afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/RecupDonnee.java" afterDir="false" />
+--+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageMain.fxml" afterDir="false" />
+--       <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" afterDir="false" />
+--       <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" afterDir="false" />
+--       <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" afterDir="false" />
+--       <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" afterDir="false" />
+--+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
+--       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+--       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+---      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+---      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/table_de_tri_fx/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Application.java" afterDir="false" />
+---      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/table_de_tri_fx/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Controller.java" afterDir="false" />
+---      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+---      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/table_de_tri_fx/PageConnexion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageConnexion.fxml" afterDir="false" />
+---      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/table_de_tri_fx/PagePrincipale.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PagePrincipale.fxml" afterDir="false" />
+--+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+--+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+--+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/table_de_tri_fx/Application.class" beforeDir="false" />
+--+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/table_de_tri_fx/Controller.class" beforeDir="false" />
+--+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/module-info.class" beforeDir="false" />
+--+      <change beforePath="$PROJECT_DIR$/build/libs/Table_de_tri_fx-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Table_de_tri_fx-1.0-SNAPSHOT.jar" afterDir="false" />
+--+      <change beforePath="$PROJECT_DIR$/build/resources/main/com/example/table_de_tri_fx/PageConnexion.fxml" beforeDir="false" />
+--+      <change beforePath="$PROJECT_DIR$/build/resources/main/com/example/table_de_tri_fx/PagePrincipale.fxml" beforeDir="false" />
+--+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/HelloApplication.class.uniqueId0" beforeDir="false" />
+--+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/module-info.class.uniqueId1" beforeDir="false" />
+--+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+--+      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Application.java" afterDir="false" />
+--+      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Controller.java" afterDir="false" />
+--+      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Gestion_Balance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Gestion_Balance.java" afterDir="false" />
+--+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
+--+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PagePrincipale.fxml" beforeDir="false" />
+--     </list>
+--     <option name="SHOW_DIALOG" value="false" />
+--     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+--@@ -44,6 +52,13 @@
+--         </projects_view>
+--       </state>
+--     </system>
+--+  </component>
+--+  <component name="FileTemplateManagerImpl">
+--+    <option name="RECENT_TEMPLATES">
+--+      <list>
+--+        <option value="Class" />
+--+      </list>
+--+    </option>
+--   </component>
+--   <component name="Git.Settings">
+--     <option name="PREVIOUS_COMMIT_AUTHORS">
+--@@ -54,27 +69,28 @@
+--     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+--   </component>
+--   <component name="ProjectId" id="2b4gdVtiv7L2UDKKDKx2WCFKRfS" />
+--+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+--   <component name="ProjectViewState">
+--     <option name="hideEmptyMiddlePackages" value="true" />
+--     <option name="showLibraryContents" value="true" />
+--   </component>
+---  <component name="PropertiesComponent"><![CDATA[{
+---  "keyToString": {
+---    "RunOnceActivity.OpenProjectViewOnStart": "true",
+---    "RunOnceActivity.ShowReadmeOnStart": "true",
+---    "WebServerToolWindowFactoryState": "false",
+---    "last_opened_file_path": "C:/Users/kgarnier/IntelliJIDEAProjects/Phidget",
+---    "node.js.detected.package.eslint": "true",
+---    "node.js.detected.package.tslint": "true",
+---    "node.js.selected.package.eslint": "(autodetect)",
+---    "node.js.selected.package.tslint": "(autodetect)",
+---    "project.structure.last.edited": "Project",
+---    "project.structure.proportion": "0.15",
+---    "project.structure.side.proportion": "0.0",
+---    "settings.editor.selected.configurable": "build.tools",
+---    "vue.rearranger.settings.migration": "true"
+--+  <component name="PropertiesComponent">{
+--+  &quot;keyToString&quot;: {
+--+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+--+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+--+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+--+    &quot;last_opened_file_path&quot;: &quot;T:/Projet_Phidget_fx&quot;,
+--+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+--+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+--+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+--+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+--+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+--+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+--+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+--+    &quot;settings.editor.selected.configurable&quot;: &quot;build.tools&quot;,
+--+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+--   }
+---}]]></component>
+--+}</component>
+--   <component name="RecentsManager">
+--     <key name="MoveFile.RECENT_KEYS">
+--       <recent name="C:\Users\kgarnier\IntelliJIDEAProjects\Phidget\lib" />
+--@@ -104,6 +120,13 @@
+--       <option name="presentableId" value="Default" />
+--       <updated>1705479853065</updated>
+--       <workItem from="1705479854248" duration="2959000" />
+--+      <workItem from="1705500457900" duration="3803000" />
+--+      <workItem from="1705504891125" duration="453000" />
+--+      <workItem from="1705505359242" duration="428000" />
+--+      <workItem from="1705505802858" duration="666000" />
+--+      <workItem from="1705506485993" duration="2305000" />
+--+      <workItem from="1705508810244" duration="794000" />
+--+      <workItem from="1705907032158" duration="322000" />
+--     </task>
+--     <task id="LOCAL-00001" summary="Add files via upload">
+--       <created>1705480665433</created>
+-Index: src/main/resources/com/table_de_tri_fx/PageConnexion.fxml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import javafx.scene.control.Label?>\r\n<?import javafx.scene.control.TextField?>\r\n<?import javafx.scene.layout.AnchorPane?>\r\n<?import javafx.scene.layout.StackPane?>\r\n<?import javafx.scene.text.Font?>\r\n\r\n<StackPane maxHeight=\"1080.0\" maxWidth=\"1920.0\" minHeight=\"1080.0\" minWidth=\"1920.0\" prefHeight=\"1080.0\" prefWidth=\"1920.0\" xmlns=\"http://javafx.com/javafx/21\" xmlns:fx=\"http://javafx.com/fxml/1\">\r\n   <children>\r\n      <AnchorPane prefHeight=\"200.0\" prefWidth=\"200.0\">\r\n         <children>\r\n            <AnchorPane layoutX=\"633.0\" prefHeight=\"1081.0\" prefWidth=\"1001.0\" AnchorPane.rightAnchor=\"322.0\">\r\n               <children>\r\n                  <Label layoutX=\"260.0\" layoutY=\"257.0\" prefHeight=\"30.0\" prefWidth=\"294.0\" text=\"Welcome user !\" textFill=\"#4086ab\">\r\n                     <font>\r\n                        <Font name=\"Tahoma\" size=\"24.0\" />\r\n                     </font>\r\n                  </Label>\r\n                  <TextField layoutX=\"281.0\" layoutY=\"318.0\" prefHeight=\"30.0\" prefWidth=\"220.0\" promptText=\"Username\" stylesheets=\"@../../../java/com/table_de_tri_fx/css/stylesheet.css\" />\r\n               </children>\r\n            </AnchorPane>\r\n            <AnchorPane layoutX=\"2.0\" prefHeight=\"1080.0\" prefWidth=\"596.0\" styleClass=\"left-form\" stylesheets=\"@../../../java/com/table_de_tri_fx/css/stylesheet.css\">\r\n               <children>\r\n                  <Label layoutX=\"81.0\" layoutY=\"314.0\" prefHeight=\"30.0\" prefWidth=\"477.0\" text=\"Table de Tri Lycee Astier\" textFill=\"WHITE\">\r\n                     <font>\r\n                        <Font name=\"Tahoma\" size=\"36.0\" />\r\n                     </font>\r\n                  </Label>\r\n               </children></AnchorPane>\r\n         </children>\r\n      </AnchorPane>\r\n   </children>\r\n</StackPane>\r\n
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/src/main/resources/com/table_de_tri_fx/PageConnexion.fxml b/src/main/resources/com/table_de_tri_fx/PageConnexion.fxml
+---- a/src/main/resources/com/table_de_tri_fx/PageConnexion.fxml	(revision 8eb3c4ec43cf3a68916837e8b4d18d15fe1b57ee)
+-+++ b/src/main/resources/com/table_de_tri_fx/PageConnexion.fxml	(date 1706532958000)
+-@@ -17,7 +17,7 @@
+-                         <Font name="Tahoma" size="24.0" />
+-                      </font>
+-                   </Label>
+--                  <TextField layoutX="281.0" layoutY="318.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" stylesheets="@../../../java/com/table_de_tri_fx/css/stylesheet.css" />
+-+                  <TextField layoutX="252.0" layoutY="320.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" stylesheets="@../../../java/com/table_de_tri_fx/css/stylesheet.css" />
+-                </children>
+-             </AnchorPane>
+-             <AnchorPane layoutX="2.0" prefHeight="1080.0" prefWidth="596.0" styleClass="left-form" stylesheets="@../../../java/com/table_de_tri_fx/css/stylesheet.css">
+-Index: src/main/java/com/table_de_tri_fx/css/stylesheet.css
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+>.left-form{\r\n    -fx-background-color: linear-gradient(to bottom right , #278a32 , #4086ab);\r\n}\r\n.text-field{\r\n    -fx-background-color: linear-gradient(to bottom,#efefef,#eee);\r\n    -fx-border-color: #000;\r\n    -fx-border-width: .8px;\r\n    -fx-font-size: 13px;\r\n    -fx-font-family: \"Tahoma\";\r\n}
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/src/main/java/com/table_de_tri_fx/css/stylesheet.css b/src/main/java/com/table_de_tri_fx/css/stylesheet.css
+---- a/src/main/java/com/table_de_tri_fx/css/stylesheet.css	(revision 8eb3c4ec43cf3a68916837e8b4d18d15fe1b57ee)
+-+++ b/src/main/java/com/table_de_tri_fx/css/stylesheet.css	(date 1706533154000)
+-@@ -7,4 +7,11 @@
+-     -fx-border-width: .8px;
+-     -fx-font-size: 13px;
+-     -fx-font-family: "Tahoma";
+-+}
+-+.navbutton{
+-+    -fx-background-color: transparent;
+-+    -fx-cursor: hand;
+-+    -fx-text-fill: #fff;
+-+    -fx-font-family: "Arial";
+-+    -fx-alignment: CENTER-LEFT;
+- }
+-\ No newline at end of file
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"08516385-d940-47d8-b540-f322cdf48d15\" name=\"Changes\" comment=\"Add files via upload\">\r\n      <change afterPath=\"$PROJECT_DIR$/lib/fontawesomefx-8.9.jar\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/RecupDonnee.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageMain.fxml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/resources/images/360_F_297984037_iuijYMhcLkt2nNW8niNbkvvUeOwtU8b3.jpg\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/resources/images/360_F_362425563_V4vRnhXylbroS0BF6TpWva3B06ogcyoy.jpg\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/8.0/checksums/checksums.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/8.0/checksums/checksums.lock\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/gradle.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/gradle.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/build.gradle\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build.gradle\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/build/classes/java/main/com/example/table_de_tri_fx/Application.class\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/build/classes/java/main/com/example/table_de_tri_fx/Controller.class\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/build/classes/java/main/module-info.class\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/build/libs/Table_de_tri_fx-1.0-SNAPSHOT.jar\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build/libs/Table_de_tri_fx-1.0-SNAPSHOT.jar\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/build/resources/main/com/example/table_de_tri_fx/PageConnexion.fxml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/build/resources/main/com/example/table_de_tri_fx/PagePrincipale.fxml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/HelloApplication.class.uniqueId0\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/module-info.class.uniqueId1\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Application.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Application.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Controller.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Controller.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Gestion_Balance.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Gestion_Balance.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/module-info.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageConnexion.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageConnexion.fxml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PagePrincipale.fxml\" beforeDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ExternalProjectsData\">\r\n    <projectState path=\"$PROJECT_DIR$\">\r\n      <ProjectState />\r\n    </projectState>\r\n  </component>\r\n  <component name=\"ExternalProjectsManager\">\r\n    <system id=\"GRADLE\">\r\n      <state>\r\n        <projects_view>\r\n          <tree_state>\r\n            <expand />\r\n            <select />\r\n          </tree_state>\r\n        </projects_view>\r\n      </state>\r\n    </system>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"FxmlFile\" />\r\n        <option value=\"CSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PREVIOUS_COMMIT_AUTHORS\">\r\n      <list>\r\n        <option value=\"K.N &lt;125902437+garnier-kenan@users.noreply.github.com&gt;\" />\r\n      </list>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"file://$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageConnexion.fxml\" root0=\"FORCE_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2b4gdVtiv7L2UDKKDKx2WCFKRfS\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"last_opened_file_path\": \"T:/Projet_Phidget_fx/lib\",\r\n    \"list.type.of.created.stylesheet\": \"CSS\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"project.structure.last.edited\": \"SDKs\",\r\n    \"project.structure.proportion\": \"0.15\",\r\n    \"project.structure.side.proportion\": \"0.2\",\r\n    \"settings.editor.selected.configurable\": \"preferences.keymap\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"ReactorSettings\">\r\n    <option name=\"notificationShown\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"T:\\Projet_Phidget_fx\\lib\" />\r\n      <recent name=\"T:\\Projet_Phidget_fx\\build\\resources\\main\" />\r\n      <recent name=\"T:\\Projet_Phidget_fx\\src\\main\\resources\" />\r\n      <recent name=\"T:\\Projet_Phidget_fx\\src\\main\\resources\\com\\table_de_tri_fx\\images\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"T:\\Projet_Phidget_fx\\src\\main\\resources\\images\" />\r\n      <recent name=\"T:\\Projet_Phidget_fx\\src\\main\\resources\\com\\table_de_tri_fx\" />\r\n      <recent name=\"C:\\Users\\kgarnier\\IntelliJIDEAProjects\\Phidget\\lib\" />\r\n    </key>\r\n    <key name=\"MoveClassesOrPackagesDialog.RECENTS_KEY\">\r\n      <recent name=\"\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"Application\" type=\"Application\" factoryName=\"Application\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.table_de_tri_fx.Application\" />\r\n      <module name=\"Table_de_tri_fx.main\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"JetRunConfigurationType\">\r\n      <module name=\"Phidget\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"KotlinStandaloneScriptRunConfigurationType\">\r\n      <module name=\"Phidget\" />\r\n      <option name=\"filePath\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"08516385-d940-47d8-b540-f322cdf48d15\" name=\"Changes\" comment=\"\" />\r\n      <created>1705479853065</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1705479853065</updated>\r\n      <workItem from=\"1705479854248\" duration=\"2959000\" />\r\n      <workItem from=\"1705915047079\" duration=\"10761000\" />\r\n      <workItem from=\"1706079722267\" duration=\"3902000\" />\r\n      <workItem from=\"1706083697937\" duration=\"2029000\" />\r\n      <workItem from=\"1706085745905\" duration=\"516000\" />\r\n      <workItem from=\"1706100735857\" duration=\"1258000\" />\r\n      <workItem from=\"1706102014469\" duration=\"715000\" />\r\n      <workItem from=\"1706102749589\" duration=\"227000\" />\r\n      <workItem from=\"1706102991561\" duration=\"348000\" />\r\n      <workItem from=\"1706103355243\" duration=\"933000\" />\r\n      <workItem from=\"1706104304774\" duration=\"1875000\" />\r\n      <workItem from=\"1706106194453\" duration=\"2360000\" />\r\n      <workItem from=\"1706113176210\" duration=\"1278000\" />\r\n      <workItem from=\"1706511975694\" duration=\"30000\" />\r\n      <workItem from=\"1706512020493\" duration=\"9788000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Add files via upload\">\r\n      <created>1705480665433</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1705480665433</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Add files via upload\">\r\n      <created>1705480713189</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1705480713189</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Add files via upload\">\r\n      <created>1705480805591</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1705480805591</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Add files via upload\">\r\n      <created>1705480812740</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1705480812740</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"5\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Add files via upload\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Add files via upload\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Controller.java</url>\r\n          <line>35</line>\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-method\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/RecupDonnee.java</url>\r\n          <line>23</line>\r\n          <properties class=\"com.table_de_tri_fx.Phidget.RecupDonnee\" method=\"Connexion\">\r\n            <option name=\"EMULATED\" value=\"true\" />\r\n            <option name=\"WATCH_EXIT\" value=\"false\" />\r\n          </properties>\r\n          <option name=\"timeStamp\" value=\"3\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	(revision 8eb3c4ec43cf3a68916837e8b4d18d15fe1b57ee)
+-+++ b/.idea/workspace.xml	(date 1706533266000)
+-@@ -5,37 +5,10 @@
+-   </component>
+-   <component name="ChangeListManager">
+-     <list default="true" id="08516385-d940-47d8-b540-f322cdf48d15" name="Changes" comment="Add files via upload">
+--      <change afterPath="$PROJECT_DIR$/lib/fontawesomefx-8.9.jar" afterDir="false" />
+--      <change afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/RecupDonnee.java" afterDir="false" />
+--      <change afterPath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageMain.fxml" afterDir="false" />
+--      <change afterPath="$PROJECT_DIR$/src/main/resources/images/360_F_297984037_iuijYMhcLkt2nNW8niNbkvvUeOwtU8b3.jpg" afterDir="false" />
+--      <change afterPath="$PROJECT_DIR$/src/main/resources/images/360_F_362425563_V4vRnhXylbroS0BF6TpWva3B06ogcyoy.jpg" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/.gradle/8.0/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/checksums/checksums.lock" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+-       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/table_de_tri_fx/Application.class" beforeDir="false" />
+--      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/table_de_tri_fx/Controller.class" beforeDir="false" />
+--      <change beforePath="$PROJECT_DIR$/build/classes/java/main/module-info.class" beforeDir="false" />
+--      <change beforePath="$PROJECT_DIR$/build/libs/Table_de_tri_fx-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Table_de_tri_fx-1.0-SNAPSHOT.jar" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/build/resources/main/com/example/table_de_tri_fx/PageConnexion.fxml" beforeDir="false" />
+--      <change beforePath="$PROJECT_DIR$/build/resources/main/com/example/table_de_tri_fx/PagePrincipale.fxml" beforeDir="false" />
+--      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/HelloApplication.class.uniqueId0" beforeDir="false" />
+--      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/module-info.class.uniqueId1" beforeDir="false" />
+--      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Application.java" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Controller.java" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Gestion_Balance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Gestion_Balance.java" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/css/stylesheet.css" afterDir="false" />
+-       <change beforePath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageConnexion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageConnexion.fxml" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PagePrincipale.fxml" beforeDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageMain.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageMain.fxml" afterDir="false" />
+-     </list>
+-     <option name="SHOW_DIALOG" value="false" />
+-     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-@@ -165,7 +138,7 @@
+-       <workItem from="1706106194453" duration="2360000" />
+-       <workItem from="1706113176210" duration="1278000" />
+-       <workItem from="1706511975694" duration="30000" />
+--      <workItem from="1706512020493" duration="9788000" />
+-+      <workItem from="1706512020493" duration="10244000" />
+-     </task>
+-     <task id="LOCAL-00001" summary="Add files via upload">
+-       <created>1705480665433</created>
+-@@ -195,7 +168,21 @@
+-       <option name="project" value="LOCAL" />
+-       <updated>1705480812740</updated>
+-     </task>
+--    <option name="localTasksCounter" value="5" />
+-+    <task id="LOCAL-00005" summary="Add files via upload">
+-+      <created>1706532815424</created>
+-+      <option name="number" value="00005" />
+-+      <option name="presentableId" value="LOCAL-00005" />
+-+      <option name="project" value="LOCAL" />
+-+      <updated>1706532815424</updated>
+-+    </task>
+-+    <task id="LOCAL-00006" summary="Add files via upload">
+-+      <created>1706532832260</created>
+-+      <option name="number" value="00006" />
+-+      <option name="presentableId" value="LOCAL-00006" />
+-+      <option name="project" value="LOCAL" />
+-+      <updated>1706532832260</updated>
+-+    </task>
+-+    <option name="localTasksCounter" value="7" />
+-     <servers />
+-   </component>
+-   <component name="TypeScriptGeneratedFilesManager">
+-Index: src/main/resources/com/table_de_tri_fx/PageMain.fxml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import javafx.scene.control.*?>\r\n<?import javafx.scene.image.*?>\r\n<?import javafx.scene.layout.*?>\r\n\r\n<AnchorPane prefHeight=\"398.0\" prefWidth=\"655.0\" xmlns=\"http://javafx.com/javafx/17.0.2-ea\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"com.table_de_tri_fx.Controller\">\r\n   <children>\r\n      <VBox prefHeight=\"398.0\" prefWidth=\"111.0\" style=\"-fx-background-color: #EBE8F9;\">\r\n         <children>\r\n            <ImageView fitHeight=\"83.0\" fitWidth=\"94.0\" pickOnBounds=\"true\" preserveRatio=\"true\" />\r\n         </children>\r\n      </VBox>\r\n      <AnchorPane prefHeight=\"75.0\" prefWidth=\"655.0\">\r\n         <children>\r\n            <Label layoutX=\"127.0\" layoutY=\"14.0\" prefHeight=\"52.0\" prefWidth=\"433.0\" style=\"-fx-background-color: #EBE8F9;\" text=\"                                                                Table de Tri Lycée Astier\" />\r\n         </children>\r\n      </AnchorPane>\r\n      <Label layoutX=\"134.0\" layoutY=\"147.0\" prefHeight=\"75.0\" prefWidth=\"465.0\" text=\"                                        Veuillez scanner votrer Carte pour vous connectez\" />\r\n      <Label fx:id=\"labelScann\" layoutX=\"203.0\" layoutY=\"257.0\" prefHeight=\"75.0\" prefWidth=\"401.0\" text=\"Label\" />\r\n   </children>\r\n</AnchorPane>\r\n
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/src/main/resources/com/table_de_tri_fx/PageMain.fxml b/src/main/resources/com/table_de_tri_fx/PageMain.fxml
+---- a/src/main/resources/com/table_de_tri_fx/PageMain.fxml	(revision 8eb3c4ec43cf3a68916837e8b4d18d15fe1b57ee)
+-+++ b/src/main/resources/com/table_de_tri_fx/PageMain.fxml	(date 1706533262000)
+-@@ -1,22 +1,50 @@
+- <?xml version="1.0" encoding="UTF-8"?>
+- 
+--<?import javafx.scene.control.*?>
+--<?import javafx.scene.image.*?>
+--<?import javafx.scene.layout.*?>
+-+<?import javafx.scene.control.Button?>
+-+<?import javafx.scene.control.Label?>
+-+<?import javafx.scene.layout.AnchorPane?>
+-+<?import javafx.scene.layout.BorderPane?>
+-+<?import javafx.scene.layout.StackPane?>
+-+<?import javafx.scene.shape.Line?>
+-+<?import javafx.scene.text.Font?>
+- 
+--<AnchorPane prefHeight="398.0" prefWidth="655.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.table_de_tri_fx.Controller">
+-+
+-+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="1080.0" minWidth="1920.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+-    <children>
+--      <VBox prefHeight="398.0" prefWidth="111.0" style="-fx-background-color: #EBE8F9;">
+-+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+-          <children>
+--            <ImageView fitHeight="83.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true" />
+--         </children>
+--      </VBox>
+--      <AnchorPane prefHeight="75.0" prefWidth="655.0">
+--         <children>
+--            <Label layoutX="127.0" layoutY="14.0" prefHeight="52.0" prefWidth="433.0" style="-fx-background-color: #EBE8F9;" text="                                                                Table de Tri Lycée Astier" />
+--         </children>
+--      </AnchorPane>
+--      <Label layoutX="134.0" layoutY="147.0" prefHeight="75.0" prefWidth="465.0" text="                                        Veuillez scanner votrer Carte pour vous connectez" />
+--      <Label fx:id="labelScann" layoutX="203.0" layoutY="257.0" prefHeight="75.0" prefWidth="401.0" text="Label" />
+--   </children>
+--</AnchorPane>
+-+            <BorderPane layoutX="133.0" layoutY="81.0" prefHeight="1080.0" prefWidth="1920.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+-+               <top>
+-+                  <AnchorPane prefHeight="93.0" prefWidth="1803.0" BorderPane.alignment="CENTER">
+-+                     <children>
+-+                        <Label layoutX="71.0" layoutY="49.0" prefHeight="30.0" prefWidth="314.0" text="Sorting Table Management System" />
+-+                     </children>
+-+                  </AnchorPane>
+-+               </top>
+-+               <left>
+-+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="left-form" stylesheets="@../../../java/com/table_de_tri_fx/css/stylesheet.css" BorderPane.alignment="CENTER">
+-+                     <children>
+-+                        <Label layoutX="20.0" layoutY="162.0" prefHeight="30.0" prefWidth="181.0" text="Welcome user ! ">
+-+                           <font>
+-+                              <Font name="Tahoma" size="24.0" />
+-+                           </font>
+-+                        </Label>
+-+                        <Line endX="100.0" layoutX="106.0" layoutY="213.0" startX="-100.0" stroke="WHITE" />
+-+                        <Button layoutX="14.0" layoutY="235.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" styleClass="navbutton" stylesheets="@../../../java/com/table_de_tri_fx/css/stylesheet.css" text="Home">
+-+                           <font>
+-+                              <Font size="24.0" />
+-+                           </font>
+-+                        </Button>
+-+                        <Button layoutX="14.0" layoutY="342.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" styleClass="navbutton" stylesheets="@../../../java/com/table_de_tri_fx/css/stylesheet.css" text="Home">
+-+                           <font>
+-+                              <Font size="24.0" />
+-+                           </font>
+-+                        </Button>
+-+                     </children>
+-+                  </AnchorPane>
+-+               </left>
+-+            </BorderPane>
+-+         </children>
+-+      </AnchorPane>
+-+   </children>
+-+</StackPane>
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_14_07__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_14_07__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_14_07__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_14_07__Changes_.xml	(revision 92de9decd321b90ea460c67dc4325b033250eb20)
++++ /dev/null	(revision 92de9decd321b90ea460c67dc4325b033250eb20)
+@@ -1,89 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_29_01_2024_14_07_[Changes]" date="1706533690041" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_14_07_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 29/01/2024 14:07 [Changes]" />
+-  <binary>
+-    <option name="BEFORE_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10_[Changes]/executionHistory.bin" />
+-    <option name="AFTER_PATH" />
+-    <option name="SHELVED_PATH" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10_[Changes]/resourceHashesCache.bin" />
+-    <option name="AFTER_PATH" />
+-    <option name="SHELVED_PATH" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10_[Changes]/outputFiles.bin" />
+-    <option name="AFTER_PATH" />
+-    <option name="SHELVED_PATH" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value=".gradle/8.0/fileHashes/fileHashes.lock" />
+-    <option name="AFTER_PATH" value=".gradle/8.0/fileHashes/fileHashes.lock" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_14_07_[Changes]/fileHashes.lock" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10_[Changes]/fileHashes.lock" />
+-    <option name="AFTER_PATH" />
+-    <option name="SHELVED_PATH" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value=".gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+-    <option name="AFTER_PATH" value=".gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_14_07_[Changes]/buildOutputCleanup.lock" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10_[Changes]/Table_de_tri_fx-1.0-SNAPSHOT.jar" />
+-    <option name="AFTER_PATH" />
+-    <option name="SHELVED_PATH" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10_[Changes]/fileHashes.bin" />
+-    <option name="AFTER_PATH" />
+-    <option name="SHELVED_PATH" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value=".gradle/8.0/checksums/md5-checksums.bin" />
+-    <option name="AFTER_PATH" value=".gradle/8.0/checksums/md5-checksums.bin" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_14_07_[Changes]/md5-checksums.bin" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10_[Changes]/previous-compilation-data.bin" />
+-    <option name="AFTER_PATH" />
+-    <option name="SHELVED_PATH" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value=".gradle/8.0/checksums/checksums.lock" />
+-    <option name="AFTER_PATH" value=".gradle/8.0/checksums/checksums.lock" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_14_07_[Changes]/checksums.lock" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value=".gradle/8.0/checksums/sha1-checksums.bin" />
+-    <option name="AFTER_PATH" value=".gradle/8.0/checksums/sha1-checksums.bin" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_14_07_[Changes]/sha1-checksums.bin" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10_[Changes]/buildOutputCleanup.lock" />
+-    <option name="AFTER_PATH" />
+-    <option name="SHELVED_PATH" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_22_01_2024_08_10_[Changes]/executionHistory.lock" />
+-    <option name="AFTER_PATH" />
+-    <option name="SHELVED_PATH" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value=".gradle/8.0/fileHashes/fileHashes.bin" />
+-    <option name="AFTER_PATH" value=".gradle/8.0/fileHashes/fileHashes.bin" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_14_07_[Changes]/fileHashes.bin" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value=".gradle/8.0/executionHistory/executionHistory.bin" />
+-    <option name="AFTER_PATH" value=".gradle/8.0/executionHistory/executionHistory.bin" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_14_07_[Changes]/executionHistory.bin" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value=".gradle/8.0/executionHistory/executionHistory.lock" />
+-    <option name="AFTER_PATH" value=".gradle/8.0/executionHistory/executionHistory.lock" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_01_2024_14_07_[Changes]/executionHistory.lock" />
+-  </binary>
+-</changelist>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"08516385-d940-47d8-b540-f322cdf48d15\" name=\"Changes\" comment=\"fxml flo\">\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/images/image.png\" beforeDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ExternalProjectsData\">\r\n    <projectState path=\"$PROJECT_DIR$\">\r\n      <ProjectState />\r\n    </projectState>\r\n  </component>\r\n  <component name=\"ExternalProjectsManager\">\r\n    <system id=\"GRADLE\">\r\n      <state>\r\n        <projects_view>\r\n          <tree_state>\r\n            <expand>\r\n              <path>\r\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\r\n                <item name=\"Table_de_tri_fx\" type=\"f1a62948:ProjectNode\" />\r\n              </path>\r\n            </expand>\r\n            <select />\r\n          </tree_state>\r\n        </projects_view>\r\n      </state>\r\n    </system>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"CSS File\" />\r\n        <option value=\"FxmlFile\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PREVIOUS_COMMIT_AUTHORS\">\r\n      <list>\r\n        <option value=\"K.N &lt;125902437+garnier-kenan@users.noreply.github.com&gt;\" />\r\n      </list>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"file://$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageConnexion.fxml\" root0=\"FORCE_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2b4gdVtiv7L2UDKKDKx2WCFKRfS\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <OptionsSetting value=\"false\" id=\"Update\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"last_opened_file_path\": \"T:/Projet/src/main/resources/images\",\r\n    \"list.type.of.created.stylesheet\": \"CSS\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"project.structure.last.edited\": \"SDKs\",\r\n    \"project.structure.proportion\": \"0.15\",\r\n    \"project.structure.side.proportion\": \"0.2\",\r\n    \"settings.editor.selected.configurable\": \"preferences.JavaFX\",\r\n    \"spring.configuration.checksum\": \"5ae6b5f69ca0ad9cc91737fda7857912\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"ReactorSettings\">\r\n    <option name=\"notificationShown\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"T:\\Projet\\src\\main\\resources\\images\" />\r\n      <recent name=\"C:\\Users\\kgarnier\\IntelliJIDEAProjects\\Projet_Phidget_fx\\src\\main\\resources\" />\r\n      <recent name=\"T:\\Projet\\src\\main\\resources\\css\" />\r\n      <recent name=\"C:\\Users\\kgarnier\\IntelliJIDEAProjects\\Projet_Phidget_fx\\src\\main\\java\\com\\table_de_tri_fx\\BDD\" />\r\n      <recent name=\"C:\\Users\\kgarnier\\IntelliJIDEAProjects\\Projet_Phidget_fx\\src\\main\\java\\com\\table_de_tri_fx\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"T:\\Projet\\src\\main\\resources\\images\" />\r\n      <recent name=\"T:\\Projet\\src\\main\\resources\\CSS\\fonts\" />\r\n      <recent name=\"T:\\Projet\\src\\main\\resources\\CSS\" />\r\n      <recent name=\"T:\\Projet\\src\\main\\resources\\com\\table_de_tri_fx\\css\\fonts\" />\r\n      <recent name=\"T:\\Projet_Phidget_fx\\src\\main\\resources\\images\" />\r\n    </key>\r\n    <key name=\"ExtractSuperBase.RECENT_KEYS\">\r\n      <recent name=\"com.table_de_tri_fx\" />\r\n      <recent name=\"sample\" />\r\n    </key>\r\n    <key name=\"MoveClassesOrPackagesDialog.RECENTS_KEY\">\r\n      <recent name=\"css\" />\r\n      <recent name=\"\" />\r\n      <recent name=\"com.table_de_tri_fx\" />\r\n    </key>\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"com.table_de_tri_fx\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"Application\" type=\"Application\" factoryName=\"Application\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.table_de_tri_fx.Application\" />\r\n      <module name=\"Table_de_tri_fx.main\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"JetRunConfigurationType\">\r\n      <module name=\"Phidget\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"KotlinStandaloneScriptRunConfigurationType\">\r\n      <module name=\"Phidget\" />\r\n      <option name=\"filePath\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"08516385-d940-47d8-b540-f322cdf48d15\" name=\"Changes\" comment=\"\" />\r\n      <created>1705479853065</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1705479853065</updated>\r\n      <workItem from=\"1705479854248\" duration=\"2959000\" />\r\n      <workItem from=\"1705915047079\" duration=\"10761000\" />\r\n      <workItem from=\"1706079722267\" duration=\"3902000\" />\r\n      <workItem from=\"1706083697937\" duration=\"2029000\" />\r\n      <workItem from=\"1706085745905\" duration=\"516000\" />\r\n      <workItem from=\"1706100735857\" duration=\"1258000\" />\r\n      <workItem from=\"1706102014469\" duration=\"715000\" />\r\n      <workItem from=\"1706102749589\" duration=\"227000\" />\r\n      <workItem from=\"1706102991561\" duration=\"348000\" />\r\n      <workItem from=\"1706103355243\" duration=\"933000\" />\r\n      <workItem from=\"1706104304774\" duration=\"1875000\" />\r\n      <workItem from=\"1706106194453\" duration=\"2360000\" />\r\n      <workItem from=\"1706113176210\" duration=\"1278000\" />\r\n      <workItem from=\"1706511975694\" duration=\"30000\" />\r\n      <workItem from=\"1706512020493\" duration=\"9788000\" />\r\n      <workItem from=\"1706536188282\" duration=\"1599000\" />\r\n      <workItem from=\"1706538437387\" duration=\"7351000\" />\r\n      <workItem from=\"1706601613606\" duration=\"9245000\" />\r\n      <workItem from=\"1706684751931\" duration=\"6287000\" />\r\n      <workItem from=\"1706704593342\" duration=\"10773000\" />\r\n      <workItem from=\"1706716935121\" duration=\"2244000\" />\r\n      <workItem from=\"1707116472556\" duration=\"9628000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Add files via upload\">\r\n      <created>1705480665433</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1705480665433</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Add files via upload\">\r\n      <created>1705480713189</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1705480713189</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Add files via upload\">\r\n      <created>1705480805591</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1705480805591</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Add files via upload\">\r\n      <created>1705480812740</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1705480812740</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Add files via upload\">\r\n      <created>1706537390910</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1706537390910</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Add files via upload\">\r\n      <created>1706537486093</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1706537486093</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Add files via upload\">\r\n      <created>1706538707085</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1706538707085</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Add files via upload\">\r\n      <created>1706544196747</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1706544196747</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Add files via upload\">\r\n      <created>1706611759272</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1706611759273</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Add files via upload\">\r\n      <created>1707117966969</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707117966969</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"Add files via upload\">\r\n      <created>1707132462612</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707132462612</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"Add files via upload\">\r\n      <created>1707132986923</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707132986923</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"Branche fonctionelle\">\r\n      <created>1707138800614</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707138800614</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"fxml flo\">\r\n      <created>1707148618155</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707148618155</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"15\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Add files via upload\" />\r\n    <MESSAGE value=\"Branche fonctionelle\" />\r\n    <MESSAGE value=\"fxml flo\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"fxml flo\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-method\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/RecupDonnee.java</url>\r\n          <line>23</line>\r\n          <properties class=\"com.table_de_tri_fx.Phidget.RecupDonnee\">\r\n            <option name=\"EMULATED\" value=\"true\" />\r\n            <option name=\"WATCH_EXIT\" value=\"false\" />\r\n          </properties>\r\n          <option name=\"timeStamp\" value=\"3\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 92de9decd321b90ea460c67dc4325b033250eb20)
++++ b/.idea/workspace.xml	(date 1707151206711)
+@@ -5,7 +5,7 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="08516385-d940-47d8-b540-f322cdf48d15" name="Changes" comment="fxml flo">
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/image.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -49,6 +49,19 @@
+       </list>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
++  "lastFilter": {
++    "state": "OPEN"
++  }
++}]]></component>
++  <component name="GithubPullRequestsUISettings">
++    <option name="selectedUrlAndAccountId">
++      <UrlAndAccount>
++        <option name="accountId" value="c1e5d68c-c4da-42d0-bff9-35c5601f942d" />
++        <option name="url" value="https://github.com/SNIRAubenas/Phidget" />
++      </UrlAndAccount>
++    </option>
+   </component>
+   <component name="HighlightingSettingsPerFile">
+     <setting file="file://$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageConnexion.fxml" root0="FORCE_HIGHLIGHTING" />
+@@ -262,7 +275,21 @@
+       <option name="project" value="LOCAL" />
+       <updated>1707148618155</updated>
+     </task>
+-    <option name="localTasksCounter" value="15" />
++    <task id="LOCAL-00015" summary="fxml flo">
++      <created>1707148928699</created>
++      <option name="number" value="00015" />
++      <option name="presentableId" value="LOCAL-00015" />
++      <option name="project" value="LOCAL" />
++      <updated>1707148928699</updated>
++    </task>
++    <task id="LOCAL-00016" summary="fxml flo">
++      <created>1707149028567</created>
++      <option name="number" value="00016" />
++      <option name="presentableId" value="LOCAL-00016" />
++      <option name="project" value="LOCAL" />
++      <updated>1707149028567</updated>
++    </task>
++    <option name="localTasksCounter" value="17" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
