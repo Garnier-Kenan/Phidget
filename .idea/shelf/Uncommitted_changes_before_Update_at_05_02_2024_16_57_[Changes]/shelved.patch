@@ -1,0 +1,494 @@
+Index: src/main/java/com/table_de_tri_fx/Application.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.table_de_tri_fx;\r\n\r\nimport javafx.fxml.FXMLLoader;\r\nimport javafx.scene.Parent;\r\nimport javafx.scene.Scene;\r\nimport javafx.scene.text.Font;\r\nimport javafx.stage.Stage;\r\n\r\nimport javafx.scene.control.Button;\r\n\r\n\r\n\r\n\r\nimport java.io.IOException;\r\n\r\npublic class Application extends javafx.application.Application {\r\n\r\n    @Override\r\n    public void start(Stage primaryStage) throws Exception {\r\n        try {\r\n            FXMLLoader fxmlLoader2 = new FXMLLoader(getClass().getResource(\"PagePrincipale.fxml\"));\r\n            Scene scene2 = new Scene(fxmlLoader2.load());\r\n            FXMLLoader fxmlLoader1 = new FXMLLoader(Application.class.getResource(\"PageDeConnexion.fxml\"));\r\n            Scene scene1 = new Scene(fxmlLoader1.load());\r\n            primaryStage.setFullScreenExitHint(\"\");\r\n            primaryStage.setTitle(\"Table de Tri\");\r\n            primaryStage.setScene(scene1);\r\n            primaryStage.setFullScreen(true);\r\n            primaryStage.show();\r\n            primaryStage.setOnCloseRequest(event -> {\r\n                System.exit(0);\r\n                Controller.close();\r\n            });\r\n            DATA_Scene.primaryStage=primaryStage;\r\n            DATA_Scene.scene1=scene1;\r\n            DATA_Scene.scene2=scene2;\r\n            DATA_Scene.controller=fxmlLoader1.getController();\r\n            DATA_Scene.controller2=fxmlLoader2.getController();\r\n            DATA_Scene.position = false;\r\n        } catch (IOException e) {\r\n            e.printStackTrace();\r\n        }\r\n    }\r\n\r\n    public static void main(String[] args) {\r\n        launch(args);\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/table_de_tri_fx/Application.java b/src/main/java/com/table_de_tri_fx/Application.java
+--- a/src/main/java/com/table_de_tri_fx/Application.java	(revision d0ff2736712f2007e893a26d21741d8999b728d1)
++++ b/src/main/java/com/table_de_tri_fx/Application.java	(date 1707145363700)
+@@ -18,13 +18,13 @@
+     @Override
+     public void start(Stage primaryStage) throws Exception {
+         try {
+-            FXMLLoader fxmlLoader2 = new FXMLLoader(getClass().getResource("PagePrincipale.fxml"));
+-            Scene scene2 = new Scene(fxmlLoader2.load());
+-            FXMLLoader fxmlLoader1 = new FXMLLoader(Application.class.getResource("PageDeConnexion.fxml"));
+-            Scene scene1 = new Scene(fxmlLoader1.load());
++            FXMLLoader fxmlLoader_Principale = new FXMLLoader(getClass().getResource("PagePrincipale.fxml"));
++            Scene scene_Principale = new Scene(fxmlLoader_Principale.load());
++            FXMLLoader fxmlLoader_Connexion = new FXMLLoader(Application.class.getResource("PageDeConnexion.fxml"));
++            Scene scene_Connexion = new Scene(fxmlLoader_Connexion.load());
+             primaryStage.setFullScreenExitHint("");
+             primaryStage.setTitle("Table de Tri");
+-            primaryStage.setScene(scene1);
++            primaryStage.setScene(scene_Connexion);
+             primaryStage.setFullScreen(true);
+             primaryStage.show();
+             primaryStage.setOnCloseRequest(event -> {
+@@ -32,10 +32,10 @@
+                 Controller.close();
+             });
+             DATA_Scene.primaryStage=primaryStage;
+-            DATA_Scene.scene1=scene1;
+-            DATA_Scene.scene2=scene2;
+-            DATA_Scene.controller=fxmlLoader1.getController();
+-            DATA_Scene.controller2=fxmlLoader2.getController();
++            DATA_Scene.scene1=scene_Connexion;
++            DATA_Scene.scene2=scene_Principale;
++            DATA_Scene.controller=fxmlLoader_Connexion.getController();
++            DATA_Scene.controller2=fxmlLoader_Principale.getController();
+             DATA_Scene.position = false;
+         } catch (IOException e) {
+             e.printStackTrace();
+Index: src/main/java/com/table_de_tri_fx/Gestion.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.table_de_tri_fx;\r\n\r\nimport com.phidget22.PhidgetException;\r\nimport com.table_de_tri_fx.BDD.Gestion_BDD;\r\nimport com.table_de_tri_fx.Phidget.DATA_Balance;\r\nimport com.table_de_tri_fx.Phidget.Gestion_RFID;\r\nimport com.table_de_tri_fx.Phidget.Vinput;\r\nimport javafx.application.Platform;\r\n\r\npublic class Gestion {\r\n    private Gestion_RFID gestion_rfid;\r\n    private Gestion_BDD gestion_bdd;\r\n    private Vinput vInput0, vInput1, vInput2;\r\n    private String oldtag = \"\", trame = \"2\";\r\n    private Double poid0, poid1, poid2;\r\n    private int id_user,id_table = DATA_Balance.id_table;\r\n\r\n    public Gestion() throws PhidgetException {\r\n\r\n        gestion_bdd = new Gestion_BDD();\r\n\r\n        gestion_rfid = new Gestion_RFID(this);\r\n\r\n//        vInput0 = new Vinput(this, 0);\r\n//\r\n//        vInput1 = new Vinput(this, 1);\r\n//\r\n//        vInput2 = new Vinput(this, 2);\r\n\r\n    }\r\n\r\n    public void afficheNom(String tag) {\r\n        if (!tag.equals(oldtag)) {\r\n            trame = gestion_bdd.verifCarte(tag);\r\n            oldtag = tag;\r\n\r\n            switch (trame.charAt(0)) {\r\n                case '1':\r\n                    String[] tab = trame.split(\"/\");\r\n                    id_user = Integer.valueOf(tab[3]);\r\n                    DATA_Scene.controller2.nom = tab[2];\r\n                    DATA_Scene.controller2.prenom = tab[1];\r\n                    if (!DATA_Scene.position){\r\n                        DATA_Scene.controller.state = true;\r\n                        DATA_Scene.controller.rfid();\r\n                    }else{\r\n                        DATA_Scene.controller2.state = true;\r\n                        DATA_Scene.controller2.rfid();\r\n                    }\r\n\r\n                    break;\r\n                case '2':\r\n                    if (DATA_Scene.position){\r\n                        DATA_Scene.controller.state = false;\r\n                        DATA_Scene.controller.rfid();\r\n                    }else{\r\n                        DATA_Scene.controller2.state = false;\r\n                        DATA_Scene.controller2.rfid();\r\n                    }\r\n                    break;\r\n            }\r\n        }\r\n    }\r\n    public void ecrire(){\r\n        Boolean reponsse = gestion_bdd.dechet(id_user,id_table, poid0, poid1, poid2);\r\n        if (reponsse) {\r\n            System.out.println(\"BDD c'est bon\");\r\n        } else {\r\n            System.err.println(\"BDD C'est pas bon\");\r\n        }\r\n    }\r\n\r\n    public void poids(int i, Double poid) {\r\n        switch (i) {\r\n            case 0 -> poid0 = poid;\r\n            case 1 -> poid1 = poid;\r\n            case 2 -> poid2 = poid;\r\n        }\r\n        Platform.runLater(() ->{\r\n            DATA_Scene.controller2.labelPain.setText(poid0.toString());\r\n            DATA_Scene.controller2.labelAlimentaires.setText(poid1.toString());\r\n            DATA_Scene.controller2.labelEmballages.setText(poid2.toString());\r\n        });\r\n    }\r\n    public void close() throws PhidgetException {\r\n        vInput0.close();\r\n        vInput1.close();\r\n        vInput2.close();\r\n        gestion_rfid.close();\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/table_de_tri_fx/Gestion.java b/src/main/java/com/table_de_tri_fx/Gestion.java
+--- a/src/main/java/com/table_de_tri_fx/Gestion.java	(revision d0ff2736712f2007e893a26d21741d8999b728d1)
++++ b/src/main/java/com/table_de_tri_fx/Gestion.java	(date 1707146486448)
+@@ -13,7 +13,7 @@
+     private Vinput vInput0, vInput1, vInput2;
+     private String oldtag = "", trame = "2";
+     private Double poid0, poid1, poid2;
+-    private int id_user,id_table = DATA_Balance.id_table;
++    private int id_user, id_table = DATA_Balance.id_table;
+ 
+     public Gestion() throws PhidgetException {
+ 
+@@ -40,29 +40,40 @@
+                     id_user = Integer.valueOf(tab[3]);
+                     DATA_Scene.controller2.nom = tab[2];
+                     DATA_Scene.controller2.prenom = tab[1];
+-                    if (!DATA_Scene.position){
++                    if (!DATA_Scene.position) {
+                         DATA_Scene.controller.state = true;
+                         DATA_Scene.controller.rfid();
+-                    }else{
++                    } else {
+                         DATA_Scene.controller2.state = true;
+                         DATA_Scene.controller2.rfid();
+                     }
+ 
+                     break;
+                 case '2':
+-                    if (DATA_Scene.position){
++                    if (DATA_Scene.position) {
+                         DATA_Scene.controller.state = false;
+                         DATA_Scene.controller.rfid();
+-                    }else{
++                    } else {
+                         DATA_Scene.controller2.state = false;
+                         DATA_Scene.controller2.rfid();
+                     }
+                     break;
+             }
++        } else if (tag.equals(oldtag)) {
++            Platform.runLater(() -> {
++                DATA_Scene.controller.labelScann.setText("Carte déjà passer");
++                try {
++                    Thread.sleep(3000);
++                } catch (InterruptedException e) {
++                    throw new RuntimeException(e);
++                }
++                DATA_Scene.controller.labelScann.setText("Bonjour veuillez scanner votre carte pour vous connecter");
++            });
+         }
+     }
+-    public void ecrire(){
+-        Boolean reponsse = gestion_bdd.dechet(id_user,id_table, poid0, poid1, poid2);
++
++    public void ecrire() {
++        Boolean reponsse = gestion_bdd.dechet(id_user, id_table, poid0, poid1, poid2);
+         if (reponsse) {
+             System.out.println("BDD c'est bon");
+         } else {
+@@ -76,12 +87,13 @@
+             case 1 -> poid1 = poid;
+             case 2 -> poid2 = poid;
+         }
+-        Platform.runLater(() ->{
++        Platform.runLater(() -> {
+             DATA_Scene.controller2.labelPain.setText(poid0.toString());
+-            DATA_Scene.controller2.labelAlimentaires.setText(poid1.toString());
+-            DATA_Scene.controller2.labelEmballages.setText(poid2.toString());
++            DATA_Scene.controller2.labelAlimentaire.setText(poid1.toString());
++            DATA_Scene.controller2.labelEmballage.setText(poid2.toString());
+         });
+     }
++
+     public void close() throws PhidgetException {
+         vInput0.close();
+         vInput1.close();
+Index: src/main/java/com/table_de_tri_fx/Controller2.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.table_de_tri_fx;\r\n\r\nimport com.phidget22.PhidgetException;\r\nimport javafx.animation.KeyFrame;\r\nimport javafx.animation.Timeline;\r\nimport javafx.application.Platform;\r\nimport javafx.fxml.Initializable;\r\nimport javafx.scene.control.Label;\r\nimport javafx.util.Duration;\r\nimport java.io.IOException;\r\nimport java.net.URL;\r\nimport java.util.ResourceBundle;\r\n\r\npublic class Controller2 implements Initializable {\r\n    public Label labelPain;\r\n    public Label labelEmballages;\r\n    public Label labelAlimentaires;\r\n    public String prenom = new String(\"\"), nom = new String(\"\");\r\n    public Boolean state = false;\r\n    private Timeline timeoutTimeline;\r\n\r\n    @Override\r\n    public void initialize(URL location, ResourceBundle resources) {\r\n        timeoutTimeline = new Timeline(\r\n                new KeyFrame(\r\n                        Duration.seconds(10),\r\n                        event -> {\r\n                            try {\r\n                                openConnexion();\r\n                            } catch (IOException e) {\r\n                                throw new RuntimeException(e);\r\n                            }\r\n                        }\r\n                ));\r\n    }\r\n    public void rfid() {\r\n        if (state) {\r\n            Platform.runLater(() -> {\r\n                resetTimeout();\r\n            });\r\n        } else {\r\n            try {\r\n                openConnexion();\r\n            } catch (IOException e) {\r\n                throw new RuntimeException(e);\r\n            }\r\n        }\r\n    }\r\n    private void openConnexion() throws IOException {\r\n        DATA_Scene.primaryStage.setScene(DATA_Scene.scene1);\r\n        DATA_Scene.primaryStage.setTitle(\"Fenêtre Connection\");\r\n        DATA_Scene.primaryStage.setFullScreen(true);\r\n        DATA_Scene.primaryStage.show();\r\n        Platform.runLater(() -> DATA_Scene.controller.labelScann.setText(\"Erreur utilisateur\"));\r\n        DATA_Scene.position = false;\r\n    }\r\n\r\n    public void resetTimeout() {\r\n        timeoutTimeline.stop();\r\n        timeoutTimeline.play();\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/table_de_tri_fx/Controller2.java b/src/main/java/com/table_de_tri_fx/Controller2.java
+--- a/src/main/java/com/table_de_tri_fx/Controller2.java	(revision d0ff2736712f2007e893a26d21741d8999b728d1)
++++ b/src/main/java/com/table_de_tri_fx/Controller2.java	(date 1707146116143)
+@@ -1,6 +1,5 @@
+ package com.table_de_tri_fx;
+ 
+-import com.phidget22.PhidgetException;
+ import javafx.animation.KeyFrame;
+ import javafx.animation.Timeline;
+ import javafx.application.Platform;
+@@ -13,8 +12,9 @@
+ 
+ public class Controller2 implements Initializable {
+     public Label labelPain;
+-    public Label labelEmballages;
+-    public Label labelAlimentaires;
++    public Label labelEmballage;
++    public Label labelAlimentaire;
++    public Label labelUser;
+     public String prenom = new String(""), nom = new String("");
+     public Boolean state = false;
+     private Timeline timeoutTimeline;
+@@ -27,6 +27,7 @@
+                         event -> {
+                             try {
+                                 openConnexion();
++                                Platform.runLater(() -> DATA_Scene.controller.labelScann.setText("Bonjour veuillez scanner votre carte pour vous connecter"));
+                             } catch (IOException e) {
+                                 throw new RuntimeException(e);
+                             }
+@@ -37,10 +38,12 @@
+         if (state) {
+             Platform.runLater(() -> {
+                 resetTimeout();
++                labelUser.setText("Bonjour " + prenom + " " + nom);
+             });
+         } else {
+             try {
+                 openConnexion();
++                Platform.runLater(() -> DATA_Scene.controller.labelScann.setText("Erreur carte inconnue"));
+             } catch (IOException e) {
+                 throw new RuntimeException(e);
+             }
+@@ -49,9 +52,6 @@
+     private void openConnexion() throws IOException {
+         DATA_Scene.primaryStage.setScene(DATA_Scene.scene1);
+         DATA_Scene.primaryStage.setTitle("Fenêtre Connection");
+-        DATA_Scene.primaryStage.setFullScreen(true);
+-        DATA_Scene.primaryStage.show();
+-        Platform.runLater(() -> DATA_Scene.controller.labelScann.setText("Erreur utilisateur"));
+         DATA_Scene.position = false;
+     }
+ 
+Index: src/main/resources/com/table_de_tri_fx/PagePrincipale.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import javafx.scene.control.Label?>\r\n<?import javafx.scene.layout.AnchorPane?>\r\n<?import javafx.scene.text.Font?>\r\n\r\n<AnchorPane maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"1080.0\" minWidth=\"1920.0\" prefHeight=\"400.0\" prefWidth=\"600.0\" styleClass=\"mainform\" stylesheets=\"@../../css/stylesheet.css\" xmlns=\"http://javafx.com/javafx/21\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"com.table_de_tri_fx.Controller2\">\r\n   <children>\r\n      <AnchorPane prefHeight=\"1080.0\" prefWidth=\"351.0\" styleClass=\"mainform\" stylesheets=\"@../../css/stylesheet.css\" />\r\n      <AnchorPane layoutX=\"372.0\" prefHeight=\"553.0\" prefWidth=\"1347.0\" styleClass=\"mainform\" stylesheets=\"@../../css/stylesheet.css\">\r\n         <children>\r\n            <AnchorPane prefHeight=\"200.0\" prefWidth=\"200.0\" />\r\n            <AnchorPane prefHeight=\"200.0\" prefWidth=\"1510.0\">\r\n               <children>\r\n                  <Label layoutX=\"1193.0\" layoutY=\"14.0\" prefHeight=\"58.0\" prefWidth=\"317.0\" text=\"         Welcome User !\" textFill=\"WHITE\">\r\n                     <font>\r\n                        <Font name=\"Tahoma\" size=\"29.0\" />\r\n                     </font>\r\n                  </Label>\r\n                  <Label alignment=\"CENTER\" layoutX=\"304.0\" layoutY=\"35.0\" prefHeight=\"126.0\" prefWidth=\"780.0\" styleClass=\"mainform\" stylesheets=\"@../../css/stylesheet.css\" text=\"Table de Tri Management \">\r\n                     <font>\r\n                        <Font name=\"Arial Black\" size=\"48.0\" />\r\n                     </font>\r\n                  </Label>\r\n               </children>\r\n            </AnchorPane>\r\n            <AnchorPane fx:id=\"dechet\" layoutX=\"30.0\" layoutY=\"214.0\" prefHeight=\"388.0\" prefWidth=\"515.0\">\r\n               <children>\r\n                  <Label alignment=\"CENTER\" layoutY=\"6.0\" prefHeight=\"74.0\" prefWidth=\"515.0\" text=\"Total Dechet : \">\r\n                     <font>\r\n                        <Font name=\"Arial Black\" size=\"48.0\" />\r\n                     </font>\r\n                  </Label>\r\n                  <Label fx:id=\"labeltotaux\" layoutY=\"169.0\" prefHeight=\"225.0\" prefWidth=\"515.0\" />\r\n               </children>\r\n            </AnchorPane>\r\n            <AnchorPane layoutX=\"615.0\" layoutY=\"222.0\" prefHeight=\"388.0\" prefWidth=\"515.0\">\r\n               <children>\r\n                  <Label prefHeight=\"74.0\" prefWidth=\"641.0\" text=\" Dechet Hebdomadaire  :\">\r\n                     <font>\r\n                        <Font name=\"Arial Black\" size=\"46.0\" />\r\n                     </font>\r\n                  </Label>\r\n                  <Label fx:id=\"labelhebdo\" layoutY=\"140.0\" prefHeight=\"257.0\" prefWidth=\"641.0\" />\r\n               </children>\r\n            </AnchorPane>\r\n         </children>\r\n      </AnchorPane>\r\n      <AnchorPane layoutX=\"372.0\" layoutY=\"619.0\" prefHeight=\"462.0\" prefWidth=\"1510.0\" styleClass=\"mainform\" stylesheets=\"@../../css/stylesheet.css\">\r\n         <children>\r\n            <AnchorPane layoutX=\"44.0\" layoutY=\"31.0\" prefHeight=\"420.0\" prefWidth=\"417.0\">\r\n               <children>\r\n                  <Label fx:id=\"labelPain\" layoutY=\"133.0\" prefHeight=\"165.0\" prefWidth=\"418.0\" />\r\n                  <Label alignment=\"CENTER\" layoutX=\"33.0\" layoutY=\"23.0\" prefHeight=\"58.0\" prefWidth=\"365.0\" text=\"Pain\">\r\n                     <font>\r\n                        <Font name=\"Arial Black\" size=\"48.0\" />\r\n                     </font>\r\n                  </Label>\r\n               </children>\r\n            </AnchorPane>\r\n            <AnchorPane layoutX=\"503.0\" layoutY=\"41.0\" prefHeight=\"420.0\" prefWidth=\"417.0\">\r\n               <children>\r\n                  <Label alignment=\"CENTER\" layoutY=\"14.0\" prefHeight=\"58.0\" prefWidth=\"417.0\" text=\"Emballages\">\r\n                     <font>\r\n                        <Font name=\"Arial Black\" size=\"48.0\" />\r\n                     </font>\r\n                  </Label>\r\n                  <Label fx:id=\"labelEmballage\" layoutX=\"19.0\" layoutY=\"85.0\" prefHeight=\"153.0\" prefWidth=\"383.0\" />\r\n               </children>\r\n            </AnchorPane>\r\n            <AnchorPane layoutX=\"1024.0\" layoutY=\"41.0\" prefHeight=\"420.0\" prefWidth=\"417.0\">\r\n               <children>\r\n                  <Label layoutX=\"28.0\" layoutY=\"17.0\" prefHeight=\"58.0\" prefWidth=\"396.0\" text=\"Alimentaire\">\r\n                     <font>\r\n                        <Font name=\"Arial Black\" size=\"48.0\" />\r\n                     </font>\r\n                  </Label>\r\n                  <Label fx:id=\"labelAlimentaire\" layoutX=\"39.0\" layoutY=\"128.0\" prefHeight=\"173.0\" prefWidth=\"365.0\" />\r\n               </children>\r\n            </AnchorPane>\r\n         </children>\r\n      </AnchorPane>\r\n   </children>\r\n</AnchorPane>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/com/table_de_tri_fx/PagePrincipale.fxml b/src/main/resources/com/table_de_tri_fx/PagePrincipale.fxml
+--- a/src/main/resources/com/table_de_tri_fx/PagePrincipale.fxml	(revision d0ff2736712f2007e893a26d21741d8999b728d1)
++++ b/src/main/resources/com/table_de_tri_fx/PagePrincipale.fxml	(date 1707145535385)
+@@ -1,10 +1,10 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
+-<?import javafx.scene.control.Label?>
+-<?import javafx.scene.layout.AnchorPane?>
+-<?import javafx.scene.text.Font?>
++<?import javafx.scene.control.*?>
++<?import javafx.scene.layout.*?>
++<?import javafx.scene.text.*?>
+ 
+-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="1080.0" minWidth="1920.0" prefHeight="400.0" prefWidth="600.0" styleClass="mainform" stylesheets="@../../css/stylesheet.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.table_de_tri_fx.Controller2">
++<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="1080.0" minWidth="1920.0" prefHeight="400.0" prefWidth="600.0" styleClass="mainform" stylesheets="@../../css/stylesheet.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.table_de_tri_fx.Controller2">
+    <children>
+       <AnchorPane prefHeight="1080.0" prefWidth="351.0" styleClass="mainform" stylesheets="@../../css/stylesheet.css" />
+       <AnchorPane layoutX="372.0" prefHeight="553.0" prefWidth="1347.0" styleClass="mainform" stylesheets="@../../css/stylesheet.css">
+@@ -12,7 +12,7 @@
+             <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+             <AnchorPane prefHeight="200.0" prefWidth="1510.0">
+                <children>
+-                  <Label layoutX="1193.0" layoutY="14.0" prefHeight="58.0" prefWidth="317.0" text="         Welcome User !" textFill="WHITE">
++                  <Label fx:id="labelUser" layoutX="1193.0" layoutY="14.0" prefHeight="58.0" prefWidth="317.0" text="         Welcome User !" textFill="WHITE">
+                      <font>
+                         <Font name="Tahoma" size="29.0" />
+                      </font>
+@@ -26,7 +26,7 @@
+             </AnchorPane>
+             <AnchorPane fx:id="dechet" layoutX="30.0" layoutY="214.0" prefHeight="388.0" prefWidth="515.0">
+                <children>
+-                  <Label alignment="CENTER" layoutY="6.0" prefHeight="74.0" prefWidth="515.0" text="Total Dechet : ">
++                  <Label alignment="CENTER" layoutY="6.0" prefHeight="74.0" prefWidth="515.0" text="Total Déchet : ">
+                      <font>
+                         <Font name="Arial Black" size="48.0" />
+                      </font>
+@@ -36,7 +36,7 @@
+             </AnchorPane>
+             <AnchorPane layoutX="615.0" layoutY="222.0" prefHeight="388.0" prefWidth="515.0">
+                <children>
+-                  <Label prefHeight="74.0" prefWidth="641.0" text=" Dechet Hebdomadaire  :">
++                  <Label prefHeight="74.0" prefWidth="641.0" text=" Déchet Hebdomadaire  :">
+                      <font>
+                         <Font name="Arial Black" size="46.0" />
+                      </font>
+@@ -70,7 +70,7 @@
+             </AnchorPane>
+             <AnchorPane layoutX="1024.0" layoutY="41.0" prefHeight="420.0" prefWidth="417.0">
+                <children>
+-                  <Label layoutX="28.0" layoutY="17.0" prefHeight="58.0" prefWidth="396.0" text="Alimentaire">
++                  <Label layoutX="24.0" layoutY="14.0" prefHeight="58.0" prefWidth="396.0" text="Alimentaire">
+                      <font>
+                         <Font name="Arial Black" size="48.0" />
+                      </font>
+Index: src/main/java/com/table_de_tri_fx/Controller.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.table_de_tri_fx;\r\n\r\n\r\nimport com.phidget22.PhidgetException;\r\nimport javafx.animation.KeyFrame;\r\nimport javafx.animation.Timeline;\r\nimport javafx.application.Platform;\r\nimport javafx.fxml.FXMLLoader;\r\nimport javafx.fxml.Initializable;\r\nimport javafx.scene.Scene;\r\nimport javafx.scene.control.Label;\r\nimport javafx.stage.Stage;\r\nimport javafx.util.Duration;\r\n\r\nimport java.io.IOException;\r\nimport java.net.URL;\r\nimport java.util.ResourceBundle;\r\n\r\npublic class Controller implements Initializable {\r\n    public Label labelScann;\r\n    public Boolean state = false;\r\n    private static Gestion gestion;\r\n    @Override\r\n    public void initialize(URL location, ResourceBundle resources) {\r\n        try {\r\n            gestion = new Gestion();\r\n            DATA_Scene.gestion = gestion;\r\n        } catch (PhidgetException e) {\r\n            throw new RuntimeException(e);\r\n        }\r\n    }\r\n    public void rfid() {\r\n        if (state) {\r\n            Platform.runLater(() -> {\r\n                DATA_Scene.controller2.resetTimeout();\r\n                try {\r\n                    openPrincipale();\r\n                } catch (IOException e) {\r\n                    throw new RuntimeException(e);\r\n                }\r\n            });\r\n        } else {\r\n            Platform.runLater(() -> labelScann.setText(\"Erreur utilisateur\"));\r\n        }\r\n    }\r\n\r\n    public void openPrincipale() throws IOException {\r\n        DATA_Scene.primaryStage.setScene(DATA_Scene.scene2);\r\n        DATA_Scene.primaryStage.setTitle(\"Fenêtre Principale\");\r\n        DATA_Scene.primaryStage.setFullScreen(true);\r\n        DATA_Scene.primaryStage.show();\r\n        DATA_Scene.position = true;\r\n    }\r\n    public static void close() {\r\n        try {\r\n            gestion.close();\r\n        } catch (PhidgetException e) {\r\n            throw new RuntimeException(e);\r\n        }\r\n    }\r\n}\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/table_de_tri_fx/Controller.java b/src/main/java/com/table_de_tri_fx/Controller.java
+--- a/src/main/java/com/table_de_tri_fx/Controller.java	(revision d0ff2736712f2007e893a26d21741d8999b728d1)
++++ b/src/main/java/com/table_de_tri_fx/Controller.java	(date 1707146116138)
+@@ -35,20 +35,19 @@
+                 DATA_Scene.controller2.resetTimeout();
+                 try {
+                     openPrincipale();
++                    DATA_Scene.controller2.labelUser.setText("Bojour " + DATA_Scene.controller2.prenom + " " + DATA_Scene.controller2.nom);
+                 } catch (IOException e) {
+                     throw new RuntimeException(e);
+                 }
+             });
+         } else {
+-            Platform.runLater(() -> labelScann.setText("Erreur utilisateur"));
++            Platform.runLater(() -> labelScann.setText("Erreur carte inconnue"));
+         }
+     }
+ 
+     public void openPrincipale() throws IOException {
+         DATA_Scene.primaryStage.setScene(DATA_Scene.scene2);
+         DATA_Scene.primaryStage.setTitle("Fenêtre Principale");
+-        DATA_Scene.primaryStage.setFullScreen(true);
+-        DATA_Scene.primaryStage.show();
+         DATA_Scene.position = true;
+     }
+     public static void close() {
+Index: src/main/resources/com/table_de_tri_fx/PageDeConnexion.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import javafx.scene.control.*?>\r\n<?import javafx.scene.image.*?>\r\n<?import javafx.scene.layout.*?>\r\n<?import javafx.scene.text.*?>\r\n\r\n<AnchorPane maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" prefHeight=\"1080.0\" prefWidth=\"1920.0\" styleClass=\"loginform\" stylesheets=\"@../../css/stylesheet.css\" xmlns=\"http://javafx.com/javafx/17.0.2-ea\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"com.table_de_tri_fx.Controller\">\r\n   <children>\r\n      <ImageView fitHeight=\"1080.0\" fitWidth=\"1920.0\" layoutX=\"2.0\" pickOnBounds=\"true\" preserveRatio=\"true\">\r\n         <image>\r\n            <Image url=\"@../../images/3b7b2d_dd557582a8cc43a18be374550a39b195~mv2_d_5312_2988_s_4_2.jpg\" />\r\n         </image>\r\n      </ImageView>\r\n      <AnchorPane prefHeight=\"155.0\" prefWidth=\"1920.0\">\r\n         <children>\r\n            <Label alignment=\"CENTER\" layoutX=\"70.0\" layoutY=\"25.0\" prefHeight=\"127.0\" prefWidth=\"663.0\" text=\"Table de tri \" textFill=\"#096b00\">\r\n               <font>\r\n                  <Font name=\"Arial Black\" size=\"48.0\" />\r\n               </font>\r\n              \r\n            </Label>\r\n            <Label alignment=\"CENTER\" layoutX=\"1194.0\" layoutY=\"39.0\" prefHeight=\"91.0\" prefWidth=\"635.0\" text=\"Bienvenue !\" textFill=\"#007200\">\r\n               <font>\r\n                  <Font name=\"Arial Black\" size=\"48.0\" />\r\n               </font>\r\n      \r\n            </Label>\r\n         </children>\r\n      </AnchorPane>\r\n      <AnchorPane layoutX=\"303.0\" layoutY=\"270.0\" prefHeight=\"650.0\" prefWidth=\"1014.0\">\r\n         <children>\r\n            <Label fx:id=\"labelScann\" layoutX=\"21.0\" layoutY=\"245.0\" prefHeight=\"127.0\" prefWidth=\"889.0\" text=\"Scannez votre carte pour vous connecter\" textFill=\"#135700\">\r\n               <font>\r\n                  <Font size=\"48.0\" />\r\n               </font></Label>\r\n         </children>\r\n      </AnchorPane>\r\n   </children>\r\n</AnchorPane>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/com/table_de_tri_fx/PageDeConnexion.fxml b/src/main/resources/com/table_de_tri_fx/PageDeConnexion.fxml
+--- a/src/main/resources/com/table_de_tri_fx/PageDeConnexion.fxml	(revision d0ff2736712f2007e893a26d21741d8999b728d1)
++++ b/src/main/resources/com/table_de_tri_fx/PageDeConnexion.fxml	(date 1707145807531)
+@@ -30,7 +30,7 @@
+       </AnchorPane>
+       <AnchorPane layoutX="303.0" layoutY="270.0" prefHeight="650.0" prefWidth="1014.0">
+          <children>
+-            <Label fx:id="labelScann" layoutX="21.0" layoutY="245.0" prefHeight="127.0" prefWidth="889.0" text="Scannez votre carte pour vous connecter" textFill="#135700">
++            <Label fx:id="labelScann" layoutX="21.0" layoutY="245.0" prefHeight="127.0" prefWidth="889.0" text="Bonjour veuillez scanner votre carte pour vous connecter" textFill="#135700">
+                <font>
+                   <Font size="48.0" />
+                </font></Label>
+Index: build/resources/main/com/table_de_tri_fx/PageDeConnexion.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import javafx.scene.control.Label?>\r\n<?import javafx.scene.image.Image?>\r\n<?import javafx.scene.image.ImageView?>\r\n<?import javafx.scene.layout.AnchorPane?>\r\n<?import javafx.scene.text.Font?>\r\n\r\n<AnchorPane maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" prefHeight=\"1080.0\" prefWidth=\"1920.0\" styleClass=\"loginform\" stylesheets=\"@../../css/stylesheet.css\" xmlns=\"http://javafx.com/javafx/21\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"com.table_de_tri_fx.Controller\">\r\n   <children>\r\n      <ImageView fitHeight=\"1080.0\" fitWidth=\"1920.0\" layoutX=\"2.0\" pickOnBounds=\"true\" preserveRatio=\"true\">\r\n         <image>\r\n            <Image url=\"@../../images/3b7b2d_dd557582a8cc43a18be374550a39b195~mv2_d_5312_2988_s_4_2.jpg\" />\r\n         </image>\r\n      </ImageView>\r\n      <AnchorPane prefHeight=\"155.0\" prefWidth=\"1920.0\">\r\n         <children>\r\n            <Label alignment=\"CENTER\" layoutX=\"70.0\" layoutY=\"25.0\" prefHeight=\"127.0\" prefWidth=\"663.0\" text=\"Table de tri \" textFill=\"#096b00\">\r\n               <font>\r\n                  <Font name=\"Arial Black\" size=\"48.0\" />\r\n               </font>\r\n              \r\n            </Label>\r\n            <Label alignment=\"CENTER\" layoutX=\"1194.0\" layoutY=\"39.0\" prefHeight=\"91.0\" prefWidth=\"635.0\" text=\"Bienvenue !\" textFill=\"#007200\">\r\n               <font>\r\n                  <Font name=\"Arial Black\" size=\"48.0\" />\r\n               </font>\r\n      \r\n            </Label>\r\n         </children>\r\n      </AnchorPane>\r\n      <AnchorPane layoutX=\"303.0\" layoutY=\"270.0\" prefHeight=\"650.0\" prefWidth=\"1014.0\">\r\n         <children>\r\n            <Label fx:id=\"labelScann\" layoutX=\"21.0\" layoutY=\"245.0\" prefHeight=\"127.0\" prefWidth=\"889.0\" text=\"Scannez votre carte pour vous connecter\" textFill=\"#135700\">\r\n               <font>\r\n                  <Font size=\"48.0\" />\r\n               </font></Label>\r\n         </children>\r\n      </AnchorPane>\r\n   </children>\r\n</AnchorPane>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build/resources/main/com/table_de_tri_fx/PageDeConnexion.fxml b/build/resources/main/com/table_de_tri_fx/PageDeConnexion.fxml
+--- a/build/resources/main/com/table_de_tri_fx/PageDeConnexion.fxml	(revision d0ff2736712f2007e893a26d21741d8999b728d1)
++++ b/build/resources/main/com/table_de_tri_fx/PageDeConnexion.fxml	(date 1707145808895)
+@@ -1,12 +1,11 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
+-<?import javafx.scene.control.Label?>
+-<?import javafx.scene.image.Image?>
+-<?import javafx.scene.image.ImageView?>
+-<?import javafx.scene.layout.AnchorPane?>
+-<?import javafx.scene.text.Font?>
++<?import javafx.scene.control.*?>
++<?import javafx.scene.image.*?>
++<?import javafx.scene.layout.*?>
++<?import javafx.scene.text.*?>
+ 
+-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="loginform" stylesheets="@../../css/stylesheet.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.table_de_tri_fx.Controller">
++<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="loginform" stylesheets="@../../css/stylesheet.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.table_de_tri_fx.Controller">
+    <children>
+       <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutX="2.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+@@ -31,7 +30,7 @@
+       </AnchorPane>
+       <AnchorPane layoutX="303.0" layoutY="270.0" prefHeight="650.0" prefWidth="1014.0">
+          <children>
+-            <Label fx:id="labelScann" layoutX="21.0" layoutY="245.0" prefHeight="127.0" prefWidth="889.0" text="Scannez votre carte pour vous connecter" textFill="#135700">
++            <Label fx:id="labelScann" layoutX="21.0" layoutY="245.0" prefHeight="127.0" prefWidth="889.0" text="Bonjour veuillez scanner votre carte pour vous connecter" textFill="#135700">
+                <font>
+                   <Font size="48.0" />
+                </font></Label>
+Index: build/resources/main/com/table_de_tri_fx/PagePrincipale.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import javafx.scene.control.Label?>\r\n<?import javafx.scene.layout.AnchorPane?>\r\n<?import javafx.scene.text.Font?>\r\n\r\n<AnchorPane maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"1080.0\" minWidth=\"1920.0\" prefHeight=\"400.0\" prefWidth=\"600.0\" styleClass=\"mainform\" stylesheets=\"@../../css/stylesheet.css\" xmlns=\"http://javafx.com/javafx/21\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"com.table_de_tri_fx.Controller2\">\r\n   <children>\r\n      <AnchorPane prefHeight=\"1080.0\" prefWidth=\"351.0\" styleClass=\"mainform\" stylesheets=\"@../../css/stylesheet.css\" />\r\n      <AnchorPane layoutX=\"372.0\" prefHeight=\"553.0\" prefWidth=\"1347.0\" styleClass=\"mainform\" stylesheets=\"@../../css/stylesheet.css\">\r\n         <children>\r\n            <AnchorPane prefHeight=\"200.0\" prefWidth=\"200.0\" />\r\n            <AnchorPane prefHeight=\"200.0\" prefWidth=\"1510.0\">\r\n               <children>\r\n                  <Label layoutX=\"1193.0\" layoutY=\"14.0\" prefHeight=\"58.0\" prefWidth=\"317.0\" text=\"         Welcome User !\" textFill=\"WHITE\">\r\n                     <font>\r\n                        <Font name=\"Tahoma\" size=\"29.0\" />\r\n                     </font>\r\n                  </Label>\r\n                  <Label alignment=\"CENTER\" layoutX=\"304.0\" layoutY=\"35.0\" prefHeight=\"126.0\" prefWidth=\"780.0\" styleClass=\"mainform\" stylesheets=\"@../../css/stylesheet.css\" text=\"Table de Tri Management \">\r\n                     <font>\r\n                        <Font name=\"Arial Black\" size=\"48.0\" />\r\n                     </font>\r\n                  </Label>\r\n               </children>\r\n            </AnchorPane>\r\n            <AnchorPane fx:id=\"dechet\" layoutX=\"30.0\" layoutY=\"214.0\" prefHeight=\"388.0\" prefWidth=\"515.0\">\r\n               <children>\r\n                  <Label alignment=\"CENTER\" layoutY=\"6.0\" prefHeight=\"74.0\" prefWidth=\"515.0\" text=\"Total Dechet : \">\r\n                     <font>\r\n                        <Font name=\"Arial Black\" size=\"48.0\" />\r\n                     </font>\r\n                  </Label>\r\n                  <Label fx:id=\"labeltotaux\" layoutY=\"169.0\" prefHeight=\"225.0\" prefWidth=\"515.0\" />\r\n               </children>\r\n            </AnchorPane>\r\n            <AnchorPane layoutX=\"615.0\" layoutY=\"222.0\" prefHeight=\"388.0\" prefWidth=\"515.0\">\r\n               <children>\r\n                  <Label prefHeight=\"74.0\" prefWidth=\"641.0\" text=\" Dechet Hebdomadaire  :\">\r\n                     <font>\r\n                        <Font name=\"Arial Black\" size=\"46.0\" />\r\n                     </font>\r\n                  </Label>\r\n                  <Label fx:id=\"labelhebdo\" layoutY=\"140.0\" prefHeight=\"257.0\" prefWidth=\"641.0\" />\r\n               </children>\r\n            </AnchorPane>\r\n         </children>\r\n      </AnchorPane>\r\n      <AnchorPane layoutX=\"372.0\" layoutY=\"619.0\" prefHeight=\"462.0\" prefWidth=\"1510.0\" styleClass=\"mainform\" stylesheets=\"@../../css/stylesheet.css\">\r\n         <children>\r\n            <AnchorPane layoutX=\"44.0\" layoutY=\"31.0\" prefHeight=\"420.0\" prefWidth=\"417.0\">\r\n               <children>\r\n                  <Label fx:id=\"labelPain\" layoutY=\"133.0\" prefHeight=\"165.0\" prefWidth=\"418.0\" />\r\n                  <Label alignment=\"CENTER\" layoutX=\"33.0\" layoutY=\"23.0\" prefHeight=\"58.0\" prefWidth=\"365.0\" text=\"Pain\">\r\n                     <font>\r\n                        <Font name=\"Arial Black\" size=\"48.0\" />\r\n                     </font>\r\n                  </Label>\r\n               </children>\r\n            </AnchorPane>\r\n            <AnchorPane layoutX=\"503.0\" layoutY=\"41.0\" prefHeight=\"420.0\" prefWidth=\"417.0\">\r\n               <children>\r\n                  <Label alignment=\"CENTER\" layoutY=\"14.0\" prefHeight=\"58.0\" prefWidth=\"417.0\" text=\"Emballages\">\r\n                     <font>\r\n                        <Font name=\"Arial Black\" size=\"48.0\" />\r\n                     </font>\r\n                  </Label>\r\n                  <Label fx:id=\"labelEmballage\" layoutX=\"19.0\" layoutY=\"85.0\" prefHeight=\"153.0\" prefWidth=\"383.0\" />\r\n               </children>\r\n            </AnchorPane>\r\n            <AnchorPane layoutX=\"1024.0\" layoutY=\"41.0\" prefHeight=\"420.0\" prefWidth=\"417.0\">\r\n               <children>\r\n                  <Label layoutX=\"28.0\" layoutY=\"17.0\" prefHeight=\"58.0\" prefWidth=\"396.0\" text=\"Alimentaire\">\r\n                     <font>\r\n                        <Font name=\"Arial Black\" size=\"48.0\" />\r\n                     </font>\r\n                  </Label>\r\n                  <Label fx:id=\"labelAlimentaire\" layoutX=\"39.0\" layoutY=\"128.0\" prefHeight=\"173.0\" prefWidth=\"365.0\" />\r\n               </children>\r\n            </AnchorPane>\r\n         </children>\r\n      </AnchorPane>\r\n   </children>\r\n</AnchorPane>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build/resources/main/com/table_de_tri_fx/PagePrincipale.fxml b/build/resources/main/com/table_de_tri_fx/PagePrincipale.fxml
+--- a/build/resources/main/com/table_de_tri_fx/PagePrincipale.fxml	(revision d0ff2736712f2007e893a26d21741d8999b728d1)
++++ b/build/resources/main/com/table_de_tri_fx/PagePrincipale.fxml	(date 1707145808896)
+@@ -1,10 +1,10 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
+-<?import javafx.scene.control.Label?>
+-<?import javafx.scene.layout.AnchorPane?>
+-<?import javafx.scene.text.Font?>
++<?import javafx.scene.control.*?>
++<?import javafx.scene.layout.*?>
++<?import javafx.scene.text.*?>
+ 
+-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="1080.0" minWidth="1920.0" prefHeight="400.0" prefWidth="600.0" styleClass="mainform" stylesheets="@../../css/stylesheet.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.table_de_tri_fx.Controller2">
++<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="1080.0" minWidth="1920.0" prefHeight="400.0" prefWidth="600.0" styleClass="mainform" stylesheets="@../../css/stylesheet.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.table_de_tri_fx.Controller2">
+    <children>
+       <AnchorPane prefHeight="1080.0" prefWidth="351.0" styleClass="mainform" stylesheets="@../../css/stylesheet.css" />
+       <AnchorPane layoutX="372.0" prefHeight="553.0" prefWidth="1347.0" styleClass="mainform" stylesheets="@../../css/stylesheet.css">
+@@ -12,7 +12,7 @@
+             <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+             <AnchorPane prefHeight="200.0" prefWidth="1510.0">
+                <children>
+-                  <Label layoutX="1193.0" layoutY="14.0" prefHeight="58.0" prefWidth="317.0" text="         Welcome User !" textFill="WHITE">
++                  <Label fx:id="labelUser" layoutX="1193.0" layoutY="14.0" prefHeight="58.0" prefWidth="317.0" text="         Welcome User !" textFill="WHITE">
+                      <font>
+                         <Font name="Tahoma" size="29.0" />
+                      </font>
+@@ -26,7 +26,7 @@
+             </AnchorPane>
+             <AnchorPane fx:id="dechet" layoutX="30.0" layoutY="214.0" prefHeight="388.0" prefWidth="515.0">
+                <children>
+-                  <Label alignment="CENTER" layoutY="6.0" prefHeight="74.0" prefWidth="515.0" text="Total Dechet : ">
++                  <Label alignment="CENTER" layoutY="6.0" prefHeight="74.0" prefWidth="515.0" text="Total Déchet : ">
+                      <font>
+                         <Font name="Arial Black" size="48.0" />
+                      </font>
+@@ -36,7 +36,7 @@
+             </AnchorPane>
+             <AnchorPane layoutX="615.0" layoutY="222.0" prefHeight="388.0" prefWidth="515.0">
+                <children>
+-                  <Label prefHeight="74.0" prefWidth="641.0" text=" Dechet Hebdomadaire  :">
++                  <Label prefHeight="74.0" prefWidth="641.0" text=" Déchet Hebdomadaire  :">
+                      <font>
+                         <Font name="Arial Black" size="46.0" />
+                      </font>
+@@ -70,7 +70,7 @@
+             </AnchorPane>
+             <AnchorPane layoutX="1024.0" layoutY="41.0" prefHeight="420.0" prefWidth="417.0">
+                <children>
+-                  <Label layoutX="28.0" layoutY="17.0" prefHeight="58.0" prefWidth="396.0" text="Alimentaire">
++                  <Label layoutX="24.0" layoutY="14.0" prefHeight="58.0" prefWidth="396.0" text="Alimentaire">
+                      <font>
+                         <Font name="Arial Black" size="48.0" />
+                      </font>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"08516385-d940-47d8-b540-f322cdf48d15\" name=\"Changes\" comment=\"Add files via upload\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ExternalProjectsData\">\r\n    <projectState path=\"$PROJECT_DIR$\">\r\n      <ProjectState />\r\n    </projectState>\r\n  </component>\r\n  <component name=\"ExternalProjectsManager\">\r\n    <system id=\"GRADLE\">\r\n      <state>\r\n        <projects_view>\r\n          <tree_state>\r\n            <expand>\r\n              <path>\r\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\r\n                <item name=\"Table_de_tri_fx\" type=\"f1a62948:ProjectNode\" />\r\n              </path>\r\n            </expand>\r\n            <select />\r\n          </tree_state>\r\n        </projects_view>\r\n      </state>\r\n    </system>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"CSS File\" />\r\n        <option value=\"FxmlFile\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PREVIOUS_COMMIT_AUTHORS\">\r\n      <list>\r\n        <option value=\"K.N &lt;125902437+garnier-kenan@users.noreply.github.com&gt;\" />\r\n      </list>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"file://$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageConnexion.fxml\" root0=\"FORCE_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2b4gdVtiv7L2UDKKDKx2WCFKRfS\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <OptionsSetting value=\"false\" id=\"Update\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/kgarnier/IntelliJIDEAProjects/Projet_Phidget_fx/src/main/resources&quot;,\r\n    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;,\r\n    &quot;spring.configuration.checksum&quot;: &quot;5ae6b5f69ca0ad9cc91737fda7857912&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ReactorSettings\">\r\n    <option name=\"notificationShown\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\kgarnier\\IntelliJIDEAProjects\\Projet_Phidget_fx\\src\\main\\resources\" />\r\n      <recent name=\"T:\\Projet\\src\\main\\resources\\css\" />\r\n      <recent name=\"C:\\Users\\kgarnier\\IntelliJIDEAProjects\\Projet_Phidget_fx\\src\\main\\java\\com\\table_de_tri_fx\\BDD\" />\r\n      <recent name=\"C:\\Users\\kgarnier\\IntelliJIDEAProjects\\Projet_Phidget_fx\\src\\main\\java\\com\\table_de_tri_fx\" />\r\n      <recent name=\"T:\\Projet_Phidget_fx\\lib\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"T:\\Projet\\src\\main\\resources\\CSS\\fonts\" />\r\n      <recent name=\"T:\\Projet\\src\\main\\resources\\CSS\" />\r\n      <recent name=\"T:\\Projet\\src\\main\\resources\\com\\table_de_tri_fx\\css\\fonts\" />\r\n      <recent name=\"T:\\Projet_Phidget_fx\\src\\main\\resources\\images\" />\r\n      <recent name=\"T:\\Projet_Phidget_fx\\src\\main\\resources\\com\\table_de_tri_fx\" />\r\n    </key>\r\n    <key name=\"ExtractSuperBase.RECENT_KEYS\">\r\n      <recent name=\"com.table_de_tri_fx\" />\r\n      <recent name=\"sample\" />\r\n    </key>\r\n    <key name=\"MoveClassesOrPackagesDialog.RECENTS_KEY\">\r\n      <recent name=\"css\" />\r\n      <recent name=\"\" />\r\n      <recent name=\"com.table_de_tri_fx\" />\r\n    </key>\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"com.table_de_tri_fx\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"Application\" type=\"Application\" factoryName=\"Application\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.table_de_tri_fx.Application\" />\r\n      <module name=\"Table_de_tri_fx.main\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"JetRunConfigurationType\">\r\n      <module name=\"Phidget\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"KotlinStandaloneScriptRunConfigurationType\">\r\n      <module name=\"Phidget\" />\r\n      <option name=\"filePath\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"08516385-d940-47d8-b540-f322cdf48d15\" name=\"Changes\" comment=\"\" />\r\n      <created>1705479853065</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1705479853065</updated>\r\n      <workItem from=\"1705479854248\" duration=\"2959000\" />\r\n      <workItem from=\"1705915047079\" duration=\"10761000\" />\r\n      <workItem from=\"1706079722267\" duration=\"3902000\" />\r\n      <workItem from=\"1706083697937\" duration=\"2029000\" />\r\n      <workItem from=\"1706085745905\" duration=\"516000\" />\r\n      <workItem from=\"1706100735857\" duration=\"1258000\" />\r\n      <workItem from=\"1706102014469\" duration=\"715000\" />\r\n      <workItem from=\"1706102749589\" duration=\"227000\" />\r\n      <workItem from=\"1706102991561\" duration=\"348000\" />\r\n      <workItem from=\"1706103355243\" duration=\"933000\" />\r\n      <workItem from=\"1706104304774\" duration=\"1875000\" />\r\n      <workItem from=\"1706106194453\" duration=\"2360000\" />\r\n      <workItem from=\"1706113176210\" duration=\"1278000\" />\r\n      <workItem from=\"1706511975694\" duration=\"30000\" />\r\n      <workItem from=\"1706512020493\" duration=\"9788000\" />\r\n      <workItem from=\"1706536188282\" duration=\"1599000\" />\r\n      <workItem from=\"1706538437387\" duration=\"7351000\" />\r\n      <workItem from=\"1706601613606\" duration=\"9245000\" />\r\n      <workItem from=\"1706684751931\" duration=\"6287000\" />\r\n      <workItem from=\"1706704593342\" duration=\"10773000\" />\r\n      <workItem from=\"1706716935121\" duration=\"2244000\" />\r\n      <workItem from=\"1707116472556\" duration=\"9628000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Add files via upload\">\r\n      <created>1705480665433</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1705480665433</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Add files via upload\">\r\n      <created>1705480713189</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1705480713189</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Add files via upload\">\r\n      <created>1705480805591</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1705480805591</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Add files via upload\">\r\n      <created>1705480812740</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1705480812740</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Add files via upload\">\r\n      <created>1706537390910</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1706537390910</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Add files via upload\">\r\n      <created>1706537486093</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1706537486093</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Add files via upload\">\r\n      <created>1706538707085</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1706538707085</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Add files via upload\">\r\n      <created>1706544196747</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1706544196747</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Add files via upload\">\r\n      <created>1706611759272</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1706611759273</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Add files via upload\">\r\n      <created>1707117966969</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707117966969</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"Add files via upload\">\r\n      <created>1707132462612</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707132462612</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"Add files via upload\">\r\n      <created>1707132986923</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707132986923</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"13\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Add files via upload\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Add files via upload\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-method\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/RecupDonnee.java</url>\r\n          <line>23</line>\r\n          <properties class=\"com.table_de_tri_fx.Phidget.RecupDonnee\">\r\n            <option name=\"EMULATED\" value=\"true\" />\r\n            <option name=\"WATCH_EXIT\" value=\"false\" />\r\n          </properties>\r\n          <option name=\"timeStamp\" value=\"3\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision d0ff2736712f2007e893a26d21741d8999b728d1)
++++ b/.idea/workspace.xml	(date 1707148633921)
+@@ -4,7 +4,40 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="08516385-d940-47d8-b540-f322cdf48d15" name="Changes" comment="Add files via upload" />
++    <list default="true" id="08516385-d940-47d8-b540-f322cdf48d15" name="Changes" comment="Add files via upload">
++      <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_02_2024_13_46__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_02_2024_13_46__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_02_2024_13_48__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_02_2024_13_48__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_02_2024_14_00__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_02_2024_14_00__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_02_2024_14_06__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_02_2024_14_06__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/table_de_tri_fx/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/table_de_tri_fx/Application.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/table_de_tri_fx/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/table_de_tri_fx/Controller.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/table_de_tri_fx/Controller2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/table_de_tri_fx/Controller2.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/table_de_tri_fx/Gestion.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/table_de_tri_fx/Gestion.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/resources/main/com/table_de_tri_fx/PageDeConnexion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/com/table_de_tri_fx/PageDeConnexion.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/resources/main/com/table_de_tri_fx/PagePrincipale.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/com/table_de_tri_fx/PagePrincipale.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Application.class.uniqueId3" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Controller.class.uniqueId1" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Controller.class.uniqueId1" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Controller2.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Controller2.class.uniqueId0" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/DATA_Scene.class.uniqueId4" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Gestion.class.uniqueId2" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Gestion.class.uniqueId2" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Gestion_RFID.class.uniqueId2" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Vinput.class.uniqueId1" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Application.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Controller.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Controller2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Controller2.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Gestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Gestion.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageDeConnexion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageDeConnexion.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PagePrincipale.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PagePrincipale.fxml" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -59,25 +92,25 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kgarnier/IntelliJIDEAProjects/Projet_Phidget_fx/src/main/resources&quot;,
+-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;,
+-    &quot;spring.configuration.checksum&quot;: &quot;5ae6b5f69ca0ad9cc91737fda7857912&quot;,
+-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "WebServerToolWindowFactoryState": "false",
++    "last_opened_file_path": "C:/Users/kgarnier/IntelliJIDEAProjects/Projet_Phidget_fx/src/main/resources",
++    "list.type.of.created.stylesheet": "CSS",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
++    "project.structure.last.edited": "SDKs",
++    "project.structure.proportion": "0.15",
++    "project.structure.side.proportion": "0.2",
++    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
++    "spring.configuration.checksum": "5ae6b5f69ca0ad9cc91737fda7857912",
++    "vue.rearranger.settings.migration": "true"
+   }
+-}</component>
++}]]></component>
+   <component name="ReactorSettings">
+     <option name="notificationShown" value="true" />
+   </component>
