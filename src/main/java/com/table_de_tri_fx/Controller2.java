@@ -3,11 +3,18 @@ package com.table_de_tri_fx;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Platform;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.chart.BarChart;
+import javafx.scene.chart.LineChart;
+import javafx.scene.chart.XYChart;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.util.Duration;
 import java.io.IOException;
 import java.net.URL;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ResourceBundle;
 
 public class Controller2 implements Initializable {
@@ -16,6 +23,13 @@ public class Controller2 implements Initializable {
     public Label labelAlimentaire;
     public Label labelUser;
     public String prenom, nom;
+    public Button btngraphics;
+    public Label labeltotaux;
+    public Label labelhebdo;
+    public Label labelheure;
+    private LineChart<?,?> lineChart;
+
+    @FXML
     private Double  poidTotalPain = 0.00 , poidTotalAlimentaire = 0.00 , poidTotalEmballages = 0.00,poid0,poid1,poid2;
     private boolean flag = true;
 
@@ -29,6 +43,7 @@ public class Controller2 implements Initializable {
             labelPain.setText("0.00");
             labelAlimentaire.setText("0.00");
             labelEmballage.setText("0.00");
+
         });
         timeoutTimeline = new Timeline(
                 new KeyFrame(
@@ -36,6 +51,7 @@ public class Controller2 implements Initializable {
                         event -> {
                             try {
                                 flag = false;
+                                iniLinechart();
                                 openConnexion();
                                 Platform.runLater(() -> DATA_Scene.controller.labelScann.setText("Bonjour veuillez scanner votre carte pour vous connecter"));
                             } catch (IOException e) {
@@ -44,6 +60,9 @@ public class Controller2 implements Initializable {
                         }
 
                 ));
+
+
+
     }
     public void rfid() {
         if (state) {
@@ -81,9 +100,19 @@ public class Controller2 implements Initializable {
                 labelPain.setText(String.valueOf(Double.parseDouble(labelPain.getText())+(this.poid0 - poidTotalPain)));
                 labelAlimentaire.setText(String.valueOf(Double.parseDouble(labelAlimentaire.getText())+(this.poid1 - poidTotalAlimentaire)));
                 labelEmballage.setText(String.valueOf(Double.parseDouble(labelEmballage.getText())+(this.poid2 - poidTotalEmballages)));
+                labeltotaux.setText(String.valueOf(Double.parseDouble(labeltotaux.getText())+poidTotalPain+poidTotalEmballages+poidTotalAlimentaire));
             });
         }
         else {
         }
+    }
+    private void iniLinechart(){
+        XYChart.Series series = new XYChart.Series();
+        series.getData().add(new XYChart.Data("Monday",poid1));
+        series.getData().add(new XYChart.Data("Monday",poid1));
+        series.getData().add(new XYChart.Data("Monday",poid1));
+        series.getData().add(new XYChart.Data("Monday",poid1));
+        series.getData().add(new XYChart.Data("Monday",poid1));
+        lineChart.getData().addAll(series);
     }
 }

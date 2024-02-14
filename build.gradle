@@ -4,6 +4,7 @@ plugins {
   id 'org.javamodularity.moduleplugin' version '1.8.12'
   id 'org.openjfx.javafxplugin' version '0.0.13'
   id 'org.beryx.jlink' version '2.25.0'
+  id 'java-library'
 
 }
 
@@ -12,6 +13,7 @@ version '1.0-SNAPSHOT'
 
 repositories {
   mavenCentral()
+  maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
 }
 
 ext {
@@ -31,19 +33,19 @@ application {
 }
 
 javafx {
-  version = '17.0.6'
+  version = '17.0.1'
   modules = ['javafx.controls', 'javafx.fxml']
 }
 
 dependencies {
   implementation("mysql:mysql-connector-java:8.0.33")
-  implementation 'org.kordamp.bootstrapfx:bootstrapfx-core:0.4.0'
   implementation(files("lib/phidget22.jar"))
-  implementation(files("lib/fontawesomefx-8.9.jar"))
-
   implementation 'com.cloudimpl.outstack:App:4.0.551'
+  implementation(files("lib/fontawesomefx-8.9.jar"))
   testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+
+
 
 
 }

@@ -4,4 +4,11 @@
 .mainform{
     -fx-background-color: linear-gradient(to bottom right,#37752f,#8b9e8d);
 }
+.buttonfield{
+    -fx-background-color: 37752f;
+    -fx-background-radius: 30;
+}
+.imageView{
+    -fx-background-color: transparent;
+}
 

@@ -37,6 +37,7 @@ public class Application extends javafx.application.Application {
             DATA_Scene.controller=fxmlLoader_Connexion.getController();
             DATA_Scene.controller2=fxmlLoader_Principale.getController();
             DATA_Scene.position = false;
+
         } catch (IOException e) {
             e.printStackTrace();
         }
