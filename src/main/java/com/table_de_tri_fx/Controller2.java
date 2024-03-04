@@ -52,12 +52,14 @@ public class Controller2 implements Initializable {
                 labelUser.setText("Bonjour " + prenom + " " + nom);
             });
         } else {
-            try {
-                openConnexion();
-                Platform.runLater(() -> DATA_Scene.controller.labelScann.setText("Erreur carte inconnue"));
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
+            Platform.runLater(() -> {
+                try {
+                    openConnexion();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+                DATA_Scene.controller.labelScann.setText("Erreur carte inconnue");
+                    });
         }
     }
     private void openConnexion() throws IOException {
@@ -71,19 +73,32 @@ public class Controller2 implements Initializable {
         timeoutTimeline.play();
         flag = true;
     }
-    public void renvoiPoid(double poid0 , double poid1, double poid2){
-        if (flag){
-            resetTimeout();
-            this.poid0 = poidTotalPain + poid0;
-            this.poid1 = poidTotalAlimentaire + poid1;
-            this.poid2 = poidTotalEmballages + poid2;
-            Platform.runLater(() -> {
-                labelPain.setText(String.valueOf(Double.parseDouble(labelPain.getText())+(this.poid0 - poidTotalPain)));
-                labelAlimentaire.setText(String.valueOf(Double.parseDouble(labelAlimentaire.getText())+(this.poid1 - poidTotalAlimentaire)));
-                labelEmballage.setText(String.valueOf(Double.parseDouble(labelEmballage.getText())+(this.poid2 - poidTotalEmballages)));
-            });
+    public void renvoiPoid(int index, String poid){
+        switch (index){
+            case 0 -> {
+                labelPain.setText(poid);
+            }
+            case 1 -> {
+                labelAlimentaire.setText(poid);
+            }
+            case 2 -> {
+                labelEmballage.setText(poid);
+            }
         }
-        else {
-        }
+        resetTimeout();
+//        if (flag){
+//            resetTimeout();
+//            this.poid0 = poidTotalPain + poid0;
+//            this.poid1 = poidTotalAlimentaire + poid1;
+//            this.poid2 = poidTotalEmballages + poid2;
+//            Platform.runLater(() -> {
+//                labelPain.setText(String.valueOf(Double.parseDouble(labelPain.getText())+(this.poid0 - poidTotalPain)));
+//                labelAlimentaire.setText(String.valueOf(Double.parseDouble(labelAlimentaire.getText())+(this.poid1 - poidTotalAlimentaire)));
+//                labelEmballage.setText(String.valueOf(Double.parseDouble(labelEmballage.getText())+(this.poid2 - poidTotalEmballages)));
+//            });
+//        }
+//        else {
+//                DATA_Scene.gestion.ecrire(Double.parseDouble(labelPain.getText()),Double.parseDouble(labelAlimentaire.getText()),Double.parseDouble(labelEmballage.getText()));
+//        }
     }
 }

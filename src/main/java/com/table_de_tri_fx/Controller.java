@@ -41,7 +41,9 @@ public class Controller implements Initializable {
                 }
             });
         } else {
-            Platform.runLater(() -> labelScann.setText("Erreur carte inconnue"));
+            Platform.runLater(() -> {
+                labelScann.setText("Erreur carte inconnue");
+            });
         }
     }
 

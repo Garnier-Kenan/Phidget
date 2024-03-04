@@ -7,12 +7,16 @@ import com.table_de_tri_fx.Phidget.Gestion_RFID;
 import com.table_de_tri_fx.Phidget.Vinput;
 import javafx.application.Platform;
 
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.util.Locale;
+
 public class Gestion {
     private Gestion_RFID gestion_rfid;
     private Gestion_BDD gestion_bdd;
     private Vinput vInput0, vInput1, vInput2;
     private String oldtag = "", trame = "2";
-    private Double poid0, poid1, poid2;
+    private Double poid0 = 0.00, poid1 = 0.00, poid2 = 0.00;
     private int id_user, id_table = DATA_Balance.id_table;
     Thread b0, b1, b2;
 
@@ -69,11 +73,11 @@ public class Gestion {
                     break;
                 case '2':
                     if (DATA_Scene.position) {
-                        DATA_Scene.controller.state = false;
-                        DATA_Scene.controller.rfid();
-                    } else {
                         DATA_Scene.controller2.state = false;
                         DATA_Scene.controller2.rfid();
+                    } else {
+                        DATA_Scene.controller.state = false;
+                        DATA_Scene.controller.rfid();
                     }
                     break;
             }
@@ -85,20 +89,7 @@ public class Gestion {
     }
 
     public void ecrire(double poid0, Double poid1, Double poid2) {
-        Boolean reponsse = gestion_bdd.dechet(id_user, id_table, poid0, poid1, poid2);
-    }
-
-    public void poids(int i, Double poid) {
-        switch (i) {
-            case 0 -> poid0 = poid;
-            case 1 -> poid1 = poid;
-            case 2 -> poid2 = poid;
-        }
-        Platform.runLater(() -> {
-            DATA_Scene.controller2.labelPain.setText(poid0.toString());
-            DATA_Scene.controller2.labelAlimentaire.setText(poid1.toString());
-            DATA_Scene.controller2.labelEmballage.setText(poid2.toString());
-        });
+        // gestion_bdd.dechet(id_user, id_table, poid0, poid1, poid2);
     }
 
     public void close() throws PhidgetException {

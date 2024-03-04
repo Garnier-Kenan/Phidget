@@ -1,6 +1,7 @@
 package com.table_de_tri_fx.Phidget;
 
 import com.phidget22.*;
+import com.table_de_tri_fx.DATA_Scene;
 import com.table_de_tri_fx.Gestion;
 import javafx.application.Platform;
 
@@ -12,8 +13,8 @@ public class Vinput implements AttachListener, DetachListener, VoltageRatioInput
     private int numero_input;
     private VoltageRatioInput input;
     private Boolean calibrer = false;
-    Gestion gestion;
-    private DecimalFormat decimalFormat = new DecimalFormat("00.000", DecimalFormatSymbols.getInstance(Locale.US));
+    private Gestion gestion;
+    private Double poid = 0.00;
     public Vinput(Gestion gestion, int numero_input) throws PhidgetException {
         this.gestion = gestion;
         this.numero_input = numero_input;
@@ -75,11 +76,16 @@ public void open(){
     @Override
     public void onVoltageRatioChange(VoltageRatioInputVoltageRatioChangeEvent voltageRatioInputVoltageRatioChangeEvent) {
         if (calibrer){
-            gestion.poids(numero_input,Double.parseDouble(decimalFormat.format(Math.abs(voltageRatioInputVoltageRatioChangeEvent.getVoltageRatio()- (DATA_Balance.offset[numero_input])) *DATA_Balance.GAIN[numero_input])));
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+            DecimalFormat decimalFormat = new DecimalFormat("00.000", DecimalFormatSymbols.getInstance(Locale.US));
+            double voltage = Math.abs(voltageRatioInputVoltageRatioChangeEvent.getVoltageRatio());
+            double offset = Math.abs(DATA_Balance.offset[numero_input]);
+            double gain = DATA_Balance.GAIN[numero_input];
+            double poid = (voltage - offset) * gain;
+            String poids = decimalFormat.format(Math.abs(poid));
+            if (comparaison_tolérance(this.poid, poid)) {
+                this.poid = poid;
+                Platform.runLater(() -> DATA_Scene.controller2.renvoiPoid(numero_input,poids));
+                System.out.println("différence");
             }
         }else{
             System.err.println("Balance " + numero_input + " erreur calibrage");
@@ -95,5 +101,13 @@ public void open(){
         DATA_Balance.offset[numero_input] /= numSamples;
         System.out.println("Balance " + numero_input + " calibrage OK " + DATA_Balance.offset[numero_input]);
         calibrer = true;
+    }
+    public boolean comparaison_tolérance (double oldpoid, double p) {
+        double difference = Math.abs(p - oldpoid);
+        double tolerance = 0.002;
+        if(difference <= tolerance){
+            return false;
+        }
+        return true;
     }
 }
