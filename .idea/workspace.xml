@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08516385-d940-47d8-b540-f322cdf48d15" name="Changes" comment="Add files via upload">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="08516385-d940-47d8-b540-f322cdf48d15" name="Changes" comment="V2">
+      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,10 +68,11 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/kgarnier/IntelliJIDEAProjects/Phidget/rmplire",
+    "last_opened_file_path": "/Users/nathan/DEV/GITHUB/Phidget/src/main/resources/images",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -91,11 +92,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/images" />
       <recent name="T:\Projet\src\main\resources\images" />
       <recent name="C:\Users\kgarnier\IntelliJIDEAProjects\Projet_Phidget_fx\src\main\resources" />
       <recent name="T:\Projet\src\main\resources\css" />
       <recent name="C:\Users\kgarnier\IntelliJIDEAProjects\Projet_Phidget_fx\src\main\java\com\table_de_tri_fx\BDD" />
-      <recent name="C:\Users\kgarnier\IntelliJIDEAProjects\Projet_Phidget_fx\src\main\java\com\table_de_tri_fx" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="T:\Projet\src\main\resources\images" />
@@ -181,7 +182,7 @@
       <workItem from="1707745414752" duration="6000" />
       <workItem from="1707750096255" duration="41000" />
       <workItem from="1709535925516" duration="4702000" />
-      <workItem from="1709550450782" duration="46000" />
+      <workItem from="1709550450782" duration="457000" />
     </task>
     <task id="LOCAL-00001" summary="Add files via upload">
       <created>1705480665433</created>
@@ -288,7 +289,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707149180265</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="V2">
+      <option name="closed" value="true" />
+      <created>1709550890211</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1709550890211</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,7 +307,8 @@
     <MESSAGE value="Branche fonctionelle" />
     <MESSAGE value="fxml flo" />
     <MESSAGE value="Add files via upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add files via upload" />
+    <MESSAGE value="V2" />
+    <option name="LAST_COMMIT_MESSAGE" value="V2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -19,11 +19,17 @@
             <Insets />
          </VBox.margin>
       </ImageView>
-      <Separator prefHeight="21.0" prefWidth="600.0" visible="false" />
+      <Separator prefHeight="10.0" prefWidth="600.0" visible="false" />
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Passez votre carte...">
          <font>
             <Font name="Inter Regular" size="30.0" />
          </font>
       </Text>
+      <Separator prefHeight="10.0" prefWidth="600.0" visible="false" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/gif_carte.gif" />
+         </image>
+      </ImageView>
    </children>
 </VBox>
