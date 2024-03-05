@@ -3,6 +3,8 @@ package com.table_de_tri_fx.Phidget;
 import com.phidget22.*;
 import com.table_de_tri_fx.Gestion;
 
+import java.io.IOException;
+
 public class Gestion_RFID implements AttachListener, DetachListener, RFIDTagListener, RFIDTagLostListener {
     private RFID lecteur;
     private Doutput dOutput0;
@@ -69,7 +71,11 @@ public class Gestion_RFID implements AttachListener, DetachListener, RFIDTagList
     @Override
     public void onTag(RFIDTagEvent rfidTagEvent) {
         System.out.println(rfidTagEvent.getTag().toString());
-        gestion.afficheNom(rfidTagEvent.getTag().toString());
+        try {
+            gestion.afficheNom(rfidTagEvent.getTag().toString());
+        } catch (InterruptedException | PhidgetException | IOException e) {
+            throw new RuntimeException(e);
+        }
         try {
             dOutput0.getOutput().setState(false);
             dOutput1.getOutput().setState(true);

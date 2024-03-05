@@ -7,6 +7,7 @@ import com.table_de_tri_fx.Phidget.Gestion_RFID;
 import com.table_de_tri_fx.Phidget.Vinput;
 import javafx.application.Platform;
 
+import java.io.IOException;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.util.Locale;
@@ -51,7 +52,7 @@ public class Gestion {
         b2.start();
     }
 
-    public void afficheNom(String tag) {
+    public void afficheNom(String tag) throws PhidgetException, InterruptedException, IOException {
         if (!tag.equals(oldtag)) {
             trame = gestion_bdd.verifCarte(tag);
             oldtag = tag;
@@ -63,21 +64,17 @@ public class Gestion {
                     DATA_Scene.controller2.nom = tab[2];
                     DATA_Scene.controller2.prenom = tab[1];
                     if (!DATA_Scene.position) {
-                        DATA_Scene.controller.state = true;
-                        DATA_Scene.controller.rfid();
+                        DATA_Scene.controller.rfid(true);
                     } else {
-                        DATA_Scene.controller2.state = true;
-                        DATA_Scene.controller2.rfid();
+                        DATA_Scene.controller2.rfid(true);
                     }
 
                     break;
                 case '2':
                     if (DATA_Scene.position) {
-                        DATA_Scene.controller2.state = false;
-                        DATA_Scene.controller2.rfid();
+                        DATA_Scene.controller2.rfid(false);
                     } else {
-                        DATA_Scene.controller.state = false;
-                        DATA_Scene.controller.rfid();
+                        DATA_Scene.controller.rfid(false);
                     }
                     break;
             }
@@ -88,8 +85,8 @@ public class Gestion {
         }
     }
 
-    public void ecrire(double poid0, Double poid1, Double poid2) {
-        // gestion_bdd.dechet(id_user, id_table, poid0, poid1, poid2);
+    public void ecrire(Double poid0, Double poid1, Double poid2) throws PhidgetException, InterruptedException {
+        gestion_bdd.dechet(id_user, id_table, poid0,poid1,poid2);
     }
 
     public void close() throws PhidgetException {

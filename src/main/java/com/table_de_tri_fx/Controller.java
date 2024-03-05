@@ -1,4 +1,5 @@
 package com.table_de_tri_fx;
+
 import com.phidget22.PhidgetException;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -21,7 +22,6 @@ import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
     public Label labelScann;
-    public Boolean state = false;
     private static Gestion gestion;
 
 
@@ -37,29 +37,28 @@ public class Controller implements Initializable {
         }
 
     }
-    public void rfid() {
+
+    public void rfid(Boolean state) {
         if (state) {
-            Platform.runLater(() -> {
-                DATA_Scene.controller2.resetTimeout();
-                try {
-                    openPrincipale();
-                    DATA_Scene.controller2.labelUser.setText("Bojour " + DATA_Scene.controller2.prenom + " " + DATA_Scene.controller2.nom);
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
-            });
+            openPrincipale();
         } else {
-            Platform.runLater(() -> {
-                labelScann.setText("Erreur carte inconnue");
-            });
+            Platform.runLater(() -> labelScann.setText("Erreur carte inconnue"));
+
         }
     }
 
-    public void openPrincipale() throws IOException {
-        DATA_Scene.primaryStage.setScene(DATA_Scene.scene2);
-        DATA_Scene.primaryStage.setTitle("Fenêtre Principale");
-        DATA_Scene.position = true;
+    public void openPrincipale() {
+        Platform.runLater(() ->
+        {
+            DATA_Scene.primaryStage.setScene(DATA_Scene.scene2);
+            DATA_Scene.primaryStage.setTitle("Fenêtre Principale");
+            DATA_Scene.primaryStage.setFullScreen(true);
+            DATA_Scene.position = true;
+            DATA_Scene.controller2.labelUser.setText("Bojour " + DATA_Scene.controller2.prenom + " " + DATA_Scene.controller2.nom);
+            DATA_Scene.controller2.resetTimeout();
+        });
     }
+
     public static void close() {
         try {
             gestion.close();

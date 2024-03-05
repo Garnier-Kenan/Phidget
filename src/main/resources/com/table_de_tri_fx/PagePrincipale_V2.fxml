@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Separator?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600" style="-fx-background-image: url('images/background.jpg');" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="TOP_CENTER" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.table_de_tri_fx.Controller2">
    <children>
       <ImageView fitHeight="163.0" fitWidth="217.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -17,45 +13,54 @@
          </image>
       </ImageView>
       <Separator prefHeight="9.0" prefWidth="600.0" visible="false" />
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue Jean Science">
+      <Label fx:id="labelUser" text="Bienvenue Jean Science" textAlignment="CENTER">
          <font>
-            <Font name="Switzer Bold" size="20.0" />
+            <Font name="System Bold" size="72.0" />
          </font>
-      </Text>
+      </Label>
       <Separator prefHeight="36.0" prefWidth="600.0" visible="false" />
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0" style="-fx-background-color: rgba(0, 0, 0, 0.5);">
+      <HBox alignment="CENTER" prefHeight="265.0" prefWidth="1920.0" spacing="150.0" style="-fx-background-color: rgba(0, 0, 0, 0.5);">
          <children>
             <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="120.0" prefWidth="120.0">
                <children>
                   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Alimentaire" textAlignment="CENTER">
                      <font>
-                        <Font name="Arial" size="13.0" />
+                        <Font name="System Bold" size="36.0" />
                      </font>
                   </Text>
                   <Separator prefHeight="31.0" prefWidth="120.0" visible="false" />
-                  <Label text="Label" />
+                  <Label fx:id="labelAlimentaire" text="Label" textFill="#0050ff">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font></Label>
                </children>
             </VBox>
             <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="120.0" prefWidth="120.0">
                <children>
                   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Emballages" textAlignment="CENTER">
                      <font>
-                        <Font name="System Bold" size="13.0" />
+                        <Font name="System Bold" size="36.0" />
                      </font>
                   </Text>
                   <Separator prefHeight="31.0" prefWidth="120.0" visible="false" />
-                  <Label text="Label" />
+                  <Label fx:id="labelEmballage" text="Label" textFill="#2dbc05">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font></Label>
                </children>
             </VBox>
             <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="120.0" prefWidth="120.0">
                <children>
                   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Pain" textAlignment="CENTER">
                      <font>
-                        <Font name="System Bold" size="13.0" />
+                        <Font name="System Bold" size="36.0" />
                      </font>
                   </Text>
                   <Separator prefHeight="31.0" prefWidth="120.0" visible="false" />
-                  <Label text="Label" />
+                  <Label fx:id="labelPain" text="Label" textFill="#c7e100">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font></Label>
                </children>
             </VBox>
          </children>

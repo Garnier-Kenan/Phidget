@@ -76,22 +76,19 @@ public void open(){
     @Override
     public void onVoltageRatioChange(VoltageRatioInputVoltageRatioChangeEvent voltageRatioInputVoltageRatioChangeEvent) {
         if (calibrer){
-            DecimalFormat decimalFormat = new DecimalFormat("00.000", DecimalFormatSymbols.getInstance(Locale.US));
             double voltage = Math.abs(voltageRatioInputVoltageRatioChangeEvent.getVoltageRatio());
             double offset = Math.abs(DATA_Balance.offset[numero_input]);
             double gain = DATA_Balance.GAIN[numero_input];
-            double poid = (voltage - offset) * gain;
-            String poids = decimalFormat.format(Math.abs(poid));
+            double poid = Math.abs((voltage - offset) * gain);
             if (comparaison_tolérance(this.poid, poid)) {
                 this.poid = poid;
-                Platform.runLater(() -> DATA_Scene.controller2.renvoiPoid(numero_input,poids));
-                System.out.println("différence");
+                Platform.runLater(() -> DATA_Scene.controller2.renvoiPoid(numero_input,poid));
             }
-        }else{
-            System.err.println("Balance " + numero_input + " erreur calibrage");
         }
     }
-    private void calibre() throws PhidgetException, InterruptedException {
+    public void calibre() throws PhidgetException, InterruptedException {
+        DATA_Balance.offset = new double[3];
+        calibrer = false;
         int numSamples = 10;
         System.out.println("Balance " + numero_input + " calibrage en cours ");
         for (int i = 0; i < numSamples; i++) {
