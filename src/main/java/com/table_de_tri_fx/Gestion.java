@@ -24,11 +24,11 @@ public class Gestion {
     public Gestion() throws PhidgetException {
 
         gestion_bdd = new Gestion_BDD();
+        gestion_rfid = new Gestion_RFID();
 
-        gestion_rfid = new Gestion_RFID(this);
     b0 = new Thread(()->{
         try {
-            vInput0 = new Vinput(this, 0);
+            vInput0 = new Vinput( 0);
         } catch (PhidgetException e) {
             throw new RuntimeException(e);
         }
@@ -36,7 +36,7 @@ public class Gestion {
     b0.start();
         b1 = new Thread(()->{
             try {
-                vInput1 = new Vinput(this, 1);
+                vInput1 = new Vinput(1);
             } catch (PhidgetException e) {
                 throw new RuntimeException(e);
             }
@@ -44,7 +44,7 @@ public class Gestion {
         b1.start();
         b2 = new Thread(()->{
             try {
-                vInput2 = new Vinput(this, 2);
+                vInput2 = new Vinput(2);
             } catch (PhidgetException e) {
                 throw new RuntimeException(e);
             }
@@ -85,8 +85,11 @@ public class Gestion {
         }
     }
 
-    public void ecrire(Double poid0, Double poid1, Double poid2) throws PhidgetException, InterruptedException {
+    public void ecrire(Double poid0, Double poid1, Double poid2){
         gestion_bdd.dechet(id_user, id_table, poid0,poid1,poid2);
+    }
+    public double initePageP (){
+        return gestion_bdd.semaine();
     }
 
     public void close() throws PhidgetException {

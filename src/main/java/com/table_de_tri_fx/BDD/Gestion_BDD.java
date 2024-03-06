@@ -60,6 +60,25 @@ public class Gestion_BDD {
         }
         return flag;
     }
+    public double semaine (){
+        double semaine = 0.000;
+        connecter();
+        try {
+            String query = "SELECT FORMAT(SUM(pain + alimentaire + emballage), 3) AS total_semaine FROM dechet WHERE YEARWEEK(horodatage) = YEARWEEK(NOW());";
+            PreparedStatement preparedStatement = connexion.prepareStatement(query);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if (resultSet.next()){
+                semaine = resultSet.getDouble(1);
+            }else {
+                semaine = 0.000;
+            }
+            decconecter();
+        } catch (SQLException e) {
+            decconecter();
+            throw new RuntimeException(e);
+        }
+        return semaine;
+    }
     private void decconecter(){
         try {
             connexion.close();

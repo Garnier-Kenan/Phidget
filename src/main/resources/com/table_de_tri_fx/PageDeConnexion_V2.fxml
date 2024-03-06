@@ -23,5 +23,39 @@
          </font>
       </Label>
       <Separator prefHeight="10.0" prefWidth="600.0" visible="false" />
+      <HBox alignment="CENTER" prefHeight="206.0" prefWidth="1752.0" style="-fx-background-color: gray;">
+         <children>
+            <VBox alignment="CENTER" prefHeight="210.0" prefWidth="275.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Total Service" textAlignment="CENTER" wrappingWidth="235.125">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Text>
+                  <Separator prefWidth="200.0" />
+                  <Label fx:id="labelService" text="Label" textFill="#00ff11">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="210.0" prefWidth="275.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Total Semaine" textAlignment="CENTER" wrappingWidth="264.134765625">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Text>
+                  <Separator prefWidth="200.0" />
+                  <Label fx:id="labelSemaine" text="Label" textFill="RED">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
    </children>
 </VBox>

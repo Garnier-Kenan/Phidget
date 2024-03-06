@@ -22,6 +22,8 @@ import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
     public Label labelScann;
+    public Label labelSemaine;
+    public Label labelService;
     private static Gestion gestion;
 
 
@@ -35,7 +37,8 @@ public class Controller implements Initializable {
         } catch (PhidgetException e) {
             throw new RuntimeException(e);
         }
-
+        labelService.setText("0.000");
+        labelSemaine.setText(String.valueOf(gestion.initePageP()));
     }
 
     public void rfid(Boolean state) {

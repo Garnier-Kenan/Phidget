@@ -2,31 +2,24 @@ package com.table_de_tri_fx.Phidget;
 
 import com.phidget22.*;
 import com.table_de_tri_fx.DATA_Scene;
-import com.table_de_tri_fx.Gestion;
 import javafx.application.Platform;
-
-import java.text.DecimalFormat;
-import java.text.DecimalFormatSymbols;
-import java.util.Locale;
 
 public class Vinput implements AttachListener, DetachListener, VoltageRatioInputVoltageRatioChangeListener {
     private int numero_input;
     private VoltageRatioInput input;
-    private Boolean calibrer = false;
-    private Gestion gestion;
-    private Double poid = 0.00;
-    public Vinput(Gestion gestion, int numero_input) throws PhidgetException {
-        this.gestion = gestion;
+    private Boolean calibrer = false, init = false;
+    private Double poid = 0.000;
+    public Vinput(int numero_input) throws PhidgetException {
         this.numero_input = numero_input;
         this.input = new VoltageRatioInput();
         Thread t = new Thread(() -> {
             open();
             try {
                 calibre();
+                init = true;
             } catch (PhidgetException | InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            this.input.addVoltageRatioChangeListener(this);
         });
         t.start();
     }
@@ -84,9 +77,14 @@ public void open(){
                 this.poid = poid;
                 Platform.runLater(() -> DATA_Scene.controller2.renvoiPoid(numero_input,poid));
             }
+        }else{
+            System.err.println("Erreur calibrage " + numero_input);
         }
     }
     public void calibre() throws PhidgetException, InterruptedException {
+        if (init){
+            input.removeVoltageRatioChangeListener(this);
+        }
         DATA_Balance.offset = new double[3];
         calibrer = false;
         int numSamples = 10;
@@ -98,6 +96,7 @@ public void open(){
         DATA_Balance.offset[numero_input] /= numSamples;
         System.out.println("Balance " + numero_input + " calibrage OK " + DATA_Balance.offset[numero_input]);
         calibrer = true;
+        input.addVoltageRatioChangeListener(this);
     }
     public boolean comparaison_tolérance (double oldpoid, double p) {
         double difference = Math.abs(p - oldpoid);

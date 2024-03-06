@@ -1,6 +1,7 @@
 package com.table_de_tri_fx.Phidget;
 
 import com.phidget22.*;
+import com.table_de_tri_fx.DATA_Scene;
 import com.table_de_tri_fx.Gestion;
 
 import java.io.IOException;
@@ -9,10 +10,8 @@ public class Gestion_RFID implements AttachListener, DetachListener, RFIDTagList
     private RFID lecteur;
     private Doutput dOutput0;
     private Doutput dOutput1;
-    private Gestion gestion;
 
-    public Gestion_RFID(Gestion gestion) throws PhidgetException {
-        this.gestion = gestion;
+    public Gestion_RFID() throws PhidgetException {
         this.lecteur = new RFID();
         Thread t = new Thread(() -> open());
         t.start();
@@ -72,7 +71,7 @@ public class Gestion_RFID implements AttachListener, DetachListener, RFIDTagList
     public void onTag(RFIDTagEvent rfidTagEvent) {
         System.out.println(rfidTagEvent.getTag().toString());
         try {
-            gestion.afficheNom(rfidTagEvent.getTag().toString());
+            DATA_Scene.gestion.afficheNom(rfidTagEvent.getTag().toString());
         } catch (InterruptedException | PhidgetException | IOException e) {
             throw new RuntimeException(e);
         }
