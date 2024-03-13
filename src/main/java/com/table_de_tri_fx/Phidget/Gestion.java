@@ -1,16 +1,13 @@
-package com.table_de_tri_fx;
+package com.table_de_tri_fx.Phidget;
 
 import com.phidget22.PhidgetException;
 import com.table_de_tri_fx.BDD.Gestion_BDD;
+import com.table_de_tri_fx.Ihm.DATA_Scene;
 import com.table_de_tri_fx.Phidget.DATA_Balance;
 import com.table_de_tri_fx.Phidget.Gestion_RFID;
 import com.table_de_tri_fx.Phidget.Vinput;
 import javafx.application.Platform;
-
 import java.io.IOException;
-import java.text.DecimalFormat;
-import java.text.DecimalFormatSymbols;
-import java.util.Locale;
 
 public class Gestion {
     private Gestion_RFID gestion_rfid;
@@ -22,10 +19,8 @@ public class Gestion {
     Thread b0, b1, b2;
 
     public Gestion() throws PhidgetException {
-
         gestion_bdd = new Gestion_BDD();
         gestion_rfid = new Gestion_RFID();
-
     b0 = new Thread(()->{
         try {
             vInput0 = new Vinput( 0);
@@ -56,7 +51,6 @@ public class Gestion {
         if (!tag.equals(oldtag)) {
             trame = gestion_bdd.verifCarte(tag);
             oldtag = tag;
-
             switch (trame.charAt(0)) {
                 case '1':
                     String[] tab = trame.split("/");
@@ -68,7 +62,6 @@ public class Gestion {
                     } else {
                         DATA_Scene.controller2.rfid(true);
                     }
-
                     break;
                 case '2':
                     if (DATA_Scene.position) {
@@ -80,7 +73,7 @@ public class Gestion {
             }
         } else if (tag.equals(oldtag)) {
             Platform.runLater(() -> {
-                DATA_Scene.controller.labelScann.setText("Carte déjà passer");
+                DATA_Scene.controller.labelScann.setText("🚨 Carte déjà passée !");
             });
         }
     }
@@ -91,7 +84,6 @@ public class Gestion {
     public double initePageP (){
         return gestion_bdd.semaine();
     }
-
     public void close() throws PhidgetException {
         vInput0.close();
         vInput1.close();

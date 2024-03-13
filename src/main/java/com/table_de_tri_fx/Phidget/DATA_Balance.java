@@ -2,7 +2,7 @@ package com.table_de_tri_fx.Phidget;
 
 public class DATA_Balance {
     public static double[] offset;
-    public static final double [] GAIN = {22760.6858019963,25828.7236379778,0};
+    public static double [] gain= {18960.3386678249,21549.3147016234,19899.5332265989};
     public static final int id_table = 1;
 
 }

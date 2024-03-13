@@ -1,7 +1,7 @@
 package com.table_de_tri_fx.Phidget;
 
 import com.phidget22.*;
-import com.table_de_tri_fx.DATA_Scene;
+import com.table_de_tri_fx.Ihm.DATA_Scene;
 import javafx.application.Platform;
 
 public class Vinput implements AttachListener, DetachListener, VoltageRatioInputVoltageRatioChangeListener {
@@ -71,7 +71,7 @@ public void open(){
         if (calibrer){
             double voltage = Math.abs(voltageRatioInputVoltageRatioChangeEvent.getVoltageRatio());
             double offset = Math.abs(DATA_Balance.offset[numero_input]);
-            double gain = DATA_Balance.GAIN[numero_input];
+            double gain = DATA_Balance.gain[numero_input];
             double poid = Math.abs((voltage - offset) * gain);
             if (comparaison_tolérance(this.poid, poid)) {
                 this.poid = poid;
@@ -86,6 +86,7 @@ public void open(){
             input.removeVoltageRatioChangeListener(this);
         }
         DATA_Balance.offset = new double[3];
+        input.getBridgeGain();
         calibrer = false;
         int numSamples = 10;
         System.out.println("Balance " + numero_input + " calibrage en cours ");
@@ -100,7 +101,7 @@ public void open(){
     }
     public boolean comparaison_tolérance (double oldpoid, double p) {
         double difference = Math.abs(p - oldpoid);
-        double tolerance = 0.002;
+        double tolerance = 0.005;
         if(difference <= tolerance){
             return false;
         }

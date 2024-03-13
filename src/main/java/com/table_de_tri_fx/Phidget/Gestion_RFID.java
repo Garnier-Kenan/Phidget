@@ -1,8 +1,7 @@
 package com.table_de_tri_fx.Phidget;
 
 import com.phidget22.*;
-import com.table_de_tri_fx.DATA_Scene;
-import com.table_de_tri_fx.Gestion;
+import com.table_de_tri_fx.Ihm.DATA_Scene;
 
 import java.io.IOException;
 

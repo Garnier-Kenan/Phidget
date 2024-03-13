@@ -1,7 +1,7 @@
-package com.table_de_tri_fx;
+package com.table_de_tri_fx.Ihm.Controllers;
 
 import com.phidget22.PhidgetException;
-import com.table_de_tri_fx.BDD.Gestion_BDD;
+import com.table_de_tri_fx.Ihm.DATA_Scene;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Platform;
@@ -33,8 +33,7 @@ public class Controller2 implements Initializable {
     private Double poidTotalPain = 0.000, poidTotalAlimentaire = 0.000, poidTotalEmballages = 0.000;
     private Boolean flag = false, lockdown = false;
     private Timeline timeoutTimeline;
-    DecimalFormat decimalFormat = new DecimalFormat("00.000", DecimalFormatSymbols.getInstance(Locale.US));
-
+    private DecimalFormat decimalFormat = new DecimalFormat("0.000", DecimalFormatSymbols.getInstance(Locale.US));
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -84,7 +83,7 @@ public class Controller2 implements Initializable {
     public void rfid(Boolean state) throws PhidgetException, InterruptedException, IOException {
         if (state) {
             ecrire();
-            Platform.runLater(() -> labelUser.setText("Bonjour " + prenom + " " + nom));
+            Platform.runLater(() -> labelUser.setText("🍕 Bonjour " + prenom + " " + nom));
             resetTimeout();
         } else {
             ecrire();
@@ -119,33 +118,24 @@ public class Controller2 implements Initializable {
                 switch (index) {
                     case 0 -> {
                         poid = poid - poidTotalPain;
-                        if (poid < 0) {
+                        if (poid < -0.010) {
                             lockdown(true);
                         }
-
-                            labelPain.setText(decimalFormat.format(poid));
-
-
+                        labelPain.setText(decimalFormat.format(poid));
                     }
                     case 1 -> {
-                        poid = poid - poidTotalAlimentaire;
-                        if (poid < 0) {
+                        poid = poid - poidTotalEmballages;
+                        if (poid < -0.010) {
                             lockdown(true);
                         }
-
-                            labelAlimentaire.setText(decimalFormat.format(poid));
-
-
+                        labelEmballage.setText(decimalFormat.format(poid));
                     }
                     case 2 -> {
-                        poid = poid - poidTotalEmballages;
-                        if (poid < 0) {
+                        poid = poid - poidTotalAlimentaire;
+                        if (poid < -0.010) {
                             lockdown(true);
                         }
-
-                            labelEmballage.setText(decimalFormat.format(poid));
-
-
+                            labelAlimentaire.setText(decimalFormat.format(poid));
                     }
                 }
                 if(!lockdown){
