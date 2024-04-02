@@ -31,15 +31,20 @@ public void open(){
                     this.input.setChannel(numero_input);
                     this.input.open(5000);
                     System.out.println("Balance " + numero_input + " OK");
+                    DATA_Scene.controller_popUP.popup_balance = false;
                     break;
                 } catch (PhidgetException e) {
-                    System.err.println("Erreur ouverture balance, regarder branchement");
+                    if (!DATA_Scene.controller_popUP.popup_balance){
+                        DATA_Scene.controller_popUP.popup_balance = true;
+                        DATA_Scene.controller_popUP.popUP();
+                    }
                 }
             }
         } catch (PhidgetException e) {
             throw new RuntimeException(e);
         }
     }
+    DATA_Scene.controller_popUP.popup_balance = false;
     this.input.addDetachListener(this);
     this.input.addAttachListener(this);
 }
@@ -59,11 +64,15 @@ public void open(){
     @Override
     public void onAttach(AttachEvent attachEvent) {
         System.out.println("Balance " + numero_input + " attachée");
+        DATA_Scene.controller_popUP.popup_balance = false;
     }
 
     @Override
     public void onDetach(DetachEvent detachEvent) {
         System.out.println("Balance " + numero_input + " déttachée");
+        DATA_Scene.controller_popUP.popup_balance = true;
+        DATA_Scene.controller_popUP.popUP();
+
     }
 
     @Override
@@ -75,7 +84,7 @@ public void open(){
             double poid = Math.abs((voltage - offset) * gain);
             if (comparaison_tolérance(this.poid, poid)) {
                 this.poid = poid;
-                Platform.runLater(() -> DATA_Scene.controller2.renvoiPoid(numero_input,poid));
+                Platform.runLater(() -> DATA_Scene.controller_Principale.renvoiPoid(numero_input,poid));
             }
         }else{
             System.err.println("Erreur calibrage " + numero_input);

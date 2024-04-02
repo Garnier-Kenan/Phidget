@@ -19,7 +19,7 @@ import java.text.DecimalFormatSymbols;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-public class Controller2 implements Initializable {
+public class Controller_Principale implements Initializable {
     public Label labelPain;
     public Label labelEmballage;
     public Label labelAlimentaire;
@@ -94,14 +94,14 @@ public class Controller2 implements Initializable {
     private void openConnexion(int i) throws IOException, PhidgetException, InterruptedException {
         Platform.runLater(() ->
         {
-            DATA_Scene.primaryStage.setScene(DATA_Scene.scene1);
+            DATA_Scene.primaryStage.setScene(DATA_Scene.scene_Connexion);
             DATA_Scene.primaryStage.setTitle("Fenêtre Connection");
             DATA_Scene.primaryStage.setFullScreen(true);
             DATA_Scene.position = false;
-            DATA_Scene.controller.labelService.setText(String.valueOf(poidTotalPain + poidTotalAlimentaire + poidTotalEmballages));
+            DATA_Scene.controller_Connexion.labelService.setText(String.valueOf(poidTotalPain + poidTotalAlimentaire + poidTotalEmballages));
             switch (i) {
-                case 1 -> DATA_Scene.controller.labelScann.setText("Bonjour veuillez scanner votre carte pour vous connecter");
-                case 2 -> DATA_Scene.controller.labelScann.setText("Erreur carte inconnue");
+                case 1 -> DATA_Scene.controller_Connexion.labelScann.setText("Bonjour veuillez scanner votre carte pour vous connecter");
+                case 2 -> DATA_Scene.controller_Connexion.labelScann.setText("Erreur carte inconnue");
             }
         });
     }

@@ -1,18 +1,32 @@
 package com.table_de_tri_fx.BDD;
 
+import com.amazonaws.services.dynamodbv2.xspec.S;
+import com.table_de_tri_fx.Ihm.DATA_Scene;
+
 import java.sql.*;
 
 public class Gestion_BDD {
-    private static final String URL = "jdbc:mysql://10.0.0.117:3306/table_de_tri";
-    private static final String UTILISATEUR = "rat";
-    private static final String MOT_DE_PASSE = "NukeTown@07";
+    private static  String URL = "jdbc:mysql://10.0.0.117:3306/table_de_tri";
+    private static  String UTILISATEUR = "rat";
+    private static  String MOT_DE_PASSE = "NukeTown@07";
     private static Connection connexion;
     private void connecter(){
-        try {
-            connexion = DriverManager.getConnection(URL, UTILISATEUR, MOT_DE_PASSE);
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
+        while (true) {
+            try {
+                connexion = DriverManager.getConnection(URL, UTILISATEUR, MOT_DE_PASSE);
+                break;
+            } catch (SQLException e) {
+                if (!DATA_Scene.controller_popUP.popup_bdd) {
+                    DATA_Scene.controller_popUP.popup_bdd = true;
+                    DATA_Scene.controller_popUP.popUP();
+                }
+            }
         }
+    }
+    public void modif_Connection (String ip, String user, String password) {
+        URL = "jdbc:mysql://"+ip+":3306/table_de_tri";
+        UTILISATEUR = user;
+        password = password;
     }
     public String verifCarte(String tagRFID){
         String flag = "2";

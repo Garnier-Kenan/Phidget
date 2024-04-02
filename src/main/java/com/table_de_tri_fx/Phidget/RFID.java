@@ -5,13 +5,13 @@ import com.table_de_tri_fx.Ihm.DATA_Scene;
 
 import java.io.IOException;
 
-public class Gestion_RFID implements AttachListener, DetachListener, RFIDTagListener, RFIDTagLostListener {
-    private RFID lecteur;
+public class RFID implements AttachListener, DetachListener, RFIDTagListener, RFIDTagLostListener {
+    private com.phidget22.RFID lecteur;
     private Doutput dOutput0;
     private Doutput dOutput1;
 
-    public Gestion_RFID() throws PhidgetException {
-        this.lecteur = new RFID();
+    public RFID() throws PhidgetException {
+        this.lecteur = new com.phidget22.RFID();
         Thread t = new Thread(() -> open());
         t.start();
     }
@@ -22,12 +22,17 @@ public class Gestion_RFID implements AttachListener, DetachListener, RFIDTagList
                 if (!this.lecteur.getIsOpen()) {
                     lecteur.open(5000);
                     System.out.println("RFID OK");
+                    DATA_Scene.controller_popUP.popup_rfid = false;
                     break;
                 }
             } catch (PhidgetException e) {
-                System.err.println("Erreur ouverture RFID, regarder branchement");
+                if (!DATA_Scene.controller_popUP.popup_rfid){
+                    DATA_Scene.controller_popUP.popup_rfid = true;
+                    DATA_Scene.controller_popUP.popUP();
+                }
             }
         }
+        DATA_Scene.controller_popUP.popup_rfid = false;
         try {
             dOutput0 = new Doutput(1);
             dOutput1 = new Doutput(2);
@@ -59,11 +64,14 @@ public class Gestion_RFID implements AttachListener, DetachListener, RFIDTagList
     @Override
     public void onAttach(AttachEvent attachEvent) {
         System.out.println("RFID attaché");
+        DATA_Scene.controller_popUP.popup_rfid = false;
     }
 
     @Override
     public void onDetach(DetachEvent detachEvent) {
         System.err.println("Erreur déttachement lecteur RFID, regarder branchement");
+        DATA_Scene.controller_popUP.popup_rfid = true;
+        DATA_Scene.controller_popUP.popUP();
     }
 
     @Override

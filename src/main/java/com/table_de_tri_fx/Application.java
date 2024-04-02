@@ -15,12 +15,12 @@ public class Application extends javafx.application.Application {
     public void start(Stage primaryStage){
         try {
             Gestion gestion = new Gestion();
-            DATA_Scene.gestion = gestion;
-
             FXMLLoader fxmlLoader_Principale = new FXMLLoader(getClass().getResource("PagePrincipale_V2.fxml"));
             Scene scene_Principale = new Scene(fxmlLoader_Principale.load());
             FXMLLoader fxmlLoader_Connexion = new FXMLLoader(Application.class.getResource("PageDeConnexion_V2.fxml"));
             Scene scene_Connexion = new Scene(fxmlLoader_Connexion.load());
+            FXMLLoader fxmlLoader_PopUP = new FXMLLoader(getClass().getResource("PagePopup.fxml"));
+            Scene scene_PopUP = new Scene(fxmlLoader_PopUP.load());
 
             primaryStage.setTitle("Table de Tri");
             primaryStage.setResizable(false);
@@ -34,18 +34,22 @@ public class Application extends javafx.application.Application {
             primaryStage.setOnCloseRequest(event -> {
                 System.exit(0);
                 try {
-                    DATA_Scene.gestion.close();
+                    gestion.close();
                 } catch (PhidgetException e) {
                     throw new RuntimeException(e);
                 }
             });
-
-            DATA_Scene.primaryStage=primaryStage;
-            DATA_Scene.scene1=scene_Connexion;
-            DATA_Scene.scene2=scene_Principale;
-            DATA_Scene.controller=fxmlLoader_Connexion.getController();
-            DATA_Scene.controller2=fxmlLoader_Principale.getController();
+            DATA_Scene.gestion = gestion;
+            DATA_Scene.primaryStage =primaryStage;
+            DATA_Scene.scene_Connexion =scene_Connexion;
+            DATA_Scene.scene_Principale =scene_Principale;
+            DATA_Scene.scene_PopUP =scene_PopUP;
+            DATA_Scene.controller_Connexion =fxmlLoader_Connexion.getController();
+            DATA_Scene.controller_Principale =fxmlLoader_Principale.getController();
+            DATA_Scene.controller_popUP =fxmlLoader_PopUP.getController();
             DATA_Scene.position = false;
+
+            gestion.start();
 
         } catch (IOException | PhidgetException e) {
             e.printStackTrace();
