@@ -12,13 +12,18 @@ public class Gestion {
     private Gestion_BDD gestion_bdd;
     private Vinput vInput0, vInput1, vInput2;
     private String oldtag = "", trame = "2";
-    private Double poid0 = 0.00, poid1 = 0.00, poid2 = 0.00;
+    private Double poid0 = 0.000, poid1 = 0.000, poid2 = 0.000;
     private int id_user, id_table = DATA_Balance.id_table;
     private Thread b0, b1, b2;
 
-    public void start() throws PhidgetException {
-        rfid = new RFID();
+    public Gestion() {
         gestion_bdd = new Gestion_BDD();
+        DATA_Scene.gestion_bdd = gestion_bdd;
+    }
+
+    public void start() throws PhidgetException {
+
+        rfid = new RFID();
         b0 = new Thread(() -> {
             try {
                 vInput0 = new Vinput(0);

@@ -4,33 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08516385-d940-47d8-b540-f322cdf48d15" name="Changes" comment="work v3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Ihm/Controllers/Controller_PopUP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PagePopup.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/image.png" afterDir="false" />
+    <list default="true" id="08516385-d940-47d8-b540-f322cdf48d15" name="Changes" comment="in progress">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/table_de_tri_fx/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/table_de_tri_fx/Application.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/table_de_tri_fx/BDD/Gestion_BDD.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/table_de_tri_fx/BDD/Gestion_BDD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/table_de_tri_fx/Phidget/Gestion_RFID.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/table_de_tri_fx/Phidget/Vinput.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/table_de_tri_fx/Phidget/Vinput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/Table_de_tri_fx-1.0-SNAPSHOT.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/BDD/Gestion_BDD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/BDD/Gestion_BDD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Ihm/Controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Ihm/Controllers/Controller_Connexion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Ihm/Controllers/Controller2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Ihm/Controllers/Controller_Principale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Ihm/Controllers/Controller_Connexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Ihm/Controllers/Controller_Connexion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Ihm/Controllers/Controller_PopUP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Ihm/Controllers/Controller_PopUP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Ihm/DATA_Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Ihm/DATA_Scene.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Gestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Gestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Gestion_RFID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/RFID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/RFID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/RFID.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Vinput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/table_de_tri_fx/Phidget/Vinput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageDeConnexion_V2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PageDeConnexion_V2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PagePrincipale_V2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PagePrincipale_V2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PagePopup.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/table_de_tri_fx/PagePopup.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,12 +45,26 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Table_de_tri_fx" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Table_de_tri_fx" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Table_de_tri_fx" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="shadow" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -99,7 +113,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/kgarnier/IntelliJIDEAProjects/Projet_Phidget_fx",
+    "last_opened_file_path": "C:/Users/kgarnier/IntelliJIDEAProjects/Phidget/rmplire",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -145,13 +159,65 @@
       <recent name="com.table_de_tri_fx" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JAR Application.Table_de_tri_fx-1.0-SNAPSHOT-all.jar">
     <configuration name="Application" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.table_de_tri_fx.Application" />
       <module name="Table_de_tri_fx.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="Projet_Phidget_fx [installDist]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="installDist" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="Projet_Phidget_fx [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="shadowJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="Table_de_tri_fx-1.0-SNAPSHOT-all.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/build/libs/Table_de_tri_fx-1.0-SNAPSHOT-all.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Table_de_tri_fx-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/build/libs/Table_de_tri_fx-1.0-SNAPSHOT.jar" />
+      <method v="2" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Phidget" />
@@ -166,6 +232,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JAR Application.Table_de_tri_fx-1.0-SNAPSHOT-all.jar" />
+        <item itemvalue="Gradle.Projet_Phidget_fx [shadowJar]" />
+        <item itemvalue="JAR Application.Table_de_tri_fx-1.0-SNAPSHOT.jar" />
+        <item itemvalue="Gradle.Projet_Phidget_fx [installDist]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -220,7 +294,9 @@
       <workItem from="1711353084934" duration="4046000" />
       <workItem from="1711371076702" duration="102000" />
       <workItem from="1711440525319" duration="10268000" />
-      <workItem from="1712041371783" duration="8729000" />
+      <workItem from="1712041371783" duration="17265000" />
+      <workItem from="1712146295236" duration="547000" />
+      <workItem from="1712559714671" duration="6556000" />
     </task>
     <task id="LOCAL-00001" summary="Add files via upload">
       <created>1705480665433</created>
@@ -364,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710315786713</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="in progress">
+      <created>1712051124241</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1712051124241</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,7 +472,8 @@
     <MESSAGE value="work" />
     <MESSAGE value="work v2" />
     <MESSAGE value="work v3" />
-    <option name="LAST_COMMIT_MESSAGE" value="work v3" />
+    <MESSAGE value="in progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="in progress" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

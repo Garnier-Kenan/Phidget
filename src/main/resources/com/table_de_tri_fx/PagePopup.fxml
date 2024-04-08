@@ -1,32 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox alignment="CENTER_LEFT" prefHeight="142.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.table_de_tri_fx.Ihm.Controllers.Controller_PopUP">
+<HBox alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.table_de_tri_fx.Ihm.Controllers.Controller_PopUP">
    <children>
-      <ImageView fx:id="Image1" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="Image1" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
       <Separator orientation="VERTICAL" prefHeight="118.0" prefWidth="30.0" visible="false" />
-      <VBox alignment="TOP_CENTER" prefHeight="132.0" prefWidth="406.0">
+      <VBox alignment="TOP_CENTER" prefHeight="204.0" prefWidth="470.0">
          <children>
-            <ImageView fx:id="Image2" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
-            <Label fx:id="Label" prefHeight="27.0" prefWidth="310.0" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+            <ImageView fx:id="Image2" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="Label" alignment="CENTER" contentDisplay="CENTER" prefHeight="133.0" prefWidth="461.0" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <HBox alignment="CENTER" prefHeight="65.0" prefWidth="398.0">
-               <children>
-                  <TextField fx:id="Text" prefHeight="25.0" prefWidth="310.0" />
-                  <Button fx:id="Button" mnemonicParsing="false" text="Connection" />
-               </children>
-            </HBox>
          </children>
       </VBox>
    </children>

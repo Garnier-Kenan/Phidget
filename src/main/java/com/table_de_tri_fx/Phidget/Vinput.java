@@ -65,6 +65,7 @@ public void open(){
     public void onAttach(AttachEvent attachEvent) {
         System.out.println("Balance " + numero_input + " attachée");
         DATA_Scene.controller_popUP.popup_balance = false;
+        DATA_Scene.controller_popUP.popup_close();
     }
 
     @Override

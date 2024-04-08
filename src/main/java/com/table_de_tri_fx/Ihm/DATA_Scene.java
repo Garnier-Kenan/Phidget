@@ -1,5 +1,6 @@
 package com.table_de_tri_fx.Ihm;
 
+import com.table_de_tri_fx.BDD.Gestion_BDD;
 import com.table_de_tri_fx.Ihm.Controllers.Controller_Connexion;
 import com.table_de_tri_fx.Ihm.Controllers.Controller_Principale;
 import com.table_de_tri_fx.Ihm.Controllers.Controller_PopUP;
@@ -15,4 +16,5 @@ public class DATA_Scene {
     public static Stage primaryStage;
     public static Scene scene_Connexion, scene_Principale,scene_PopUP;
     public static Boolean position;
+    public static Gestion_BDD gestion_bdd;
 }

@@ -5,9 +5,16 @@ plugins {
   id 'org.openjfx.javafxplugin' version '0.0.13'
   id 'org.beryx.jlink' version '2.25.0'
   id 'java-library'
+  id "com.github.johnrengelman.shadow" version "7.1.2"
 
 }
-
+jar{
+  manifest{
+    attributes(
+    'Main-Class' : 'com.table_de_tri_fx'
+    )
+  }
+}
 group 'com.example'
 version '1.0-SNAPSHOT'
 
@@ -28,8 +35,8 @@ tasks.withType(JavaCompile) {
 }
 
 application {
-  mainModule = 'com.example.table_de_tri_fx'
-  mainClass = 'com.example.table_de_tri_fx.HelloApplication'
+  mainModule = 'com.table_de_tri_fx'
+  mainClass = 'com.table_de_tri_fx.Application'
 }
 
 javafx {

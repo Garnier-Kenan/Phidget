@@ -19,9 +19,11 @@ public class Controller_Connexion implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         labelService.setText("0.000");
-//        labelSemaine.setText(decimalFormat.format(DATA_Scene.gestion.initePageP()));
     }
 
+    public void bilan_semaine(){
+        labelSemaine.setText(decimalFormat.format(DATA_Scene.gestion.initePageP()));
+    }
     public void rfid(Boolean state) {
         if (state) {
             openPrincipale();

@@ -65,6 +65,7 @@ public class RFID implements AttachListener, DetachListener, RFIDTagListener, RF
     public void onAttach(AttachEvent attachEvent) {
         System.out.println("RFID attaché");
         DATA_Scene.controller_popUP.popup_rfid = false;
+        DATA_Scene.controller_popUP.popup_close();
     }
 
     @Override
