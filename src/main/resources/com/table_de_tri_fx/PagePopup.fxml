@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.table_de_tri_fx.Ihm.Controllers.Controller_PopUP">
+<HBox alignment="CENTER_LEFT" prefHeight="180.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.table_de_tri_fx.Ihm.Controllers.Controller_PopUP">
    <children>
       <ImageView fx:id="Image1" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
       <Separator orientation="VERTICAL" prefHeight="118.0" prefWidth="30.0" visible="false" />

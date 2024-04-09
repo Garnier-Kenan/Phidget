@@ -32,6 +32,7 @@ public void open(){
                     this.input.open(5000);
                     System.out.println("Balance " + numero_input + " OK");
                     DATA_Scene.controller_popUP.popup_balance = false;
+                    DATA_Scene.controller_popUP.popUP();
                     break;
                 } catch (PhidgetException e) {
                     if (!DATA_Scene.controller_popUP.popup_balance){

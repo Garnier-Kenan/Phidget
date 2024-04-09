@@ -22,7 +22,7 @@ public class Controller_Connexion implements Initializable {
     }
 
     public void bilan_semaine(){
-        labelSemaine.setText(decimalFormat.format(DATA_Scene.gestion.initePageP()));
+        labelSemaine.setText(DATA_Scene.gestion.initePageP().toString());
     }
     public void rfid(Boolean state) {
         if (state) {

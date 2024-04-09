@@ -23,6 +23,7 @@ public class RFID implements AttachListener, DetachListener, RFIDTagListener, RF
                     lecteur.open(5000);
                     System.out.println("RFID OK");
                     DATA_Scene.controller_popUP.popup_rfid = false;
+                    DATA_Scene.controller_popUP.popUP();
                     break;
                 }
             } catch (PhidgetException e) {

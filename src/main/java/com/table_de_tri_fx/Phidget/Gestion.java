@@ -87,7 +87,7 @@ public class Gestion {
         gestion_bdd.dechet(id_user, id_table, poid0, poid1, poid2);
     }
 
-    public double initePageP() {
+    public Double initePageP() {
         return gestion_bdd.semaine();
     }
 

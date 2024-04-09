@@ -22,11 +22,21 @@ public class Controller_PopUP implements Initializable {
     public Boolean popup_bdd = false;
     private Boolean popup_state = false;
     private Stage popupStage;
+    private Thread pingBDD;
 
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+        pingBDD = new Thread(()->{
+            while (true){
+                DATA_Scene.gestion_bdd.pingBDD();
+                try {
+                    Thread.sleep(5000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
     }
 
     public void init_page() {
@@ -36,21 +46,34 @@ public class Controller_PopUP implements Initializable {
 
     public void popUP() {
         Platform.runLater(() -> {
-            if (popup_rfid && popup_balance) {
-                Label.setText("Errreur Balance + Lecteur de carte.\nVerifiez le Branchement");
-            } else if (popup_balance) {
-                Label.setText("Errreur Balance. Verifiez le Branchement");
-            } else if (popup_rfid) {
-                Label.setText("Errreur Lecteur de carte. Verifiez le Branchement");
-            } else if (popup_bdd) {
-                Label.setText("Errreur Base de données. Verifiez le serveur Client");
-            } else {
-                Label.setText("Errreur Inconue");
+            if (popup_bdd){
+                pingBDD.start();
+            }else{
+                if (pingBDD.isAlive()){
+                    pingBDD.stop();
+                }
             }
-            if (!popup_state) {
-                popup_state = true;
-                init_page();
-                stage();
+            if (popup_bdd || popup_rfid || popup_balance){
+                if (popup_bdd && popup_rfid && popup_balance) {
+                    Label.setText("Errreur Base de données.\nVerifiez le serveur Client.\nErrreur Balance + Errreur Lecteur de carte.\nVerifiez le Branchement.");
+                } else if (popup_bdd && popup_rfid){
+                    Label.setText("Errreur Base de données.\nVerifiez le serveur Client.\nErrreur Lecteur de carte.\nVerifiez le Branchement.");
+                } else if(popup_bdd && popup_balance){
+                    Label.setText("Errreur Base de données.\nVerifiez le serveur Client.\nErrreur Balance\nVerifiez le Branchement.");
+                } else if (popup_rfid && popup_balance) {
+                    Label.setText("Errreur Balance + Errreur Lecteur de carte.\nVerifiez le Branchement.");
+                } else if (popup_balance) {
+                    Label.setText("Errreur Balance. Verifiez le Branchement.");
+                } else if (popup_rfid) {
+                    Label.setText("Errreur Lecteur de carte. Verifiez le Branchement.");
+                } else if (popup_bdd) {
+                    Label.setText("Errreur Base de données. Verifiez le serveur Client.");
+                }
+                if (!popup_state) {
+                    popup_state = true;
+                    init_page();
+                    stage();
+                }
             }
         });
     }
@@ -72,9 +95,41 @@ public class Controller_PopUP implements Initializable {
             popupStage.showAndWait();
         });
     }
-    public void popup_close (){
-        if (popupStage.isShowing()){
-            popupStage.close();
-        }
+
+    public void popup_close() {
+        Platform.runLater(() -> {
+            if (popup_bdd){
+                pingBDD.start();
+            }else{
+                if (pingBDD.isAlive()){
+                    pingBDD.stop();
+                }
+            }
+            if (popup_bdd || popup_rfid || popup_balance){
+                if (popup_bdd && popup_rfid && popup_balance) {
+                    Label.setText("Errreur Base de données.\nVerifiez le serveur Client.\nErrreur Balance + Errreur Lecteur de carte.\nVerifiez le Branchement.");
+                } else if (popup_bdd && popup_rfid){
+                    Label.setText("Errreur Base de données.\nVerifiez le serveur Client.\nErrreur Lecteur de carte.\nVerifiez le Branchement.");
+                } else if(popup_bdd && popup_balance){
+                    Label.setText("Errreur Base de données.\nVerifiez le serveur Client.\nErrreur Balance\nVerifiez le Branchement.");
+                } else if (popup_rfid && popup_balance) {
+                    Label.setText("Errreur Balance + Errreur Lecteur de carte.\nVerifiez le Branchement.");
+                } else if (popup_balance) {
+                    Label.setText("Errreur Balance. Verifiez le Branchement.");
+                } else if (popup_rfid) {
+                    Label.setText("Errreur Lecteur de carte. Verifiez le Branchement.");
+                } else if (popup_bdd) {
+                    Label.setText("Errreur Base de données. Verifiez le serveur Client.");
+                }
+            }
+            else{
+                if (popupStage != null) {
+                    if (popupStage.isShowing()) {
+                        popupStage.close();
+                        popup_state = false;
+                    }
+                }
+            }
+        });
     }
 }

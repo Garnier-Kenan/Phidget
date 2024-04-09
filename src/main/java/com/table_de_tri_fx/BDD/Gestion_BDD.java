@@ -6,14 +6,17 @@ import com.table_de_tri_fx.Ihm.DATA_Scene;
 import java.sql.*;
 
 public class Gestion_BDD {
-    private static String URL = "jdbc:mysql://10.0.0.117:3306/table_de_tri";
-    private static String UTILISATEUR = "rat";
-    private static String MOT_DE_PASSE = "NukeTown@07";
+    private static final String URL = "jdbc:mysql://10.0.0.117:3306/table_de_tri";
+    private static final String UTILISATEUR = "rat";
+    private static final String MOT_DE_PASSE = "NukeTown@07";
     private static Connection connexion;
-
+    public void pingBDD(){
+        connecter();
+    }
     private void connecter() {
         try {
             connexion = DriverManager.getConnection(URL, UTILISATEUR, MOT_DE_PASSE);
+            DATA_Scene.controller_popUP.popup_bdd = false;
             DATA_Scene.controller_popUP.popup_close();
         } catch (SQLException e) {
             if (!DATA_Scene.controller_popUP.popup_bdd) {
@@ -22,13 +25,6 @@ public class Gestion_BDD {
             }
         }
     }
-
-    public void modif_Connection(String ip, String user, String password) {
-        URL = "jdbc:mysql://" + ip + ":3306/table_de_tri";
-        UTILISATEUR = user;
-        MOT_DE_PASSE = password;
-    }
-
     public String verifCarte(String tagRFID) {
         String flag = "2";
         connecter();
@@ -75,8 +71,8 @@ public class Gestion_BDD {
         return flag;
     }
 
-    public double semaine() {
-        double semaine = 0.000;
+    public Double semaine() {
+        Double semaine = 0.000;
         connecter();
         if (connexion == null) {
             if (!DATA_Scene.controller_popUP.popup_bdd) {
@@ -85,11 +81,11 @@ public class Gestion_BDD {
             }
         }else {
             try {
-                String query = "SELECT FORMAT(SUM(pain + alimentaire + emballage), 3) AS total_semaine FROM dechet WHERE YEARWEEK(horodatage) = YEARWEEK(NOW());";
+                String query = "SELECT REPLACE(FORMAT(SUM(pain + alimentaire + emballage), 3,'fr_FR'), ',', '.') AS total_semaine FROM dechet WHERE YEARWEEK(horodatage) = YEARWEEK(NOW());";
                 PreparedStatement preparedStatement = connexion.prepareStatement(query);
                 ResultSet resultSet = preparedStatement.executeQuery();
                 if (resultSet.next()) {
-                    semaine = resultSet.getDouble(1);
+                    semaine = resultSet.getDouble("total_semaine");
                 } else {
                     semaine = 0.000;
                 }
