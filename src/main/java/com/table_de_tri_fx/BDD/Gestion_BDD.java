@@ -6,7 +6,7 @@ import com.table_de_tri_fx.Ihm.DATA_Scene;
 import java.sql.*;
 
 public class Gestion_BDD {
-    private static final String URL = "jdbc:mysql://10.0.0.117:3306/table_de_tri";
+    private static final String URL = "jdbc:mysql://tabletri.iris07.local/table_de_tri";
     private static final String UTILISATEUR = "rat";
     private static final String MOT_DE_PASSE = "NukeTown@07";
     private static Connection connexion;
